@@ -12,20 +12,34 @@
 	displayBlock="true" >
 
 	<Page title="{i18n>appTitle}" showHeader="false" showNavButton="false" >
+		<subHeader>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Select
+					enabled="true"
+					editable="true"
+					forceSelection="true"
+					change="onSelectYear"
+					items="{info>/}">
+					<core:Item key="{info>date}" text="{path:'info>date',type:'sap.ui.model.type.Date', formatOptions: {style: 'short'}}" />
+				</Select>
+			</Toolbar>
+		</subHeader>
+
 		<uxap:ObjectPageLayout id="Detail" enableLazyLoading="true" useIconTabBar="false" class="ObjectPageRoot">
 			<uxap:headerContent>
 				<l:HorizontalLayout class="sapUiNoContentPadding sapUiNoMargin">
-					<Image src="images/SLogo_SITBRU.png" width="100%"/>
-					<!--<Text text="{i18n>appDescription}"/>-->
+					<Image src="images/SLogo_SITBRU.png" width="100%" mode="Background" />
 				</l:HorizontalLayout>
 			</uxap:headerContent>
+
 			<uxap:sections>
 				<!--overview-->
 				<uxap:ObjectPageSection id="tabOverview" title="{i18n>be.fiddle.sitbe.overview}">
 					<!--description-->
 					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.overview}">
 						<l:VerticalLayout>
-							<ObjectHeader title="{i18n>be.fiddle.sitbe.savedate}"></ObjectHeader>
+							<ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date',type:'sap.ui.model.type.Date', formatOptions: {style: 'short'}}"/>
 							<FormattedText
 								htmlText='{i18n>appDescription} &lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSemeYm9An9S7k7hrfhm468dzCYEwO3GbU2k8jftBwvvOQHnzw/viewform?usp=sf_link&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;'/>
 						</l:VerticalLayout>
@@ -37,7 +51,7 @@
 
 						<SinglePlanningCalendar
 							title= ""
-							startDate="{settings>/startdate}"
+							startDate="{info>date}"
 							enableAppointmentsDragAndDrop="false"
 							stickyMode="None"
 							appointments="{info>/sessions}"

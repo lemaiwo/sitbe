@@ -11,12 +11,6 @@ sap.ui.define(
 			});
 
 		Main.prototype.onInit = function () {
-			this.getView().bindElement({
-				path: 'participants>/Events(59)',
-				parameters:{
-					expand:'Participants'
-				}
-			});
 			
 		};
 
@@ -52,6 +46,21 @@ sap.ui.define(
 					popover.openBy(source);
 				}.bind(this));
 			}
+		};
+
+		Main.prototype.onSelectYear = function(event){
+			let objectPage = this.getView().byId("Detail");
+			//use the binding of the selected item as the binding for the objectpage
+			let selectedContext = event.getParameter("selectedItem").getBindingContext("info");
+			objectPage.setBindingContext(selectedContext, "info"); 
+
+			//and change the binding for the participant service:
+			this.getView().bindElement({
+				path: 'participants>/Events(' + selectedContext.getProperty("eventId") + ')',
+				parameters:{
+					expand:'Participants'
+				}
+			});
 		};
 
 		return Main;
