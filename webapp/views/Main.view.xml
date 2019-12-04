@@ -131,8 +131,7 @@
 									<Text text="{info>location/country}"/>
 								</f:content>
 							</f:SimpleForm>
-							<core:HTML
-								content='&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt;'></core:HTML>
+							<core:HTML content="{info>location/mapUrl}"></core:HTML>
 						</VBox>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
