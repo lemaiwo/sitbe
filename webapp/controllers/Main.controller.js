@@ -4,20 +4,45 @@ sap.ui.define(
 		"sap/ui/core/Fragment"
 	],
 	function (Controller, Fragment) {
-		let Main = Controller.extend("be.fiddle.sitbe.controllers.Main",
+		/**
+		 * @name	be.fiddle.sitbe.controllers.Main
+		 * @alias 	be.fiddle.sitbe.controllers.Main
+		 * @memberof be.fiddle.sitbe.controllers
+		 * @constructor
+		 * @public
+		 * @extends sap.ui.core.mvc.Controller
+		 * @class
+		 * 
+		 **/
+		const Main = Controller.extend("be.fiddle.sitbe.controllers.Main",
 			/** @lends be.fiddle.sitbe.controller.Main.prototype */
 			{
 
-			});
+			}
+		);
 
-		Main.prototype.onInit = function () {
-			
-		};
-
+		/**
+		 * 
+		 * @method onAfterRendering
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 * @public
+		 * @param {event} event 
+		 */
 		Main.prototype.onAfterRendering = function(event){
 			this.getView().getModel("info").attachRequestCompleted({}, this.updateSessionDates, this );
 		};
 
+		/**
+		 * 
+		 * @method updateSessionDates
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 * @public
+		 * @param {event} event 
+		 */
 		Main.prototype.updateSessionDates = function(event){
 			//convert the json dates, because the calendar element is being a bitch
 			let sessions = this.getView().getModel("info").getProperty("/sessions");
@@ -29,6 +54,15 @@ sap.ui.define(
 			this.getView().getModel("info").setProperty("/sessions",sessions);
 		};
 		
+		/**
+		 * 
+		 * @method onClickSession
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 * @public
+		 * @param {event} event 
+		 */
 		Main.prototype.onClickSession = function(event){
 			//get the bindingcontext of the session
 			let source = event.getParameter("appointment"); //using source variable for reuse later, since the event variable is binned after event cycle
@@ -48,6 +82,15 @@ sap.ui.define(
 			}
 		};
 
+		/**
+		 * 
+		 * @method onSelectYear
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 * @public
+		 * @param {event} event 
+		 */
 		Main.prototype.onSelectYear = function(event){
 			let objectPage = this.getView().byId("Detail");
 			//use the binding of the selected item as the binding for the objectpage
