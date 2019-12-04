@@ -34,6 +34,7 @@
 			</uxap:headerContent>
 
 			<uxap:sections>
+			
 				<!--overview-->
 				<uxap:ObjectPageSection id="tabOverview" title="{i18n>be.fiddle.sitbe.overview}">
 					<!--description-->
@@ -45,6 +46,7 @@
 						</l:VerticalLayout>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
+
 				<!--sessions-->
 				<uxap:ObjectPageSection id="tabsessions" title="{i18n>be.fiddle.sitbe.sessions}">
 					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.sessions}">
@@ -52,9 +54,12 @@
 						<SinglePlanningCalendar
 							title= ""
 							startDate="{info>date}"
+							startHour="7"
+							endHour="21"
+							fullDay="false"
 							enableAppointmentsDragAndDrop="false"
 							stickyMode="None"
-							appointments="{info>/sessions}"
+							appointments="{info>sessions}"
 							appointmentSelect="onClickSession">
 							<views>
 								<SinglePlanningCalendarDayView key="DayView" title="Day" />
@@ -73,6 +78,7 @@
 
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
+
 				<!--participants-->
 				<uxap:ObjectPageSection id="tabParticipants" title="{i18n>be.fiddle.sitbe.participants} ">
 					<uxap:ObjectPageSubSection
@@ -82,7 +88,7 @@
 									<Toolbar>
 										<content>
 											<Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank"
-												href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/59"/>
+												href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/{info>eventId}"/>
 										</content>
 									</Toolbar>
 								</headerToolbar>
@@ -98,13 +104,14 @@
 									<ColumnListItem>
 										<cells>
 											<ObjectIdentifier title="{participants>FirstName} {participants>LastName}"/>
-											<Link href="https://twitter.com/{Twitter}" text="{path:'participants>Twitter'}"/>
+											<Link href="https://twitter.com/{path:'participants>Twitter'}" text="{path:'participants>Twitter'}"/>
 										</cells>
 									</ColumnListItem>
 								</items>
 							</Table>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
+
 				<!--host-->
 				<uxap:ObjectPageSection id="tabLocation" title="{i18n>be.fiddle.sitbe.location}">
 					<!--description-->
@@ -115,13 +122,13 @@
 								singleContainerFullSize="false">
 								<f:content>
 									<Label text="{i18n>be.fiddle.sitbe.name}"/>
-									<Text text="{info>/location/name}"/>
+									<Text text="{info>location/name}"/>
 									<Label text="{i18n>be.fiddle.sitbe.street}"/>
-									<Text text="{info>/location/street}"/>
+									<Text text="{info>location/street}"/>
 									<Label text="{i18n>be.fiddle.sitbe.city}"/>
-									<Text text="{info>/location/city}"/>
+									<Text text="{info>location/city}"/>
 									<Label text="{i18n>be.fiddle.sitbe.country}"/>
-									<Text text="{info>/location/country}"/>
+									<Text text="{info>location/country}"/>
 								</f:content>
 							</f:SimpleForm>
 							<core:HTML
@@ -133,11 +140,11 @@
 				<uxap:ObjectPageSection id="tabHost" title="{i18n>be.fiddle.sitbe.host}">
 					<!--description-->
 					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.host}">
-						<Image src="{info>/host/logo}" width="240px"/>
+						<Image src="{info>host/logo}" width="240px"/>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
 				<!--sponsors-->
-				<uxap:ObjectPageSection id="tabSponsor" title="{i18n>be.fiddle.sitbe.sponsors}" subSections="{path:'info>/sponsors'}">
+				<uxap:ObjectPageSection id="tabSponsor" title="{i18n>be.fiddle.sitbe.sponsors}" subSections="{path:'info>sponsors'}">
 					<!--description-->
 					<uxap:ObjectPageSubSection title="{info>name}">
 						<Image src="{info>logo}" width="240px"/>
