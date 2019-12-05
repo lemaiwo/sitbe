@@ -69,8 +69,8 @@
 									type= "None"
 									title= "{info>name}"
 									text= "{info>description}"
-									startDate= "{path:'info>startDate', formatter:'.asDate'}}"
-									endDate= "{path:'info>endDate', formatter:'.asDate'}}"
+									startDate= "{path:'info>startDate', formatter:'.asDate'}"
+									endDate= "{path:'info>endDate', formatter:'.asDate'}"
 									>
 								</unified:CalendarAppointment>
 							</appointments>
