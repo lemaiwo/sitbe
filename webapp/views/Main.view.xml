@@ -29,7 +29,7 @@
 		<uxap:ObjectPageLayout id="Detail" enableLazyLoading="true" useIconTabBar="false" class="ObjectPageRoot">
 			<uxap:headerContent>
 				<l:HorizontalLayout class="sapUiNoContentPadding sapUiNoMargin">
-					<Image src="images/SLogo_SITBRU.png" width="100%" mode="Background" />
+					<Image src="images/SLogo_SITBRU.png" width="100%" mode="Image" />
 				</l:HorizontalLayout>
 			</uxap:headerContent>
 
