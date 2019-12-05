@@ -95,7 +95,7 @@ sap.ui.define(
 			let objectPage = this.getView().byId("Detail");
 			//use the binding of the selected item as the binding for the objectpage
 			let selectedContext = event.getParameter("selectedItem").getBindingContext("info");
-			objectPage.setBindingContext(selectedContext, "info"); 
+			objectPage.bindElement({path:selectedContext.getPath() + "/data", model:"info"}); 
 
 			//and change the binding for the participant service:
 			this.getView().bindElement({
