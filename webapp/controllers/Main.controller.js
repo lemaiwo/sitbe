@@ -151,11 +151,11 @@ sap.ui.define(
 		 * @param {string} date -  
 		 */
 		Main.prototype.asDate = function(date){
-			let newDate = new Date( date );
+			let newDate = new Date( date || 0 );
 			if (newDate){
 				return newDate;
 			}
-			return "Error parsing date";
+			return new Date();
 		};
 
 		return Main;
