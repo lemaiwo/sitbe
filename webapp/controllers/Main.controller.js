@@ -119,7 +119,7 @@ sap.ui.define(
 
 			//and change the binding for the participant service:
 			this.getView().bindElement({
-				path: 'participants>/Events(' + this.getModel("info").getProperty(path + "/data/eventId") + ')',
+				path: 'participants>/Events(' + this.getOwnerComponent().getModel("info").getProperty(path + "/data/eventId") + ')',
 				parameters:{
 					expand:'Participants'
 				}
