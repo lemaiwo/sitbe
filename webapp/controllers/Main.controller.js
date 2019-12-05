@@ -23,11 +23,21 @@ sap.ui.define(
 
 		/**
 		 * 
+		 * @method onInit
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 */
+		Main.prototype.onInit = function(){
+			this.setPath( "/0" );
+		};
+
+		/**
+		 * 
 		 * @method onAfterRendering
 		 * @public
 		 * @instance
 		 * @memberof be.fiddle.sitbe.controllers.Main
-		 * @public
 		 * @param {event} event 
 		 */
 		Main.prototype.onAfterRendering = function(event){
@@ -40,7 +50,6 @@ sap.ui.define(
 		 * @public
 		 * @instance
 		 * @memberof be.fiddle.sitbe.controllers.Main
-		 * @public
 		 * @param {event} event 
 		 */
 		Main.prototype.updateSessionDates = function(event){
@@ -60,7 +69,6 @@ sap.ui.define(
 		 * @public
 		 * @instance
 		 * @memberof be.fiddle.sitbe.controllers.Main
-		 * @public
 		 * @param {event} event 
 		 */
 		Main.prototype.onClickSession = function(event){
@@ -88,22 +96,50 @@ sap.ui.define(
 		 * @public
 		 * @instance
 		 * @memberof be.fiddle.sitbe.controllers.Main
-		 * @public
 		 * @param {event} event 
 		 */
 		Main.prototype.onSelectYear = function(event){
-			let objectPage = this.getView().byId("Detail");
 			//use the binding of the selected item as the binding for the objectpage
 			let selectedContext = event.getParameter("selectedItem").getBindingContext("info");
-			objectPage.bindElement({path:selectedContext.getPath() + "/data", model:"info"}); 
+			this.setPath(selectedContext.getPath() );
+		};
+
+		/**
+		 * 
+		 * @method setPath
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 * @param {string} path - instance path 
+		 */
+		Main.prototype.setPath = function(path){
+			let objectPage = this.getView().byId("Detail");
+			//use the binding of the selected item as the binding for the objectpage
+			objectPage.bindElement({path:path + "/data", model:"info"}); 
 
 			//and change the binding for the participant service:
 			this.getView().bindElement({
-				path: 'participants>/Events(' + selectedContext.getProperty("eventId") + ')',
+				path: 'participants>/Events(' + this.getModel("info").getProperty(path + "/data/eventId") + ')',
 				parameters:{
 					expand:'Participants'
 				}
 			});
+		};
+
+		/**
+		 * 
+		 * @method formatDate
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 * @param {string} date -  
+		 */
+		Main.prototype.formatDate = function(date){
+			let newDate = new Date( date );
+			if (newDate){
+				return newDate.toDateString();
+			}
+			return "Error parsing date";
 		};
 
 		return Main;
