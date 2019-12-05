@@ -21,7 +21,7 @@
 					forceSelection="true"
 					change="onSelectYear"
 					items="{info>/}">
-					<core:Item key="{info>year}" text="{path:'info>data/date',type:'sap.ui.model.type.Date', formatOptions: {style: 'short'}}" />
+					<core:Item key="{info>year}" text="{info>year}" />
 				</Select>
 			</Toolbar>
 		</subHeader>
