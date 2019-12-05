@@ -142,6 +142,22 @@ sap.ui.define(
 			return "Error parsing date";
 		};
 
+		/**
+		 * 
+		 * @method asDate
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 * @param {string} date -  
+		 */
+		Main.prototype.asDate = function(date){
+			let newDate = new Date( date );
+			if (newDate){
+				return newDate;
+			}
+			return "Error parsing date";
+		};
+
 		return Main;
 	}
 );
