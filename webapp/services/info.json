@@ -1,200 +1,204 @@
-{
-	"2020":{
-		"date":"2019-05-05T07:30:00.000Z",
-		"eventId":"",
-		"sessions": [
-		{
-			"name": "Keynote",
-			"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-			"startdate":"2019-05-09T07:30:00.000Z",
-			"enddate":"2019-05-09T08:00:00.000Z",
-			"links":[
-				{ "url":""}
-			]
-		},{
-			"name":"Lunch",
-			"startdate":"2019-05-09T10:00:00.000Z",
-			"enddate":"2019-05-09T11:00:00.000Z"
-		},{
-			"name": "Wrap-up, Reception and book Lottery",
-			"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-			"description": "",
-			"startdate":"2019-05-09T14:00:00Z",
-			"enddate":"2019-05-09T15:30:00Z",
-			"links":[
-				{ "url":""}
-			]
-		},{
-			"name": "Dinner",
-			"speaker": "",
-			"description": "",
-			"startdate":"2019-05-09T17:00:00Z",
-			"enddate":"2019-05-09T21:30:00Z"
-		}],
-		"location": {
-			"name": "Flexso Nv",
-			"street": "Veldkant 33/A",
-			"city": "2550 Kontich",
-			"country": "Belgium",
-			"mapUrl":"&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt"
-		},
-		"host": {
-			"name": "Flexso",
-			"logo": "./images/flexso.png"
-		},
-		"sponsors": [{
-			"name": "SAP Mentors",
-			"logo": "./images/mentors.png"
-		}, {
-			"name": "SAP Community",
-			"logo": "./images/SAPCommunity.png"
-		}, {
-			"name": "Fiddle Consulting",
-			"logo": "./images/fiddle.png"
-		}],
-		"participants": [],
-		"address": []
-	},
-
-	"2019":{
-		"date":"2019-05-18T07:30:00.000Z",
-		"eventId":"59",
-		"sessions": [
-		{
-			"name": "Keynote",
-			"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-			"startdate":"2019-05-18T07:30:00.000Z",
-			"enddate":"2019-05-18T08:00:00.000Z",
-			"links":[
-				{ "url":"./presentations/Keynote.pdf"}
-			]
-		},{
-			"name":"Cloud qualities out-of-the-box: Development and continuous delivery of high-quality enterprise apps on SAP Cloud Platform",
-			"speaker":"Marco Dahms (SAP)",
-			"description":"While running enterprise software in the cloud, we can decouple its lifecycle from that of the legacy enterprise systems maintained by the IT organizations residing on-premise. While the IT department is usually reluctant to enhance the functional scope of their legacy enterprise applications in order to reduce the risk of outages, we can provide new innovations to the business in a faster pace through the SAP Cloud Platform. The development of such cloud extensions shall be quick and efficient and lead to applications that meet high quality standards. In addition, business expects to receive new innovations instantly and frequently. To fulfill both expectations at the same time, you may use the S/4HANA Cloud SDK and its open-source Continuous Delivery Toolkit provided by SAP. In this talk, we will outline how this SDK simplifies the development process and helps to integrate new cloud solutions with legacy enterprise systems. We will also present a pre-configured, out-of-the-box delivery pipeline that requires minimal setup effort and ensures that the delivered software fulfills the expected quality criteria.",
-			"startdate":"2019-05-18T08:00:00.000Z",
-			"enddate":"2019-05-18T08:50:00.000Z",
-			"links":[
-				{ "url":"./presentations/Development%20%26%20Delivery%20of%20Enterprise%20Cloud%20Apps%20with%20SAP%20Cloud%20SDK.pdf"}
-			]
-		},{
-			"name": "Hack the system",
-			"speaker": "Joris Van De Vis",
-			"description": "Ever wondered how secure your SAP systems are? They're not.",
-			"startdate":"2019-05-18T09:00:00.000Z",
-			"enddate":"2019-05-18T09:50:00.000Z",
-			"links":[
-				{ "url":""}
-			]
-		},{
-			"name":"The Future of ABAP Programming",
-			"speaker":"Paul Hardy",
-			"description":"All that you know is at an end. This is in regard to both version management - CTS => abapGit and even the very nature of ABAP programming \"the so called RESTful ABAP programming model\" which SAP are working on. I am on the inside of both initiatives and want to share with you all the non-secret things I can...",
-			"startdate":"2019-05-18T09:00:00.000Z",
-			"enddate":"2019-05-18T09:50:00.000Z",
-			"links":[
-				{ "url":"./presentations/FutureOfAbap.pdf"}
-			]
-		},{
-			"name":"Lunch",
-			"startdate":"2019-05-18T10:00:00.000Z",
-			"enddate":"2019-05-18T11:00:00.000Z"
-		},{
-			"name":"Hitchhikers Guide to the Legacy",
-			"speaker":"Laurens van Rijn",
-			"description":"Handling legacy code",
-			"startdate":"2019-05-18T11:00:00.000Z",
-			"enddate":"2019-05-18T11:50:00.000Z",
-			"links":[
-				{ "url":"/presentations/sitBRU%20-%20HHGttLegacy.ppsx"}
-			]
-		},{
-			"name": "I Have Issues",
-			"speaker": "Tom Van Doorslaer",
-			"description": "You have issues, I have issues, we all have issues. But how can you keep track of these issues and manage your modern UI5 project?",
-			"startdate":"2019-05-18T11:00:00Z",
-			"enddate":"2019-05-18T11:50:00Z",
-			"links":[
-				{ "url":"./presentations/issues.pdf"},
-				{"url":"https://gitlab.com/fiddlebe"}
-			]
-		},{
-			"name":"Domain-driven design, ABAP and SAP Cloud Platform",
-			"speaker":"Tudor Riscutia",
-			"description":"Introduction to DDD: a bit of theory as well as how to apply these ideas in your day to day work as an SAP developer working on ABAP or SAP Cloud Platform.",
-			"startdate":"2019-05-18T12:00:00Z",
-			"enddate":"2019-05-18T12:50:00Z",
-			"links":[
-				{ "url":""}
-			]
-		},{
-			"name":"Troubleshooting and debugging Node.js applications in SAP Cloud Platform Cloud Foundry",
-			"speaker":"Vadim Klimov",
-			"description":"The session will cover some practical hints and tips about increasing productivity of troubleshooting and particularly debugging Node.js applications that are deployed to SAP Cloud Platform Cloud Foundry. We will use classic options that require pausing application execution, as well as will see how verbose logging output can be collected dynamically for an application that is already running in debug mode. We will also apply described techniques to Node.js applications that involve source code transpiling - such as Node.js applications developed in TypeScript.",
-			"startdate":"2019-05-18T12:00:00Z",
-			"enddate":"2019-05-18T12:50:00Z",
-			"links":[
-				{ "url":""}
-			]
-		},{
-			"name": "Hunting Zombies the SCP-Way",
-			"speaker": "Christian Drumm",
-			"description": "In my session I'll show how the SCP can be used to survive in a world after the zombie apocalypse.",
-			"startdate":"2019-05-18T13:00:00Z",
-			"enddate":"2019-05-18T13:50:00Z",
-			"links":[
-				{ "url":"https://blogs.sap.com/2018/12/04/hunting-zombies-the-scp-way/"}
-			]
-		},{
-			"name": "Smart Coffee Machine – SAP Leonardo IoT Service",
-			"speaker": "Dries Van Vaerenbergh & Wouter Lemaire",
-			"description": "If you like to blow stuff up, this session really is for you. Come join us to learn how we gave a coffee machine some intelligence, and then blew it up.",
-			"startdate":"2019-05-18T13:00:00Z",
-			"enddate":"2019-05-18T13:50:00Z",
-			"links":[
-				{ "url":""}
-			]
-		},{
-			"name": "Wrap-up, Reception and book Lottery",
-			"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-			"description": "",
-			"startdate":"2019-05-18T14:00:00Z",
-			"enddate":"2019-05-18T15:30:00Z",
-			"links":[
-				{ "url":"./presentations/Wrapup.pdf"}
-			]
-		},{
-			"name": "Dinner",
-			"speaker": "",
-			"description": "",
-			"startdate":"2019-05-18T17:00:00Z",
-			"enddate":"2019-05-18T21:30:00Z"
-		}],
-		"location": {
-			"name": "Flexso Nv",
-			"street": "Veldkant 33/A",
-			"city": "2550 Kontich",
-			"country": "Belgium",
-			"mapUrl":"&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt"
-		},
-		"host": {
-			"name": "Flexso",
-			"logo": "./images/flexso.png"
-		},
-		"sponsors": [{
-			"name": "SAP Mentors",
-			"logo": "./images/mentors.png"
-		}, {
-			"name": "SAP Community",
-			"logo": "./images/SAPCommunity.png"
-		}, {
-			"name": "Espresso Tutorials",
-			"logo": "./images/ET.jpg"
-		}, {
-			"name": "Fiddle Consulting",
-			"logo": "./images/fiddle.png"
-		}],
-		"participants": [],
-		"address": []
+[
+	{
+		"year":"2020",
+		"data":{
+			"date":"2019-05-05T07:30:00.000Z",
+			"eventId":"",
+			"sessions": [
+			{
+				"name": "Keynote",
+				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
+				"startdate":"2019-05-09T07:30:00.000Z",
+				"enddate":"2019-05-09T08:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name":"Lunch",
+				"startdate":"2019-05-09T10:00:00.000Z",
+				"enddate":"2019-05-09T11:00:00.000Z"
+			},{
+				"name": "Wrap-up, Reception and book Lottery",
+				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
+				"description": "",
+				"startdate":"2019-05-09T14:00:00Z",
+				"enddate":"2019-05-09T15:30:00Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "Dinner",
+				"speaker": "",
+				"description": "",
+				"startdate":"2019-05-09T17:00:00Z",
+				"enddate":"2019-05-09T21:30:00Z"
+			}],
+			"location": {
+				"name": "Flexso Nv",
+				"street": "Veldkant 33/A",
+				"city": "2550 Kontich",
+				"country": "Belgium",
+				"mapUrl":"&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt"
+			},
+			"host": {
+				"name": "Flexso",
+				"logo": "./images/flexso.png"
+			},
+			"sponsors": [{
+				"name": "SAP Mentors",
+				"logo": "./images/mentors.png"
+			}, {
+				"name": "SAP Community",
+				"logo": "./images/SAPCommunity.png"
+			}, {
+				"name": "Fiddle Consulting",
+				"logo": "./images/fiddle.png"
+			}],
+			"participants": [],
+			"address": []
+		}
+	},{
+		"year":"2019",
+		"data":{
+			"date":"2019-05-18T07:30:00.000Z",
+			"eventId":"59",
+			"sessions": [
+			{
+				"name": "Keynote",
+				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
+				"startdate":"2019-05-18T07:30:00.000Z",
+				"enddate":"2019-05-18T08:00:00.000Z",
+				"links":[
+					{ "url":"./presentations/Keynote.pdf"}
+				]
+			},{
+				"name":"Cloud qualities out-of-the-box: Development and continuous delivery of high-quality enterprise apps on SAP Cloud Platform",
+				"speaker":"Marco Dahms (SAP)",
+				"description":"While running enterprise software in the cloud, we can decouple its lifecycle from that of the legacy enterprise systems maintained by the IT organizations residing on-premise. While the IT department is usually reluctant to enhance the functional scope of their legacy enterprise applications in order to reduce the risk of outages, we can provide new innovations to the business in a faster pace through the SAP Cloud Platform. The development of such cloud extensions shall be quick and efficient and lead to applications that meet high quality standards. In addition, business expects to receive new innovations instantly and frequently. To fulfill both expectations at the same time, you may use the S/4HANA Cloud SDK and its open-source Continuous Delivery Toolkit provided by SAP. In this talk, we will outline how this SDK simplifies the development process and helps to integrate new cloud solutions with legacy enterprise systems. We will also present a pre-configured, out-of-the-box delivery pipeline that requires minimal setup effort and ensures that the delivered software fulfills the expected quality criteria.",
+				"startdate":"2019-05-18T08:00:00.000Z",
+				"enddate":"2019-05-18T08:50:00.000Z",
+				"links":[
+					{ "url":"./presentations/Development%20%26%20Delivery%20of%20Enterprise%20Cloud%20Apps%20with%20SAP%20Cloud%20SDK.pdf"}
+				]
+			},{
+				"name": "Hack the system",
+				"speaker": "Joris Van De Vis",
+				"description": "Ever wondered how secure your SAP systems are? They're not.",
+				"startdate":"2019-05-18T09:00:00.000Z",
+				"enddate":"2019-05-18T09:50:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name":"The Future of ABAP Programming",
+				"speaker":"Paul Hardy",
+				"description":"All that you know is at an end. This is in regard to both version management - CTS => abapGit and even the very nature of ABAP programming \"the so called RESTful ABAP programming model\" which SAP are working on. I am on the inside of both initiatives and want to share with you all the non-secret things I can...",
+				"startdate":"2019-05-18T09:00:00.000Z",
+				"enddate":"2019-05-18T09:50:00.000Z",
+				"links":[
+					{ "url":"./presentations/FutureOfAbap.pdf"}
+				]
+			},{
+				"name":"Lunch",
+				"startdate":"2019-05-18T10:00:00.000Z",
+				"enddate":"2019-05-18T11:00:00.000Z"
+			},{
+				"name":"Hitchhikers Guide to the Legacy",
+				"speaker":"Laurens van Rijn",
+				"description":"Handling legacy code",
+				"startdate":"2019-05-18T11:00:00.000Z",
+				"enddate":"2019-05-18T11:50:00.000Z",
+				"links":[
+					{ "url":"/presentations/sitBRU%20-%20HHGttLegacy.ppsx"}
+				]
+			},{
+				"name": "I Have Issues",
+				"speaker": "Tom Van Doorslaer",
+				"description": "You have issues, I have issues, we all have issues. But how can you keep track of these issues and manage your modern UI5 project?",
+				"startdate":"2019-05-18T11:00:00Z",
+				"enddate":"2019-05-18T11:50:00Z",
+				"links":[
+					{ "url":"./presentations/issues.pdf"},
+					{"url":"https://gitlab.com/fiddlebe"}
+				]
+			},{
+				"name":"Domain-driven design, ABAP and SAP Cloud Platform",
+				"speaker":"Tudor Riscutia",
+				"description":"Introduction to DDD: a bit of theory as well as how to apply these ideas in your day to day work as an SAP developer working on ABAP or SAP Cloud Platform.",
+				"startdate":"2019-05-18T12:00:00Z",
+				"enddate":"2019-05-18T12:50:00Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name":"Troubleshooting and debugging Node.js applications in SAP Cloud Platform Cloud Foundry",
+				"speaker":"Vadim Klimov",
+				"description":"The session will cover some practical hints and tips about increasing productivity of troubleshooting and particularly debugging Node.js applications that are deployed to SAP Cloud Platform Cloud Foundry. We will use classic options that require pausing application execution, as well as will see how verbose logging output can be collected dynamically for an application that is already running in debug mode. We will also apply described techniques to Node.js applications that involve source code transpiling - such as Node.js applications developed in TypeScript.",
+				"startdate":"2019-05-18T12:00:00Z",
+				"enddate":"2019-05-18T12:50:00Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "Hunting Zombies the SCP-Way",
+				"speaker": "Christian Drumm",
+				"description": "In my session I'll show how the SCP can be used to survive in a world after the zombie apocalypse.",
+				"startdate":"2019-05-18T13:00:00Z",
+				"enddate":"2019-05-18T13:50:00Z",
+				"links":[
+					{ "url":"https://blogs.sap.com/2018/12/04/hunting-zombies-the-scp-way/"}
+				]
+			},{
+				"name": "Smart Coffee Machine – SAP Leonardo IoT Service",
+				"speaker": "Dries Van Vaerenbergh & Wouter Lemaire",
+				"description": "If you like to blow stuff up, this session really is for you. Come join us to learn how we gave a coffee machine some intelligence, and then blew it up.",
+				"startdate":"2019-05-18T13:00:00Z",
+				"enddate":"2019-05-18T13:50:00Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "Wrap-up, Reception and book Lottery",
+				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
+				"description": "",
+				"startdate":"2019-05-18T14:00:00Z",
+				"enddate":"2019-05-18T15:30:00Z",
+				"links":[
+					{ "url":"./presentations/Wrapup.pdf"}
+				]
+			},{
+				"name": "Dinner",
+				"speaker": "",
+				"description": "",
+				"startdate":"2019-05-18T17:00:00Z",
+				"enddate":"2019-05-18T21:30:00Z"
+			}],
+			"location": {
+				"name": "Flexso Nv",
+				"street": "Veldkant 33/A",
+				"city": "2550 Kontich",
+				"country": "Belgium",
+				"mapUrl":"&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt"
+			},
+			"host": {
+				"name": "Flexso",
+				"logo": "./images/flexso.png"
+			},
+			"sponsors": [{
+				"name": "SAP Mentors",
+				"logo": "./images/mentors.png"
+			}, {
+				"name": "SAP Community",
+				"logo": "./images/SAPCommunity.png"
+			}, {
+				"name": "Espresso Tutorials",
+				"logo": "./images/ET.jpg"
+			}, {
+				"name": "Fiddle Consulting",
+				"logo": "./images/fiddle.png"
+			}],
+			"participants": [],
+			"address": []
+		}
 	}
-}
+]
