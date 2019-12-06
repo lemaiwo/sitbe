@@ -69,8 +69,8 @@
 									type= "None"
 									title= "{info>name}"
 									text= "{info>description}"
-									startDate= "{path:'info>startDate', formatter:'.asDate'}"
-									endDate= "{path:'info>endDate', formatter:'.asDate'}"
+									startDate= "{path:'info>startdate', formatter:'.asDate'}"
+									endDate= "{path:'info>enddate', formatter:'.asDate'}"
 									>
 								</unified:CalendarAppointment>
 							</appointments>
@@ -135,6 +135,7 @@
 						</VBox>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
+
 				<!--host-->
 				<uxap:ObjectPageSection id="tabHost" title="{i18n>be.fiddle.sitbe.host}">
 					<!--description-->
@@ -142,6 +143,7 @@
 						<Image src="{info>host/logo}" width="240px"/>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
+
 				<!--sponsors-->
 				<uxap:ObjectPageSection id="tabSponsor" title="{i18n>be.fiddle.sitbe.sponsors}" subSections="{path:'info>sponsors'}">
 					<!--description-->
@@ -149,6 +151,7 @@
 						<Image src="{info>logo}" width="240px"/>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
+				
 				<!--contact us-->
 				<uxap:ObjectPageSection id="tabContact" title="{i18n>be.fiddle.sitbe.contact}">
 					<!--description-->
