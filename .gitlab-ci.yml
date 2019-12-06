@@ -5,13 +5,14 @@ cache:
   - node_modules/ 
   
 stages:
+  - install
   - qa
   - build
   - test
   - deploy
 
-install_dependencies:
-  stage: build
+install:
+  stage: install
   script:
     - npm install
   artifacts:
