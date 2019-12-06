@@ -1,5 +1,8 @@
 image: node:latest
  
+before_script:
+    - npm install
+
 cache:
   paths:
   - node_modules/ 
@@ -7,13 +10,12 @@ cache:
 stages:
   - deploy
 
-install:
+deploy:
   stage: deploy
   environment:
     name: Fiddle.be
     url: https://sitbe.fiddle.be
   script:
-    - npm install
     - npm run lint
     - npm run build
     - npm run deploy --user=$FTP_USER --pwd=$FTP_PASS
