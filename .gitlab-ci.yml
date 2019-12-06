@@ -5,39 +5,20 @@ cache:
   - node_modules/ 
   
 stages:
-  - install
-  - qa
-  - build
-  - test
   - deploy
 
 install:
-  stage: install
-  script:
-    - npm install
-  artifacts:
-    paths:
-      - node_modules/
-
-qa:
-  stage: qa
-  script: npm run lint
-
-build:
-  stage: build
-  script: npm run build
-
-test:
-  stage: test
-  script: npm run test
-
-deploy:
   stage: deploy
   environment:
     name: Fiddle.be
     url: https://sitbe.fiddle.be
   script:
-    - echo "using FTP to deploy the app"
+    - npm install
+    - npm run lint
+    - npm run build
     - npm run deploy --user=$FTP_USER --pwd=$FTP_PASS
+  artifacts:
+    paths:
+      - node_modules/
   only:
     - master
