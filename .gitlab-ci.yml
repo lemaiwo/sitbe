@@ -4,8 +4,26 @@ before_script:
   - apt-get update -qy
   - apt-get install -y lftp
   
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  script: echo "You don't have any tests"
+
+build:
+  stage: build
+  script: echo "Not really Building the app"
+
 deploy:
+  stage: deploy
+  environment:
+    name: Fiddle.be
+    url: https://sitbe.fiddle.be
   script:
+    - echo "using FTP to deploy the app"
     - apt-get update -qq && apt-get install -y -qq lftp
     - lftp -c "set ftp:ssl-allow no; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -Rnev ./webapp ./public_html/sitbe --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/"
   only:
