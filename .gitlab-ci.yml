@@ -1,14 +1,25 @@
-image: node:latest
- 
-before_script:
-    - npm install
+image: ubuntu:18.04
 
-cache:
-  paths:
-  - node_modules/ 
+before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
+  - apt-get install -y npm
+  - npm install
   
 stages:
+  - test
+  - build
   - deploy
+
+test:
+  stage: test
+  script: 
+    - npm run lint
+
+build:
+  stage: build
+  script: 
+    - npm run build
 
 deploy:
   stage: deploy
@@ -16,11 +27,9 @@ deploy:
     name: Fiddle.be
     url: https://sitbe.fiddle.be
   script:
-    - npm run lint
     - npm run build
-    - npm run deploy --user=$FTP_USER --pwd=$FTP_PASS
-  artifacts:
-    paths:
-      - node_modules/
+    - echo "using FTP to deploy the app"
+    - apt-get update -qq && apt-get install -y -qq lftp
+    - lftp -c "set ftp:ssl-allow no; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -Rnev ./dist ./public_html/sitbe --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/"
   only:
     - master
