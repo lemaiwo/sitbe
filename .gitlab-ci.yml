@@ -5,6 +5,8 @@ before_script:
   - apt-get install -y lftp
   - apt-get install -y npm
   - npm install
+  - whereis grunt
+  - export PATH=$PATH:/usr/local/bin
   
 stages:
   - test
