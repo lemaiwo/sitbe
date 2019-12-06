@@ -6,6 +6,7 @@ before_script:
   
 stages:
   - test
+  - qa
   - build
   - deploy
 
@@ -13,9 +14,13 @@ test:
   stage: test
   script: echo "You don't have any tests"
 
+qa:
+  stage: qa
+  script: npm run lint
+
 build:
   stage: build
-  script: echo "Not really Building the app"
+  script: npm run build
 
 deploy:
   stage: deploy
@@ -25,6 +30,6 @@ deploy:
   script:
     - echo "using FTP to deploy the app"
     - apt-get update -qq && apt-get install -y -qq lftp
-    - lftp -c "set ftp:ssl-allow no; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -Rnev ./webapp ./public_html/sitbe --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/"
+    - lftp -c "set ftp:ssl-allow no; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -Rnev ./dist ./public_html/sitbe --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/"
   only:
     - master
