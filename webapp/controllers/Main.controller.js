@@ -132,7 +132,8 @@ sap.ui.define(
 		 * @public
 		 * @instance
 		 * @memberof be.fiddle.sitbe.controllers.Main
-		 * @param {string} date -  
+		 * @param {string|date} date -  
+		 * @return {string} readable date format
 		 */
 		Main.prototype.formatDate = function(date){
 			let newDate = new Date( date );
@@ -148,12 +149,15 @@ sap.ui.define(
 		 * @public
 		 * @instance
 		 * @memberof be.fiddle.sitbe.controllers.Main
-		 * @param {string} date -  
+		 * @param {string} date -  date in text form. will be interpreted
+		 * @return {Date} converted date ojbect
 		 */
 		Main.prototype.asDate = function(date){
-			let newDate = new Date( date || 0 );
-			if (newDate){
-				return newDate;
+			if (date){
+				let newDate = new Date( date );
+				if (newDate){
+					return newDate;
+				}
 			}
 			return new Date();
 		};

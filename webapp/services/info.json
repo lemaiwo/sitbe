@@ -2,14 +2,14 @@
 	{
 		"year":"2020",
 		"data":{
-			"date":"\/Date('2019-05-09T07:30:00.000Z')\/",
+			"date":"2019-05-09T07:30:00.000Z",
 			"eventId":"",
 			"sessions": [
 			{
 				"name": "Keynote",
 				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-				"startdate":"\/Date('2019-05-09T07:30:00.000Z')\/",
-				"enddate":"\/Date('2019-05-09T08:00:00.000Z')\/",
+				"startdate":"2019-05-09T07:30:00.000Z",
+				"enddate":"2019-05-09T08:00:00.000Z",
 				"links":[
 					{ "url":""}
 				]
@@ -178,7 +178,7 @@
 				"street": "Veldkant 33/A",
 				"city": "2550 Kontich",
 				"country": "Belgium",
-				"mapUrl":"&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt"
+				"mapUrl":"<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390' width='100' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
 			},
 			"host": {
 				"name": "Flexso",
