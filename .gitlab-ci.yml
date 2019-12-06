@@ -1,43 +1,20 @@
-#image: ubuntu:18.04
+image: ubuntu:18.04
 
-#before_script:
-#  - apt-get update -qy
-#  - apt-get install -y lftp
-
-#stages:
-#  - deploy
-
-#deploy:
-#  stage: deploy
-#  environment:
-#    name: Fiddle.be
-#    url: https://sitbe.fiddle.be
-#  script:
-#    - echo "using FTP to deploy the app"
-#    - apt-get update -qq && apt-get install -y -qq lftp
-#    - lftp -c "set ftp:ssl-allow no; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -Rnev ./webapp ./public_html/sitbe --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/"
-#  only:
-#    - master
-
-
-image: node:latest
-
-cache:
-  paths:
-    - /node_modules/
-    
-#before_script:
-#  - npm install --silent    
+before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
 
 stages:
-  - lint
-  
-eslint:
-  stage: lint
-  before_script:
-    - npm install
+  - deploy
+
+deploy:
+  stage: deploy
+  environment:
+    name: Fiddle.be
+    url: https://sitbe.fiddle.be
   script:
-#    - npm run lint
-    - eslint -- --ext .jsx,.js src/
-  only: 
+    - echo "using FTP to deploy the app"
+    - apt-get update -qq && apt-get install -y -qq lftp
+    - lftp -c "set ftp:ssl-allow no; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -Rnev ./webapp ./public_html/sitbe --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/"
+  only:
     - master
