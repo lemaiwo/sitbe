@@ -21,6 +21,13 @@ module.exports = function(grunt) {
         "clean": {
             dist: "<%= dir.dest %>/**"
         },
+
+		// Coding style!
+		eslint: {
+			src: ["<%= dir.src %>"],
+			test: ["<%= dir.test %>"],
+			gruntfile: ["Gruntfile.js"]
+		},
         
         //copy from webapp to dist
         "copy": {
@@ -67,12 +74,12 @@ module.exports = function(grunt) {
         "ftp-deploy": {
             build: {
                 auth: {
-                    host: 'fiddle.be',
+                    host: 'ftp.fiddle.be',
                     port: 21,
                     authKey: 'pdfAuth'
                 },
                 src: './dist',
-                dest: '/sitbe/',
+                dest: './public_html/sitbe',
                 exclusions: []
             }
         }
@@ -114,9 +121,15 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-openui5");
     grunt.loadNpmTasks('grunt-ftp-deploy');
 
+    // lint task
+    grunt.registerTask("lint", [ "eslint" ]);
+
     // Build task
     grunt.registerTask("build", [ "jsdoc", "openui5_preload",  "copy" ]);
 
+    // deploy task
+    grunt.registerTask("deploy", [ "ftp-deploy" ]);
+
     // Default task
-    grunt.registerTask("default", ["clean", "build", "ftp-deploy"]);
+    grunt.registerTask("default", ["clean", "lint", "build", "deploy"]);
 };

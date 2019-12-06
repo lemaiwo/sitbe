@@ -9,9 +9,11 @@
 		"url": "https://gitlab.com/fiddlebe/web/sitbe.git"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified. Please add some.\" && exit 1",
+		"start": "grunt",
+	    "lint": "grunt lint",
 		"build": "grunt build",
-		"deploy": "grunt sapdeploy"
+		"test": "echo \"Error: no test specified. Please add some.\" && exit 1",
+		"deploy": "grunt deploy"
 	},
 	"devDependencies": {
 		"grunt": "~0.4.5",
