@@ -20,23 +20,44 @@
 #    - master
 
 
-image: node:latest
+#image: node:latest
 
-cache:
-  paths:
-    - /node_modules/
+#cache:
+#  paths:
+#    - /node_modules/
     
-before_script:
-  - npm install --silent    
+#before_script:
+#  - npm install --silent    
 
-stages:
-  - lint
+#stages:
+#  - lint
   
+#eslint:
+#  stage: lint
+#  script:
+#    - npm install eslint
+#    - npm install grunt
+#    - npm run lint
+#  only: 
+#    - master
+
 eslint:
-  stage: lint
+  image: node:latest
+  stage: qa
+  before_script:
+    - npm install -g eslint
   script:
-    - npm install eslint
-    - npm install grunt
-    - npm run lint
+    - eslint -- --ext .jsx,.js src/
   only: 
     - master
+    
+build:
+  image: node:latest
+  stage: build
+  before_script:
+    - npm install
+  script:
+    - npm run start
+  only: 
+    - master
+    
