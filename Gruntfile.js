@@ -2,19 +2,22 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
-    var sUser = grunt.option("user"),
-        sPwd = grunt.option("pwd");
+    //these params only work if you use the "grunt deploy --user.." command instead of "npm run deploy"
+    let sUser   = process.env.FTP_USER,
+        sPwd    = process.env.FTP_PASS,
+        dest    = grunt.option("dest");
 
     grunt.initConfig({
 
-        "pdfAuth":{
+        "ftpAuth":{
             username: sUser,
-            password:sPwd
+            password:sPwd,
+            dest: "/public_html/" + ( dest || "dev" )
         },
         
         "dir": {
             src: "webapp",
-            dest: "dist"
+            dest: dest || "dist"
         },
 
         //clean dist folder
@@ -23,9 +26,8 @@ module.exports = function(grunt) {
         },
 
 		// Coding style!
-		eslint: {
+		"eslint": {
 			src: ["<%= dir.src %>"],
-			test: ["<%= dir.test %>"],
 			gruntfile: ["Gruntfile.js"]
 		},
         
@@ -37,7 +39,7 @@ module.exports = function(grunt) {
                     cwd: "<%= dir.src %>",
                     src: [
                         "**",
-                        "!test/**",
+                        "!test/**"
                     ],
                     dest: "<%= dir.dest %>"
                 }]
@@ -71,45 +73,55 @@ module.exports = function(grunt) {
             }
         },
 
-        "ftp-deploy": {
-            build: {
-                auth: {
-                    host: 'ftp.fiddle.be',
+        //FTP deploy:
+        ftp_push: {
+            dev: {
+                options: {
+                    host: "ftp.fiddle.be",
+                    dest: "<%= ftpAuth.dest %>",
                     port: 21,
-                    authKey: 'pdfAuth'
+                    username: "<%= ftpAuth.username %>",
+                    password: "<%= ftpAuth.password %>",
+                    debug:true
                 },
-                src: './dist',
-                dest: './public_html/sitbe',
-                exclusions: []
+                files: [{
+                    expand: true, //what does this do?
+                    cwd: dest,
+                    src: [
+                        "**/*"
+                    ]
+                }]
             }
         }
     });
 
-	//JSDoco parsing
-	grunt.registerTask('jsdoc', 'parsing all jsdoco into one big json file', function(){
-		grunt.log.writeln('Generating JSDoc file');
-		var done = this.async();
 
-		var jsdocx = require('jsdoc-x');
+	//JSDoco parsing
+	grunt.registerTask("jsdoc", "parsing all jsdoco into one big json file", function(){
+		grunt.log.writeln("Generating JSDoc file");
+
+		let done = this.async();
+
+		let jsdocx = require("jsdoc-x");
 
 		jsdocx.parse({
 			files:[
-				'./webapp/**/*.js',
+				"./webapp/**/*.js",
 				"!webapp/test/**",
 				"!webapp/localService/**"
 			],
-			excludePattern:'(test|localService)',
+			excludePattern:"(test|localService)",
 			recurse:true,
 			private:true,
-			output:'./webapp/documentation.json',
-			encoding:'utf-8'
+			output:"./webapp/documentation.json",
+			encoding:"utf-8"
 		}, function (err, docs) {
 			if (err) {
-				grunt.log.writeln('JSDoc file generation failed with error:');
+				grunt.log.writeln("JSDoc file generation failed with error:");
 				grunt.log.writeln(err);
 				done(false);
 			} else {
-				grunt.log.writeln('JSDoc file generated');
+				grunt.log.writeln("JSDoc file generated");
 				done(true);
 			}			
 		});
@@ -119,17 +131,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-openui5");
-    grunt.loadNpmTasks('grunt-ftp-deploy');
+	grunt.loadNpmTasks("grunt-eslint");
+    grunt.loadNpmTasks('grunt-ftp-push');
 
     // lint task
     grunt.registerTask("lint", [ "eslint" ]);
 
-    // Build task
-    grunt.registerTask("build", [ "jsdoc", "openui5_preload",  "copy" ]);
-
     // deploy task
-    grunt.registerTask("deploy", [ "ftp-deploy" ]);
-
-    // Default task
-    grunt.registerTask("default", ["clean", "lint", "build", "deploy"]);
-};
+    grunt.registerTask("deploy", [ "clean", "eslint", "jsdoc", "openui5_preload",  "copy", "ftp_push" ]);
