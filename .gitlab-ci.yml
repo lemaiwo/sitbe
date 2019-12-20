@@ -26,4 +26,4 @@ publish:
     - echo "Publishing via FTP"
     - npm run deploy -- --dest=sitbe 
   only:
-    - redesign
+    - master
