@@ -29,7 +29,6 @@ sap.ui.define(
 		 * @memberof be.fiddle.sitbe.controllers.Main
 		 */
 		Main.prototype.onInit = function(){
-			this.setPath( "/0" );
 		};
 
 		/**
@@ -53,6 +52,8 @@ sap.ui.define(
 		 * @param {event} event 
 		 */
 		Main.prototype.updateSessionDates = function(event){
+			this.setPath( "/0" );
+
 			//convert the json dates, because the calendar element is being a bitch
 			let sessions = this.getView().getModel("info").getProperty("/sessions");
 			sessions && sessions.forEach(function(session){
