@@ -41,6 +41,9 @@
 					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.overview}">
 						<l:VerticalLayout>
 							<ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date', formatter:'.formatDate'}"/>
+							<FormattedText
+								htmlText='{i18n>appDescription} &lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;https://forms.gle/rku6sZoQMbNRGDkq9&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;'/>
+
 						</l:VerticalLayout>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
