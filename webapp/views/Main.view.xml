@@ -89,7 +89,7 @@
 									<Toolbar>
 										<content>
 											<Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank"
-												href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/{info>eventId}"/>
+												href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/{info>eventId}" visible="{= ${info>eventId} !== 'undefined'}"/>
 										</content>
 									</Toolbar>
 								</headerToolbar>
