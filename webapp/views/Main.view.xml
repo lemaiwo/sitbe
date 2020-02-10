@@ -52,7 +52,7 @@
 				<uxap:ObjectPageSection 
 					id="tabsessions" 
 					title="{i18n>be.fiddle.sitbe.sessions}"
-					visible="{=!${path:'info>agenda'}}"
+					visible="{=!${info>agenda}}"
 					subSections="{info>sessions}">
 					<uxap:ObjectPageSubSection title="{info>name}">
 						<VBox>
@@ -72,7 +72,7 @@
 				<uxap:ObjectPageSection 
 					id="tabsessions" 
 					title="{i18n>be.fiddle.sitbe.sessions}"
-					visible="{path:'info>agenda'}">
+					visible="{info>agenda}">
 					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.sessions}">
 						<SinglePlanningCalendar
 							title= ""
