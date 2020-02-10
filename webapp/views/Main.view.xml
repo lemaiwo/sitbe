@@ -70,7 +70,7 @@
 
 				<!--agenda-->
 				<uxap:ObjectPageSection 
-					id="tabsessions" 
+					id="tabagenda" 
 					title="{i18n>be.fiddle.sitbe.sessions}"
 					visible="{info>agenda}">
 					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.sessions}">
