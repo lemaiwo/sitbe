@@ -49,9 +49,31 @@
 				</uxap:ObjectPageSection>
 
 				<!--sessions-->
-				<uxap:ObjectPageSection id="tabsessions" title="{i18n>be.fiddle.sitbe.sessions}">
-					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.sessions}">
+				<uxap:ObjectPageSection 
+					id="tabsessions" 
+					title="{i18n>be.fiddle.sitbe.sessions}"
+					visible="{=!${path:'info>agenda'}}"
+					subSections="{info>sessions}">
+					<uxap:ObjectPageSubSection title="{info>name}">
+						<VBox>
+							<Title text="{info>speaker}"/>
+							<Text text="{info>description}"/>
 
+							<List headerText="Session material" items="{info>links}" >
+								<CustomListItem>
+									<Link text="{info>url}" href="{info>url}" target="_blank" />
+								</CustomListItem>
+							</List>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:ObjectPageSection>
+
+				<!--agenda-->
+				<uxap:ObjectPageSection 
+					id="tabsessions" 
+					title="{i18n>be.fiddle.sitbe.sessions}"
+					visible="{path:'info>agenda'}">
+					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.sessions}">
 						<SinglePlanningCalendar
 							title= ""
 							startDate="{path:'info>date', formatter:'.asDate'}"

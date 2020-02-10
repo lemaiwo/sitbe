@@ -3,19 +3,94 @@
 		"year":"2020",
 		"data":{
 			"date":"2020-05-09T07:30:00.000Z",
-			"__eventId":"69",
+			"eventId":"69",
+			"agenda":false,
 			"sessions": [
 			{
 				"name": "Keynote",
 				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
+				"description":"",
 				"startdate":"2020-05-09T07:30:00.000Z",
 				"enddate":"2020-05-09T08:00:00.000Z",
 				"links":[
 					{ "url":""}
 				]
 			},{
-				"name": "",
+				"name": "FaceRecognition with SCP",
+				"speaker":"Wouter Lemaire",
+				"description":"Over the years you get to know more and more people and of course you always like to greet them by name. From time to time it can happen that you can’t remember the name of someone you know… which can be awkward.\nThe same thing happens to me too, more and more lately… To avoid awkward situations, I’ve been thinking about a solution for this. I’ve started with an app to store all the people I know together with a picture. This should help me to find the name of someone I already knew. I would still need to search in the list, which is not easy when it becomes a big list and you don’t remember the name…\nI needed to add something to the app that could provide me the name of a person by just taking a picture. This way, I don’t need to search through a big list and don’t have to know the name.\nThis is where I came up with the Face Recognition app! In this session I will show how this app works and how you can do face recognition with SCP yourself!",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "Cloud: The Final Frontier",
+				"speaker":"Christian Drumm",
+				"description":"Cloud: the final frontier. These are the endeavors of an ABAP developer. Its mission: to explore strange new cloud worlds. To seek out new platform and new programming models. To boldly go where no ABAP developer has gone before! ",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "Write more solid state code with functional programming techniques",
+				"description":"Functional programming techniques can help you write code that is less prone to bugs, because it has a smaller surface area and follows principles that mean that the code \"doesn't move\" - it just \"is\". This session will give you an introduction to some of the fundamentals using JavaScript as the carrier language.",
 				"speaker":"DJ Adams",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "Performance Measurement and Benchmarking of Custom Code in SAP Cloud Platform Integration",
+				"speaker":"Vadim Klimov",
+				"description":"The session will showcase some techniques and tools that can be utilized when measuring performance of custom code that is embedded in integration scenarios deployed to SAP Cloud Platform Integration. In particular, we will start from a bird's eye view on performance measurement using stopwatch benchmarking, and then will put it under the microscope and detail to a level of microbenchmarking.",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "SAP Community at its best",
+				"speaker":"Svea Becker",
+				"description":"Everyone is somehow involved in a community e.g. a sports club, neighborhood, a fan club, etc. Why are you part of these communities? The SAP Community offers a wide range of involvement and engagement opportunities. What are the similarities to your private communities? Join this session and find out what the SAP Community is, how to get part of it and how to actively contribute. After all, bringing people together is what community is all about.",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "CAP and Cloud SDK at work",
+				"speaker":"Vincent Weiss",
+				"description":"Since August 2019 I have been working with CAP to build Applications and APIs and also leveraging the Cloud SDK from time to time. This session will share a bit of the lessons learned and how to work with it.",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "Cloud Foundry, Kyma, Kubernetes, Knative - What do I need?!",
+				"speaker":"Max Streifeneder",
+				"description":"Containers are no longer buzzwords, they are reality and part of most development activities today. Let's take a quick look at the differences, the advantages and disadvantages and see what SAP has to offer in this context. ",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "SAP Security",
+				"speaker":"Joris Van De Vis & Kris Wauters",
+				"description":"Joris and Kris have uncovered yet a whole new load of SAP security issues that could seriously endanger your business operations. This is the stuff of nightmares.",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+					{ "url":""}
+				]
+			},{
+				"name": "Safety First",
+				"speaker":"Tom Van Doorslaer",
+				"description":"I'm a complete dummy when it comes to security, but apparently there are even bigger dummies. I won't teach you how to hack, because I have no idea myself. Instead, I'll show you how best intentions can lead to catastrophes.\n\nThis session will make you laugh, cry and feel embarassed about the silly way your IT landscape could be at risk. Promise me you'll never make such mistakes yourself.",
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
@@ -70,6 +145,7 @@
 		"data":{
 			"date":"2019-05-18T07:30:00.000Z",
 			"eventId":"59",
+			"agenda":true,
 			"sessions": [
 			{
 				"name": "Keynote",
