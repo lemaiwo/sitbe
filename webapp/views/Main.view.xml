@@ -59,7 +59,7 @@
 							<Title text="{info>speaker}"/>
 							<Text text="{info>description}"/>
 
-							<List headerText="Session material" items="{info>links}" >
+							<List items="{info>links}" >
 								<CustomListItem>
 									<Link text="{info>url}" href="{info>url}" target="_blank" />
 								</CustomListItem>
