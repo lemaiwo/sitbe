@@ -163,6 +163,20 @@ sap.ui.define(
 			return new Date();
 		};
 
+		/**
+		 * 
+		 * @method isArrayVisible
+		 * @public
+		 * @instance
+		 * @memberof be.fiddle.sitbe.controllers.Main
+		 * @param {any} list -  an object that could be an array or not
+		 * @return {boolean} is it an array, and does it hold elements?
+		 */
+		Main.prototype.isArrayVisible = function(list){
+			if ( list instanceof Array && list.length > 0) return true;
+			return false;
+		};
+
 		return Main;
 	}
 );

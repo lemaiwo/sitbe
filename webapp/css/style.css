@@ -5,3 +5,18 @@
 .ObjectPageRoot > .sapUxAPObjectPageWrapper > .sapUxAPObjectPageScroll > header > div {
 	padding-left:0rem !important;
 }
+
+.announcement{
+	border-style:solid;
+	border-radius: 0.5rem;
+	border-color: #BB4444;
+	border-width:1px;
+}
+
+.session{
+	border-style:solid;
+	border-radius: 0.5rem;
+	border-color: #72a7ca;
+	border-width:1px;
+	margin:0.5rem;
+}

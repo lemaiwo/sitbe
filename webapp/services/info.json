@@ -5,6 +5,13 @@
 			"date":"2020-05-09T07:30:00.000Z",
 			"eventId":"69",
 			"agenda":false,
+			"submissions":false,
+			"announcements":[
+				{
+					"title":"Covid-19",
+					"content":"Due to the Covid-19 measures, we are not certain yet if SITBe will proceed on the foreseen date of May the 9th. We don't want the brightest minds in the SAP ecosystem to fall victim to this nasty virus. We are keeping a close eye on the trends and government regulations to decide if we proceed on May 9, or postpone to a later date."
+				}
+			],
 			"sessions": [
 			{
 				"name": "Keynote",
@@ -13,7 +20,6 @@
 				"startdate":"2020-05-09T07:30:00.000Z",
 				"enddate":"2020-05-09T08:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "FaceRecognition with SCP",
@@ -22,7 +28,6 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "Cloud: The Final Frontier",
@@ -31,7 +36,6 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "Write more solid state code with functional programming techniques",
@@ -40,7 +44,6 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "Performance Measurement and Benchmarking of Custom Code in SAP Cloud Platform Integration",
@@ -49,7 +52,6 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "SAP Community at its best",
@@ -58,7 +60,6 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "CAP and Cloud SDK at work",
@@ -67,7 +68,6 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "Cloud Foundry, Kyma, Kubernetes, Knative - What do I need?!",
@@ -76,7 +76,6 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "SAP Security",
@@ -85,7 +84,6 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
 				]
 			},{
 				"name": "Safety First",
@@ -94,16 +92,31 @@
 				"startdate":"2020-05-09T08:00:00.000Z",
 				"enddate":"2020-05-09T09:00:00.000Z",
 				"links":[
-					{ "url":""}
+				]
+			},{
+				"name": "Building a Trello Timesheet MTA on Cloud Foundry",
+				"speaker":"Dries Van Vaerenbergh",
+				"description":"Over the years the Trello application is a tool I’ve seen a lot of times. This combined with a customer that wants you to maintain your timesheet and an extra excel drove me crazy. This excel file had to contain the spent hours on a Trello card and all the details. But building an SAP Multi Target Application running on Cloud Foundry brought me relief. One single application to maintain your timesheet combined with the Trello cards (data) via the Trello API’s. No more timesheet and excel files to maintain. Happy Developers === Happy Customers 😎",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "Using the SAP Business Application Studio for UI development",
+				"speaker":"Marius Obert",
+				"description":"The SAP Business Application Studio, or short: App Studio, is the next generation of SAP's web-based development environment. The new architecture offers a new degree of freedom to the developer by adding support for VS Code plugins and access to a full-fledged terminal. In this session, Marius will show how the new App Studio simplifies UI development and why it is more than just a Web IDE 2.0.",
+				"startdate":"2020-05-09T08:00:00.000Z",
+				"enddate":"2020-05-09T09:00:00.000Z",
+				"links":[
 				]
 			},{
 				"name": "Wrap-up, Reception and book Lottery",
 				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-				"description": "",
+				"description": "As usual, we'll be giving away free SAP press books. Don't worry, they are wrapped in sterile plastic and properly quarantained.",
 				"startdate":"2020-05-09T14:00:00Z",
 				"enddate":"2020-05-09T15:30:00Z",
 				"links":[
-					{ "url":""}
+					{ "url":"./images/books.jpg"}
 				]
 			}],
 			"location": {
@@ -136,6 +149,7 @@
 			"date":"2019-05-18T07:30:00.000Z",
 			"eventId":"59",
 			"agenda":true,
+			"submissions":false,
 			"sessions": [
 			{
 				"name": "Keynote",

@@ -40,10 +40,23 @@
 					<!--description-->
 					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.overview}">
 						<l:VerticalLayout>
-							<ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date', formatter:'.formatDate'}"/>
-							<FormattedText
-								htmlText='{i18n>appDescription} &lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;https://forms.gle/rku6sZoQMbNRGDkq9&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;'/>
+							<List items="{
+											path:'info>announcements',
+											templateShareable:true
+										}">
+								<StandardListItem 
+									class="announcement" 
+									title="{info>title}" 
+									description="{info>content}"
+									wrapping="true"/>
+							</List>
 
+							<ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date', formatter:'.formatDate'}"/>
+							<FormattedText htmlText="{i18n>appDescription}" />
+							<FormattedText 
+								htmlText="&lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;https://forms.gle/rku6sZoQMbNRGDkq9&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;"
+								visible="{info>submissions}"/>
+							
 						</l:VerticalLayout>
 					</uxap:ObjectPageSubSection>
 				</uxap:ObjectPageSection>
@@ -54,12 +67,14 @@
 					title="{i18n>be.fiddle.sitbe.sessions}"
 					visible="{=!${info>agenda}}"
 					subSections="{info>sessions}">
-					<uxap:ObjectPageSubSection title="{info>name}">
-						<VBox>
+					<uxap:ObjectPageSubSection title="{info>name}" class="session">
+						<VBox >
 							<Title text="{info>speaker}"/>
 							<Text text="{info>description}"/>
 
-							<List items="{info>links}" >
+							<List 
+								items="{info>links}" 
+								visible="{path:'info>links', formatter:'.isArrayVisible' }">
 								<CustomListItem>
 									<Link text="{info>url}" href="{info>url}" target="_blank" />
 								</CustomListItem>
