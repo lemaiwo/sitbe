@@ -37,20 +37,21 @@
 			
 				<!--overview-->
 				<uxap:ObjectPageSection id="tabOverview" title="{i18n>be.fiddle.sitbe.overview}">
-					<!--description-->
 					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.overview}">
 						<l:VerticalLayout>
+							<!--Announcements-->
 							<List items="{
 											path:'info>announcements',
 											templateShareable:true
-										}">
-								<StandardListItem 
-									class="announcement" 
-									title="{info>title}" 
-									description="{info>content}"
-									wrapping="true"/>
+										}"
+								visible="{path:'info>announcements', formatter:'.isArrayVisible'}">
+								<CustomListItem class="announcement">
+									<Title text="{info>title}" />
+									<FormattedText htmlText="{info>content}"/>
+								</CustomListItem>
 							</List>
 
+							<!--description-->
 							<ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date', formatter:'.formatDate'}"/>
 							<FormattedText htmlText="{i18n>appDescription}" />
 							<FormattedText 
