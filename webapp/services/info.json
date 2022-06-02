@@ -3,7 +3,7 @@
 		"year":"2022",
 		"data":{
 			"date":"2022-09-24T07:30:00.000Z",
-			"eventId":"xx",
+			"eventId":"undefined",
 			"agenda":false,
 			"submissions":false,
 			"announcements":[
