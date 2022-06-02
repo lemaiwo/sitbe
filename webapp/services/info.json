@@ -64,8 +64,12 @@
 			"submissions":false,
 			"announcements":[
 				{
-					"title":"Covid-19",
+					"title":"March 15: Covid-19",
 					"content":"Due to the Covid-19 measures, we are not certain yet if SITBe will proceed on the foreseen date of May the 9th. We don't want the brightest minds in the SAP ecosystem to fall victim to this nasty virus. We are keeping a close eye on the trends and government regulations to decide if we proceed on May 9, or postpone to a later date."
+				},
+				{
+					"title":"March 29: SITBe cancelled",
+					"content":"Sadly, the current crisis will not abate anytime soon and life as we know it will not resume for a while. Therefore, it's no big surprise that SITBe will not take place on the 9th of May.<br/>We have decided to cancel the event until further notice, but we will be back in the future.<br /> Stay safe, respect the rules imposed by your government and keep physical distance."
 				}
 			],
 			"sessions": [
