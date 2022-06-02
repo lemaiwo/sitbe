@@ -1,5 +1,61 @@
 [
 	{
+		"year":"2022",
+		"data":{
+			"date":"2022-09-24T07:30:00.000Z",
+			"eventId":"xx",
+			"agenda":false,
+			"submissions":false,
+			"announcements":[
+				{
+					"title":"The Big Re-connect",
+					"content":"2 years of homework, but we're back. Let's re-connect and share our knowledge with a fresh pint of beer or soda!"
+				}
+			],
+			"sessions": [
+			{
+				"name": "Keynote",
+				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
+				"description":"Welcome back to our SITBe. After a 3 year break, we're back!",
+				"startdate":"2022-09-24T07:30:00.000Z",
+				"enddate":"2020-09-24T08:00:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "Wrap-up, Reception and book Lottery",
+				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
+				"description": "As usual, we'll be giving away free SAP press books. Don't worry, they are wrapped in sterile plastic and properly quarantained.",
+				"startdate":"2022-09-24T14:00:00Z",
+				"enddate":"2022-09-24T15:30:00Z",
+				"links":[
+					{ "url":"./images/books.jpg"}
+				]
+			}],
+			"location": {
+				"name": "TheValueChain",
+				"street": "Satenrozen 10",
+				"city": "2550 Kontich",
+				"country": "Belgium",
+				"mapUrl":"<iframe src='https://www.google.com/maps/place/Satenrozen+10,+2550+Kontich/data=!4m2!3m1!1s0x47c3f044bc2be273:0x7a578ffefe326ace?sa=X&ved=2ahUKEwiO_6L2sY_4AhUIcxoKHRtXCJAQ8gF6BAgLEAE' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+			},
+			"host": {
+				"name": "TVC",
+				"logo": "./images/tvc.png"
+			},
+			"sponsors": [{
+				"name": "SAP Mentors",
+				"logo": "./images/mentors.png"
+			}, {
+				"name": "SAP Community",
+				"logo": "./images/SAPCommunity.png"
+			}, {
+				"name": "Fiddle Consulting",
+				"logo": "./images/fiddle.png"
+			}],
+			"participants": [],
+			"address": []
+		}
+	},{
 		"year":"2020",
 		"data":{
 			"date":"2020-05-09T07:30:00.000Z",
