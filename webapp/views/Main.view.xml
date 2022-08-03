@@ -122,12 +122,14 @@
 				<uxap:ObjectPageSection id="tabParticipants" title="{i18n>be.fiddle.sitbe.participants} ">
 					<uxap:ObjectPageSubSection
 						title="{i18n>be.fiddle.sitbe.participants} ({= ${participants>Participants}.length } / 50)">
-							<Table items="{path:'participants>Participants'}" class="sapUiLargeMarginBottom">
+							<Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank"
+								href="{info>subscriptionLink}" visible="{= ${info>subscriptionLink} !== 'undefined'}"/>	
+							<Table items="{path:'participants>Participants'}" class="sapUiLargeMarginBottom" visible="{= ${info>eventId} !== 'undefined'}">
 								<headerToolbar>
 									<Toolbar>
 										<content>
 											<Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank"
-												href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/{info>eventId}" visible="{= ${info>eventId} !== 'undefined'}"/>
+												href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/{info>eventId}" visible="{= ${info>eventId} !== 'undefined'}"/>											
 										</content>
 									</Toolbar>
 								</headerToolbar>
