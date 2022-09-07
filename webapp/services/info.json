@@ -5,7 +5,7 @@
 			"date":"2022-09-24T07:30:00.000Z",
 			"eventId":"undefined",
 			"subscriptionLink":"https://groups.community.sap.com/t5/sap-insidetrack/sap-inside-track-belgium/ec-p/5203#M3",
-			"agenda":false,
+			"agenda":true,
 			"submissions":false,
 			"announcements":[
 				{
@@ -15,100 +15,141 @@
 			],
 			"sessions": [
 			{
+				"name": "Welcome",
+				"speaker":"",
+				"description":"Breakfast!",
+				"startdate":"2022-09-24T06:00:00Z",
+				"enddate":"2022-09-24T06:45:00Z",
+				"links":[
+				]
+			},
+			{
 				"name": "Keynote",
 				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
 				"description":"Welcome back to our SITBe. After a 3 year break, we're back!",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Setting up a local development environment using Windows Subsystem Linux (For SAP Cloud Application Programming & Fiori development)",
-				"speaker":"Geert-Jan Klaps",
-				"description":"Don't have access to SAP Business Application Studio? Don't like developing in a web browser? Still having trouble with setting up a local development environment for Cloud Application Programming or Fiori Development? Don't know where to start? Which plugins you need? Still think that you need a Mac to leverage the full power of the underlying Linux terminal? Let me prove you otherwise! During this session I'll show you how you can setup a local development environment using Windows Subsystem Linux, covering almost all functionalities available in SAP Business Application Studio. Agenda:\n- Introduction to Windows Subsystem Linux\n- Installing Windows Subsystem Linux\n- Connecting VS Code to Windows Subsystem Linux\n- Interesting plugins\n- Installing plugins\n",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "API Management",
-				"speaker":"Ismail Kichaout",
-				"description":"A high level overview about API Management solution",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Decision Tree to keep the core clean in S/4Hana and S/4Hana Public Cloud Implementation",
-				"speaker":"Sudip Ghosh",
-				"description":"In this session i will talk about different strategy to keep the core clean in S/4Hana and S/4Hana public cloud imementation with use case example. In which scenario which strategy will work. Below is the blog where i have started talking about this. If you are architect , developer , customer or partner in sap consulting project this session would help you to make your decision strategy.",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
-				"links":[
-					{ "url":"https://blogs.sap.com/2022/06/14/keep-the-core-blog-series-decision-tree-of-sap-s-4hana-or-s-4hana-public-cloud-implementation/"}
-				]
-			},{
-				"name": "OData V4 and SAP Cloud Application Programming Model",
-				"speaker":"DJ Adams",
-				"description":"In this session we'll look at what the SAP Cloud Application Programming Model (CAP) has to offer for OData V4. ",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "SEN Web Assistant, deep dive",
-				"speaker":"Jérémy Coppey & Tom Van Der Beken",
-				"description":"We will explain the benefits of SEN Web assistant, explain how to set it up, show its endless possibility's and make you want to implement this at your clients",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Best of Open Source SAP Community Projects",
-				"speaker":"Marian Zeis",
-				"description":"Fortunately, thanks to the initiative of the SAP Commnuity Members, SAP is increasingly focusing on making essential components of the software open and public.\nOn this basis it was possible to create further components based on the open source code.\nJust like the Inside Tracks, this SAP community open source software started as grassroots projects and have evolved to be indispensable for the daily development workflow.\nThis session will provide an current overview of the SAP community projects.\nProjects within these categories are showcased:\n- UI5\n- ABAP\n- CAP",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "A Type Trip",
-				"speaker":"Dries Van Vaerenbergh / Wouter Lemaire",
-				"description":"An End-to-End TypeScript flavored journey.\nBuilding and testing a CAP TypeScript middleware (using the latest CAP-CLI-commands) with an SAPUI5 TypeScript app as cherry on top.",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
+				"startdate":"2022-09-24T06:45:00Z",
+				"enddate":"2022-09-24T07:15:00Z",
 				"links":[
 				]
 			},{
 				"name": "A harmonized UX with the BTP Launchpad Service",
 				"speaker":"Stijn Puttemans, Yor Rombaut & Wouter Lemaire",
 				"description":"At Elia Group we are working on one of the biggest projects in Elia's history, called OneSAP. In this project the full SAP team is bringing all SAP systems from 50Hertz and Elia together as well as the functional as the technical parts of it. \nAs part of this project we provide one harmonized User eXperience for all standard and custom Fiori apps from different SAP systems to our business using the Business Technology Platform Launchpad Service!\nIn this session we will share our strategy, architecture and migration steps to achieve this.",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
+				"startdate":"2022-09-24T07:15:00.000Z",
+				"enddate":"2022-09-24T08:00:00.000Z",
 				"links":[
 				]
 			},{
-				"name": "SAP Cloud ALM: monitoring Integration Suite and SuccessFactors",
-				"speaker":"Tom Rottiers",
-				"description":"I would like to share our experiences with deploying Cloud ALM to monitor integration suite and SuccessFactors.\nI am by no means an expert in Cloud ALM, but we have implemented it for some of our customers and I am eager to share our experiences.",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
+				"name": "How the SAP Business Technology Platform takes you beyond Robotic Process Automation",
+				"speaker":"Jana de Klerk",
+				"description":"SAP Business Technology Platform has so much to offer when it comes to Hyperautomation",
+				"startdate":"2022-09-24T07:15:00.000Z",
+				"enddate":"2022-09-24T08:00:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "SEN Web Assistant, deep dive",
+				"speaker":"Jérémy Coppey & Tom Van Der Beken",
+				"description":"We will explain the benefits of SEN Web assistant, explain how to set it up, show its endless possibility's and make you want to implement this at your clients",
+				"startdate":"2022-09-24T08:00:00.000Z",
+				"enddate":"2022-09-24T08:45:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "Setting up a local development environment using Windows Subsystem Linux (For SAP Cloud Application Programming & Fiori development)",
+				"speaker":"Geert-Jan Klaps",
+				"description":"Don't have access to SAP Business Application Studio? Don't like developing in a web browser? Still having trouble with setting up a local development environment for Cloud Application Programming or Fiori Development? Don't know where to start? Which plugins you need? Still think that you need a Mac to leverage the full power of the underlying Linux terminal? Let me prove you otherwise! During this session I'll show you how you can setup a local development environment using Windows Subsystem Linux, covering almost all functionalities available in SAP Business Application Studio. Agenda:\n- Introduction to Windows Subsystem Linux\n- Installing Windows Subsystem Linux\n- Connecting VS Code to Windows Subsystem Linux\n- Interesting plugins\n- Installing plugins\n",
+				"startdate":"2022-09-24T08:00:00.000Z",
+				"enddate":"2022-09-24T08:45:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "Decision Tree to keep the core clean in S/4Hana and S/4Hana Public Cloud Implementation",
+				"speaker":"Sudip Ghosh",
+				"description":"In this session i will talk about different strategy to keep the core clean in S/4Hana and S/4Hana public cloud imementation with use case example. In which scenario which strategy will work. Below is the blog where i have started talking about this. If you are architect , developer , customer or partner in sap consulting project this session would help you to make your decision strategy.",
+				"startdate":"2022-09-24T09:00:00.000Z",
+				"enddate":"2022-09-24T09:45:00.000Z",
+				"links":[
+					{ "url":"https://blogs.sap.com/2022/06/14/keep-the-core-blog-series-decision-tree-of-sap-s-4hana-or-s-4hana-public-cloud-implementation/"}
+				]
+			},{
+				"name": "A Type Trip",
+				"speaker":"Dries Van Vaerenbergh / Wouter Lemaire",
+				"description":"An End-to-End TypeScript flavored journey.\nBuilding and testing a CAP TypeScript middleware (using the latest CAP-CLI-commands) with an SAPUI5 TypeScript app as cherry on top.",
+				"startdate":"2022-09-24T09:00:00.000Z",
+				"enddate":"2022-09-24T09:45:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "API Management",
+				"speaker":"Ismail Kichaout",
+				"description":"A high level overview about API Management solution",
+				"startdate":"2022-09-24T09:45:00.000Z",
+				"enddate":"2022-09-24T10:30:00.000Z",
 				"links":[
 				]
 			},{
 				"name": "SAP BTP NEO to SAP BTP CF Migration Best Practices",
 				"speaker":"Harish Yarra",
 				"description":"In the session will talk about the process, tools and best practices for BTP NEO to BTP CF application migrations. ",
-				"startdate":"2022-09-24T07:30:00.000Z",
-				"enddate":"2020-09-24T08:00:00.000Z",
+				"startdate":"2022-09-24T09:45:00.000Z",
+				"enddate":"2022-09-24T10:30:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "SAP Cloud ALM: monitoring Integration Suite and SuccessFactors",
+				"speaker":"Tom Rottiers",
+				"description":"I would like to share our experiences with deploying Cloud ALM to monitor integration suite and SuccessFactors.\nI am by no means an expert in Cloud ALM, but we have implemented it for some of our customers and I am eager to share our experiences.",
+				"startdate":"2022-09-24T11:15:00.000Z",
+				"enddate":"2022-09-24T12:00:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "SAP Cloud SDK - Speed up your nodeJs projects with Virtual-Data-Models and learn to love the benefits!",
+				"speaker":"Cedric Heisel",
+				"description":"Let me show you the benefits of the SAP Cloud SDK and how to work efficient with Virtual-Datal-Models (VDMs) in nodeJs typescript applications. I am going share some insights of a project, where we did release more then 40 VDM packages in private npm-feeds to build up a solid world of type-safe SDKs for integration purposes. See why it's worth it to spend to effort in setting it up and getting to know the SAP Cloud SDK and why it's a gamechanger in our digital transformation.",
+				"startdate":"2022-09-24T11:15:00.000Z",
+				"enddate":"2022-09-24T12:00:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "Event Driven Architecture with SAP Event Mesh",
+				"speaker":"Sandesh Kurumella",
+				"description":"With growing curiosity on event driven architectures at customers, I would like to introduce the basics of event based integrations and present a use-case how we have implemented 'SAP Event Mesh' at one of our customers to orchestrate an event driven architecture with SAP ECC.",
+				"startdate":"2022-09-24T12:00:00.000Z",
+				"enddate":"2022-09-24T12:45:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "OData V4 and SAP Cloud Application Programming Model",
+				"speaker":"DJ Adams",
+				"description":"In this session we'll look at what the SAP Cloud Application Programming Model (CAP) has to offer for OData V4. ",
+				"startdate":"2022-09-24T12:00:00.000Z",
+				"enddate":"2022-09-24T12:45:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "Best of Open Source SAP Community Projects",
+				"speaker":"Marian Zeis",
+				"description":"Fortunately, thanks to the initiative of the SAP Commnuity Members, SAP is increasingly focusing on making essential components of the software open and public.\nOn this basis it was possible to create further components based on the open source code.\nJust like the Inside Tracks, this SAP community open source software started as grassroots projects and have evolved to be indispensable for the daily development workflow.\nThis session will provide an current overview of the SAP community projects.\nProjects within these categories are showcased:\n- UI5\n- ABAP\n- CAP",
+				"startdate":"2022-09-24T13:00:00.000Z",
+				"enddate":"2022-09-24T13:45:00.000Z",
+				"links":[
+				]
+			},{
+				"name": "CAP vs RAP",
+				"speaker":"Aman Garg, Komal Bhadani, Sam M. Thenganalil",
+				"description":"Thinking of creating a new application? What to choose? Why? This session would give answers to all these questions and much more!",
+				"startdate":"2022-09-24T13:00:00.000Z",
+				"enddate":"2022-09-24T13:45:00.000Z",
 				"links":[
 				]
 			},{
 				"name": "Wrap-up",
 				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
 				"description": "",
-				"startdate":"2022-09-24T14:00:00Z",
-				"enddate":"2022-09-24T15:30:00Z",
+				"startdate":"2022-09-24T13:45:00Z",
+				"enddate":"2022-09-24T14:15:00Z",
 				"links":[
 				]
 			}],

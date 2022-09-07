@@ -1,217 +1,209 @@
-<mvc:View 
-	controllerName="be.fiddle.sitbe.controllers.Main" 
-	xmlns="sap.m" 
-	xmlns:l="sap.ui.layout" 
-	xmlns:f="sap.ui.layout.form"
-	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns:uxap="sap.uxap"
-	xmlns:core="sap.ui.core"
-	xmlns:html="http://www.w3.org/1999/xhtml" 
-	xmlns:unified="sap.ui.unified"
-	height="100%" 
-	displayBlock="true" >
+<mvc:View
+    controllerName="be.fiddle.sitbe.controllers.Main"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:uxap="sap.uxap"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:unified="sap.ui.unified"
+    height="100%"
+    displayBlock="true"
+>
+    <Page title="{i18n>appTitle}" showHeader="false" showNavButton="false">
+        <subHeader>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Select enabled="true" editable="true" forceSelection="true" change="onSelectYear" items="{info>/}">
+                    <core:Item key="{info>year}" text="{info>year}" />
+                </Select>
+            </Toolbar>
+        </subHeader>
 
-	<Page title="{i18n>appTitle}" showHeader="false" showNavButton="false" >
-		<subHeader>
-			<Toolbar>
-				<ToolbarSpacer/>
-				<Select
-					enabled="true"
-					editable="true"
-					forceSelection="true"
-					change="onSelectYear"
-					items="{info>/}">
-					<core:Item key="{info>year}" text="{info>year}" />
-				</Select>
-			</Toolbar>
-		</subHeader>
+        <uxap:ObjectPageLayout id="Detail" enableLazyLoading="true" useIconTabBar="false" class="ObjectPageRoot">
+            <uxap:headerContent>
+                <l:HorizontalLayout class="sapUiNoContentPadding sapUiNoMargin">
+                    <Image src="images/SLogo_SITBRU.png" width="100%" mode="Image" />
+                </l:HorizontalLayout>
+            </uxap:headerContent>
 
-		<uxap:ObjectPageLayout id="Detail" enableLazyLoading="true" useIconTabBar="false" class="ObjectPageRoot">
-			<uxap:headerContent>
-				<l:HorizontalLayout class="sapUiNoContentPadding sapUiNoMargin">
-					<Image src="images/SLogo_SITBRU.png" width="100%" mode="Image" />
-				</l:HorizontalLayout>
-			</uxap:headerContent>
-
-			<uxap:sections>
-			
-				<!--overview-->
-				<uxap:ObjectPageSection id="tabOverview" title="{i18n>be.fiddle.sitbe.overview}">
-					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.overview}">
-						<l:VerticalLayout>
-							<!--Announcements-->
-							<List items="{
+            <uxap:sections>
+                <!--overview-->
+                <uxap:ObjectPageSection id="tabOverview" title="{i18n>be.fiddle.sitbe.overview}">
+                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.overview}">
+                        <l:VerticalLayout>
+                            <!--Announcements-->
+                            <List items="{
 											path:'info>announcements',
 											templateShareable:true
-										}"
-								visible="{path:'info>announcements', formatter:'.isArrayVisible'}">
-								<CustomListItem class="announcement">
-									<Title text="{info>title}" />
-									<FormattedText htmlText="{info>content}"/>
-								</CustomListItem>
-							</List>
+										}" visible="{path:'info>announcements', formatter:'.isArrayVisible'}">
+                                <CustomListItem class="announcement">
+                                    <Title text="{info>title}" />
+                                    <FormattedText htmlText="{info>content}" />
+                                </CustomListItem>
+                            </List>
 
-							<!--description-->
-							<ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date', formatter:'.formatDate'}"/>
-							<FormattedText htmlText="{i18n>appDescription}" />
-							<FormattedText 
-								htmlText="&lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;https://forms.gle/rku6sZoQMbNRGDkq9&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;"
-								visible="{info>submissions}"/>
-							
-						</l:VerticalLayout>
-					</uxap:ObjectPageSubSection>
-				</uxap:ObjectPageSection>
+                            <!--description-->
+                            <ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date', formatter:'.formatDate'}" />
+                            <FormattedText htmlText="{i18n>appDescription}" />
+                            <FormattedText htmlText="&lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;https://forms.gle/rku6sZoQMbNRGDkq9&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;" visible="{info>submissions}" />
+                        </l:VerticalLayout>
+                    </uxap:ObjectPageSubSection>
+                </uxap:ObjectPageSection>
 
-				<!--sessions-->
-				<uxap:ObjectPageSection 
-					id="tabsessions" 
-					title="{i18n>be.fiddle.sitbe.sessions}"
-					visible="{=!${info>agenda}}"
-					subSections="{info>sessions}">
-					<uxap:ObjectPageSubSection title="{info>name}" class="session">
-						<VBox >
-							<Title text="{info>speaker}"/>
-							<Text text="{info>description}"/>
+                <!--sessions-->
+                <uxap:ObjectPageSection id="tabsessions" title="{i18n>be.fiddle.sitbe.sessions}" visible="{=!${info>agenda}}" subSections="{info>sessions}">
+                    <uxap:ObjectPageSubSection title="{info>name}" class="session">
+                        <VBox>
+                            <Title text="{info>speaker}" />
+                            <Text text="{info>description}" />
 
-							<List 
-								items="{info>links}" 
-								visible="{path:'info>links', formatter:'.isArrayVisible' }">
-								<CustomListItem>
-									<Link text="{info>url}" href="{info>url}" target="_blank" />
-								</CustomListItem>
-							</List>
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:ObjectPageSection>
+                            <List items="{info>links}" visible="{path:'info>links', formatter:'.isArrayVisible' }">
+                                <CustomListItem>
+                                    <Link text="{info>url}" href="{info>url}" target="_blank" />
+                                </CustomListItem>
+                            </List>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:ObjectPageSection>
 
-				<!--agenda-->
-				<uxap:ObjectPageSection 
-					id="tabagenda" 
-					title="{i18n>be.fiddle.sitbe.sessions}"
-					visible="{info>agenda}">
-					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.sessions}">
-						<SinglePlanningCalendar
-							title= ""
-							startDate="{path:'info>date', formatter:'.asDate'}"
-							startHour="7"
-							endHour="21"
-							fullDay="false"
-							enableAppointmentsDragAndDrop="false"
-							stickyMode="None"
-							appointments="{info>sessions}"
-							appointmentSelect="onClickSession">
-							<views>
-								<SinglePlanningCalendarDayView key="DayView" title="Day" />
-							</views>
-							<appointments>
-								<unified:CalendarAppointment
-									type= "None"
-									title= "{info>name}"
-									text= "{info>description}"
-									startDate= "{path:'info>startdate', formatter:'.asDate'}"
-									endDate= "{path:'info>enddate', formatter:'.asDate'}"
-									>
-								</unified:CalendarAppointment>
-							</appointments>
-						</SinglePlanningCalendar>
+                <!--agenda-->
+                <uxap:ObjectPageSection id="tabagenda" title="{i18n>be.fiddle.sitbe.sessions}" visible="{info>agenda}">
+                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.sessions}">
+                        <VBox>
+                            <MessageStrip type="Information" text="{i18n>be.fiddle.sitbe.sessions.info}" />
+                            <SinglePlanningCalendar title="" startDate="{path:'info>date', formatter:'.asDate'}" startHour="8" endHour="18" fullDay="false" enableAppointmentsDragAndDrop="false" stickyMode="None" appointments="{info>sessions}" appointmentSelect="onClickSession">
+                                <views>
+                                    <SinglePlanningCalendarDayView key="DayView" title="Day" />
+                                </views>
+                                <appointments>
+                                    <unified:CalendarAppointment type="None" title="{info>name}" text="{info>description}" startDate="{path:'info>startdate', formatter:'.asDate'}" endDate="{path:'info>enddate', formatter:'.asDate'}" />
+                                </appointments>
+                            </SinglePlanningCalendar>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:ObjectPageSection>
 
-					</uxap:ObjectPageSubSection>
-				</uxap:ObjectPageSection>
+                <!--participants-->
+                <uxap:ObjectPageSection id="tabParticipants" title="{i18n>be.fiddle.sitbe.participants} ">
+                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.participants} ({= ${participants>Participants}.length } / 50)">
+                        <Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank" href="{info>subscriptionLink}" visible="{= ${info>subscriptionLink} !== 'undefined'}" />
+                        <Table items="{path:'participants>Participants'}" class="sapUiLargeMarginBottom" visible="{= ${info>eventId} !== 'undefined'}">
+                            <headerToolbar>
+                                <Toolbar>
+                                    <content>
+                                        <Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank" href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/{info>eventId}" visible="{= ${info>eventId} !== 'undefined'}" />
+                                    </content>
+                                </Toolbar>
+                            </headerToolbar>
+                            <columns>
+                                <Column width="7rem">
+                                    <Text text="Name" />
+                                </Column>
+                                <Column width="9rem">
+                                    <Text text="Twitter Handle" />
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <ObjectIdentifier title="{participants>FirstName} {participants>LastName}" />
+                                        <Link href="https://twitter.com/{path:'participants>Twitter'}" text="{path:'participants>Twitter'}" />
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </uxap:ObjectPageSubSection>
+                </uxap:ObjectPageSection>
 
-				<!--participants-->
-				<uxap:ObjectPageSection id="tabParticipants" title="{i18n>be.fiddle.sitbe.participants} ">
-					<uxap:ObjectPageSubSection
-						title="{i18n>be.fiddle.sitbe.participants} ({= ${participants>Participants}.length } / 50)">
-							<Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank"
-								href="{info>subscriptionLink}" visible="{= ${info>subscriptionLink} !== 'undefined'}"/>	
-							<Table items="{path:'participants>Participants'}" class="sapUiLargeMarginBottom" visible="{= ${info>eventId} !== 'undefined'}">
-								<headerToolbar>
-									<Toolbar>
-										<content>
-											<Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank"
-												href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/{info>eventId}" visible="{= ${info>eventId} !== 'undefined'}"/>											
-										</content>
-									</Toolbar>
-								</headerToolbar>
-								<columns>
-									<Column width="7rem">
-										<Text text="Name"/>
-									</Column>
-									<Column width="9rem">
-										<Text text="Twitter Handle"/>
-									</Column>
-								</columns>
-								<items>
-									<ColumnListItem>
-										<cells>
-											<ObjectIdentifier title="{participants>FirstName} {participants>LastName}"/>
-											<Link href="https://twitter.com/{path:'participants>Twitter'}" text="{path:'participants>Twitter'}"/>
-										</cells>
-									</ColumnListItem>
-								</items>
-							</Table>
-					</uxap:ObjectPageSubSection>
-				</uxap:ObjectPageSection>
+                <!--host-->
+                <uxap:ObjectPageSection id="tabLocation" title="{i18n>be.fiddle.sitbe.location}">
+                    <!--description-->
+                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.location}">
+                        <VBox class="sapUiSmallMargin">
+                            <f:SimpleForm
+                                editable="false"
+                                layout="ResponsiveGridLayout"
+                                labelSpanXL="1"
+                                labelSpanL="2"
+                                labelSpanM="3"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="4"
+                                emptySpanL="4"
+                                emptySpanM="4"
+                                emptySpanS="0"
+                                columnsXL="1"
+                                columnsL="1"
+                                columnsM="1"
+                                singleContainerFullSize="false"
+                            >
+                                <f:content>
+                                    <Label text="{i18n>be.fiddle.sitbe.name}" />
+                                    <Text text="{info>location/name}" />
+                                    <Label text="{i18n>be.fiddle.sitbe.street}" />
+                                    <Text text="{info>location/street}" />
+                                    <Label text="{i18n>be.fiddle.sitbe.city}" />
+                                    <Text text="{info>location/city}" />
+                                    <Label text="{i18n>be.fiddle.sitbe.country}" />
+                                    <Text text="{info>location/country}" />
+                                </f:content>
+                            </f:SimpleForm>
+                            <core:HTML content="{info>location/mapUrl}" />
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:ObjectPageSection>
 
-				<!--host-->
-				<uxap:ObjectPageSection id="tabLocation" title="{i18n>be.fiddle.sitbe.location}">
-					<!--description-->
-					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.location}">
-						<VBox class="sapUiSmallMargin">
-							<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="1" labelSpanL="2" labelSpanM="3" labelSpanS="12"
-								adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
-								singleContainerFullSize="false">
-								<f:content>
-									<Label text="{i18n>be.fiddle.sitbe.name}"/>
-									<Text text="{info>location/name}"/>
-									<Label text="{i18n>be.fiddle.sitbe.street}"/>
-									<Text text="{info>location/street}"/>
-									<Label text="{i18n>be.fiddle.sitbe.city}"/>
-									<Text text="{info>location/city}"/>
-									<Label text="{i18n>be.fiddle.sitbe.country}"/>
-									<Text text="{info>location/country}"/>
-								</f:content>
-							</f:SimpleForm>
-							<core:HTML content="{info>location/mapUrl}"></core:HTML>
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:ObjectPageSection>
+                <!--host-->
+                <uxap:ObjectPageSection id="tabHost" title="{i18n>be.fiddle.sitbe.host}">
+                    <!--description-->
+                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.host}">
+                        <Image src="{info>host/logo}" width="240px" />
+                    </uxap:ObjectPageSubSection>
+                </uxap:ObjectPageSection>
 
-				<!--host-->
-				<uxap:ObjectPageSection id="tabHost" title="{i18n>be.fiddle.sitbe.host}">
-					<!--description-->
-					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.host}">
-						<Image src="{info>host/logo}" width="240px"/>
-					</uxap:ObjectPageSubSection>
-				</uxap:ObjectPageSection>
+                <!--sponsors-->
+                <uxap:ObjectPageSection id="tabSponsor" title="{i18n>be.fiddle.sitbe.sponsors}" subSections="{path:'info>sponsors'}">
+                    <!--description-->
+                    <uxap:ObjectPageSubSection title="{info>name}">
+                        <Image src="{info>logo}" width="240px" />
+                    </uxap:ObjectPageSubSection>
+                </uxap:ObjectPageSection>
 
-				<!--sponsors-->
-				<uxap:ObjectPageSection id="tabSponsor" title="{i18n>be.fiddle.sitbe.sponsors}" subSections="{path:'info>sponsors'}">
-					<!--description-->
-					<uxap:ObjectPageSubSection title="{info>name}">
-						<Image src="{info>logo}" width="240px"/>
-					</uxap:ObjectPageSubSection>
-				</uxap:ObjectPageSection>
-				
-				<!--contact us-->
-				<uxap:ObjectPageSection id="tabContact" title="{i18n>be.fiddle.sitbe.contact}">
-					<!--description-->
-					<uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.contact}">
-						<!--<l:VerticalLayout>-->
-						<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="1" labelSpanL="2" labelSpanM="3" labelSpanS="12"
-							adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
-							singleContainerFullSize="false">
-							<f:content>
-								<Label text="{i18n>be.fiddle.sitbe.mail}"/>
-								<Link href="mailto:sapinsidetrackbelgium@gmail.com" text="sapinsidetrackbelgium@gmail.com" target="_blank"></Link>
-								<Label text="{i18n>be.fiddle.sitbe.twitter}"/>
-								<Link href="https://twitter.com/sitbru" text="#sitbru" target="_blank"></Link>
-							</f:content>
-						</f:SimpleForm>
-						<!--</l:VerticalLayout>-->
-					</uxap:ObjectPageSubSection>
-				</uxap:ObjectPageSection>
-			</uxap:sections>
-		</uxap:ObjectPageLayout>
-	</Page>
+                <!--contact us-->
+                <uxap:ObjectPageSection id="tabContact" title="{i18n>be.fiddle.sitbe.contact}">
+                    <!--description-->
+                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.contact}">
+                        <!--<l:VerticalLayout>-->
+                        <f:SimpleForm
+                            editable="false"
+                            layout="ResponsiveGridLayout"
+                            labelSpanXL="1"
+                            labelSpanL="2"
+                            labelSpanM="3"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="4"
+                            emptySpanL="4"
+                            emptySpanM="4"
+                            emptySpanS="0"
+                            columnsXL="1"
+                            columnsL="1"
+                            columnsM="1"
+                            singleContainerFullSize="false"
+                        >
+                            <f:content>
+                                <Label text="{i18n>be.fiddle.sitbe.mail}" />
+                                <Link href="mailto:sapinsidetrackbelgium@gmail.com" text="sapinsidetrackbelgium@gmail.com" target="_blank" />
+                                <Label text="{i18n>be.fiddle.sitbe.twitter}" />
+                                <Link href="https://twitter.com/sitbru" text="#sitbru" target="_blank" />
+                            </f:content>
+                        </f:SimpleForm>
+                        <!--</l:VerticalLayout>-->
+                    </uxap:ObjectPageSubSection>
+                </uxap:ObjectPageSection>
+            </uxap:sections>
+        </uxap:ObjectPageLayout>
+    </Page>
 </mvc:View>

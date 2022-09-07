@@ -10,6 +10,7 @@
 	},
 	"scripts": {
 		"start": "grunt",
+		"start:local":"ui5 serve",
 	    "lint": "grunt lint",
 		"build": "grunt build",
 		"test": "echo \"Error: no test specified. Please add some.\" && exit 1",
