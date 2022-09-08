@@ -56,9 +56,9 @@
 				"links":[
 				]
 			},{
-				"name": "Setting up a local development environment using Windows Subsystem Linux (For SAP Cloud Application Programming & Fiori development)",
+				"name": "Testing your CAP apps locally made easy with the open source cds-launchpad-plugin",
 				"speaker":"Geert-Jan Klaps",
-				"description":"Don't have access to SAP Business Application Studio? Don't like developing in a web browser? Still having trouble with setting up a local development environment for Cloud Application Programming or Fiori Development? Don't know where to start? Which plugins you need? Still think that you need a Mac to leverage the full power of the underlying Linux terminal? Let me prove you otherwise! During this session I'll show you how you can setup a local development environment using Windows Subsystem Linux, covering almost all functionalities available in SAP Business Application Studio. Agenda:\n- Introduction to Windows Subsystem Linux\n- Installing Windows Subsystem Linux\n- Connecting VS Code to Windows Subsystem Linux\n- Interesting plugins\n- Installing plugins\n",
+				"description":"Tired of always creating and maintaining a local Fiori Launchpad Sandbox configuration in each CAP project manually?\n\nWell look no further, with the open source cds-launchpad-plugin you can easilly generate a local Fiori Launchpad Sandbox out of the box!\n\nIn this session, you will get an overview of what's included in this plugin and what it's advantages are.\n\nFurthermore, you will see how how you can incorporate this plugin in your own projects and how it allows you to easily test and demo your CAP-based Fiori / SAPUI5 apps and plugins hassle-free.",
 				"startdate":"2022-09-24T08:00:00.000Z",
 				"enddate":"2022-09-24T08:45:00.000Z",
 				"links":[
