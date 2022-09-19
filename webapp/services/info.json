@@ -170,6 +170,9 @@
 			}, {
 				"name": "SAP Community",
 				"logo": "./images/SAPCommunity.png"
+			},{
+				"name": "Neptune Software",
+				"logo": "./images/neptune.png"
 			}, {
 				"name": "Fiddle Consulting",
 				"logo": "./images/fiddle.png"
