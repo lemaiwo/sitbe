@@ -135,6 +135,7 @@
 				"startdate":"2022-09-24T13:00:00.000Z",
 				"enddate":"2022-09-24T13:45:00.000Z",
 				"links":[
+					{ "url":"https://github.com/marianfoo/marianfoo"}
 				]
 			},{
 				"name": "CAP vs RAP",
