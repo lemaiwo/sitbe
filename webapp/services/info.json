@@ -38,6 +38,7 @@
 				"startdate":"2022-09-24T07:15:00.000Z",
 				"enddate":"2022-09-24T08:00:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/BTPSetup.pdf"}
 				]
 			},{
 				"name": "How the SAP Business Technology Platform takes you beyond Robotic Process Automation",
@@ -54,6 +55,7 @@
 				"startdate":"2022-09-24T08:00:00.000Z",
 				"enddate":"2022-09-24T08:45:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/SEN.pdf"}
 				]
 			},{
 				"name": "Testing your CAP apps locally made easy with the open source cds-launchpad-plugin",
@@ -95,6 +97,7 @@
 				"startdate":"2022-09-24T09:45:00.000Z",
 				"enddate":"2022-09-24T10:30:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/NeotoCF.pdf"}
 				]
 			},{
 				"name": "SAP Cloud ALM: monitoring Integration Suite and SuccessFactors",
@@ -103,6 +106,7 @@
 				"startdate":"2022-09-24T11:15:00.000Z",
 				"enddate":"2022-09-24T12:00:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/ALM.pdf"}
 				]
 			},{
 				"name": "SAP Cloud SDK - Speed up your nodeJs projects with Virtual-Data-Models and learn to love the benefits!",
@@ -111,6 +115,7 @@
 				"startdate":"2022-09-24T11:15:00.000Z",
 				"enddate":"2022-09-24T12:00:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/SAPCloudSDK.pdf"}
 				]
 			},{
 				"name": "Event Driven Architecture with SAP Event Mesh",
@@ -119,6 +124,7 @@
 				"startdate":"2022-09-24T12:00:00.000Z",
 				"enddate":"2022-09-24T12:45:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/SAPEventMesh.pdf"}
 				]
 			},{
 				"name": "OData V4 and SAP Cloud Application Programming Model",
@@ -144,6 +150,7 @@
 				"startdate":"2022-09-24T13:00:00.000Z",
 				"enddate":"2022-09-24T13:45:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/CAPvsRAP.pdf"}
 				]
 			},{
 				"name": "Wrap-up",
