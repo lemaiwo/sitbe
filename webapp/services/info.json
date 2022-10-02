@@ -81,6 +81,7 @@
 				"startdate":"2022-09-24T09:00:00.000Z",
 				"enddate":"2022-09-24T09:45:00.000Z",
 				"links":[
+					{"url":"./presentations/2022/A-TYPE-TRIP.ppt"}
 				]
 			},{
 				"name": "API Management",
@@ -133,6 +134,9 @@
 				"startdate":"2022-09-24T12:00:00.000Z",
 				"enddate":"2022-09-24T12:45:00.000Z",
 				"links":[
+					{
+						"url":"https://github.com/qmacro/odata-v4-and-cap/blob/main/slides.md"
+					}
 				]
 			},{
 				"name": "Best of Open Source SAP Community Projects",
