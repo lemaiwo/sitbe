@@ -81,7 +81,7 @@
 				"startdate":"2022-09-24T09:00:00.000Z",
 				"enddate":"2022-09-24T09:45:00.000Z",
 				"links":[
-					{"url":"./presentations/2022/A-TYPE-TRIP.ppt"}
+					{"url":"./presentations/2022/A-TYPE-TRIP.pdf"}
 				]
 			},{
 				"name": "API Management",
