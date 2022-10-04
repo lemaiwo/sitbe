@@ -47,6 +47,7 @@
 				"startdate":"2022-09-24T07:15:00.000Z",
 				"enddate":"2022-09-24T08:00:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/Testing your CAP apps locally.pdf"}
 				]
 			},{
 				"name": "SEN Web Assistant, deep dive",
@@ -64,6 +65,7 @@
 				"startdate":"2022-09-24T08:00:00.000Z",
 				"enddate":"2022-09-24T08:45:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/Automation.pdf"}
 				]
 			},{
 				"name": "Decision Tree to keep the core clean in S/4Hana and S/4Hana Public Cloud Implementation",
@@ -90,6 +92,7 @@
 				"startdate":"2022-09-24T09:45:00.000Z",
 				"enddate":"2022-09-24T10:30:00.000Z",
 				"links":[
+					{ "url":"./presentations/2022/APIManagement.pdf"}
 				]
 			},{
 				"name": "SAP BTP NEO to SAP BTP CF Migration Best Practices",
