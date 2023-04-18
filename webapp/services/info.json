@@ -10,7 +10,7 @@
 			"announcements":[
 				{
 					"title":"SAP Inside Track Belgium 2023",
-					"content":"Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of Deloitte.\nSessions will run until 16:00 CET, followed by a wrap up and a drink.\nIf you're interested, there's also a codejam on 22rd of September. You can make a complete trip out of it."
+					"content":"Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of Deloitte.\nSessions will run until 16:00 CET, followed by a wrap up and a drink.\nIf you're interested, there's also a codejam on 22th of September. You can make a complete trip out of it."
 				}
 			],
 			"sessions": [],
@@ -19,7 +19,7 @@
 				"street": "Luchthaven Brussel Nationaal 1 J",
 				"city": "1930 Zaventem",
 				"country": "Belgium",
-				"mapUrl":"<iframe src='https://www.google.be/maps/place/Deloitte/@50.8961585,4.4828843,17z/data=!4m5!3m4!1s0x0:0x19a08d64e0690f7b!8m2!3d50.896304!4d4.4849297' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+				"mapUrl":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.481437292551!2d4.4823548766483245!3d50.896307355161234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dce1896ddd07%3A0x19a08d64e0690f7b!2sDeloitte%20Belgium!5e0!3m2!1sen!2sbe!4v1681849840007!5m2!1sen!2sbe' width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
 			},
 			"host": {
 				"name": "Deloitte",
