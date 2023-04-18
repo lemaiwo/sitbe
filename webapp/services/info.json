@@ -1,5 +1,44 @@
 [
 	{
+		"year":"2023",
+		"data":{
+			"date":"2023-09-23T07:30:00.000Z",
+			"eventId":"undefined",
+			"subscriptionLink":"",
+			"agenda":false,
+			"submissions":false,
+			"announcements":[
+				{
+					"title":"SAP Inside Track Belgium 2023",
+					"content":"Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of Deloitte.\nSessions will run until 16:00 CET, followed by a wrap up and a drink.\nIf you're interested, there's also a codejam on 22rd of September. You can make a complete trip out of it."
+				}
+			],
+			"sessions": [],
+			"location": {
+				"name": "Deloitte",
+				"street": "Luchthaven Brussel Nationaal 1 J",
+				"city": "1930 Zaventem",
+				"country": "Belgium",
+				"mapUrl":"<iframe src='https://www.google.be/maps/place/Deloitte/@50.8961585,4.4828843,17z/data=!4m5!3m4!1s0x0:0x19a08d64e0690f7b!8m2!3d50.896304!4d4.4849297' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+			},
+			"host": {
+				"name": "Deloitte",
+				"logo": ""
+			},
+			"sponsors": [{
+				"name": "SAP Mentors",
+				"logo": "./images/mentors.png"
+			}, {
+				"name": "SAP Community",
+				"logo": "./images/SAPCommunity_new.JPG"
+			}, {
+				"name": "Fiddle Consulting",
+				"logo": "./images/fiddle.png"
+			}],
+			"participants": [],
+			"address": []
+		}
+	},{
 		"year":"2022",
 		"data":{
 			"date":"2022-09-24T07:30:00.000Z",
