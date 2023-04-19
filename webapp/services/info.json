@@ -23,7 +23,7 @@
 			},
 			"host": {
 				"name": "Deloitte",
-				"logo": ""
+				"logo": "./images/Deloitte_logo_black.png"
 			},
 			"sponsors": [{
 				"name": "SAP Mentors",
