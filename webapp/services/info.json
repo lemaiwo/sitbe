@@ -6,14 +6,84 @@
 			"eventId":"undefined",
 			"subscriptionLink":"https://groups.community.sap.com/t5/sap-insidetrack/sap-inside-track-belgium-2023/ec-p/255411#M40",
 			"agenda":false,
-			"submissions":false,
+			"submissions":true,
 			"announcements":[
 				{
 					"title":"SAP Inside Track Belgium 2023",
 					"content":"Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of Deloitte.\nSessions will run until 16:00 CET, followed by a wrap up and a drink.\nIf you're interested, there's also a codejam on 22th of September. You can make a complete trip out of it."
 				}
 			],
-			"sessions": [],
+			"sessions": [{
+				"name": "Introduction into SAP Master Data Integration",
+				"speaker":"Tom Rottiers/Pieter Janssens",
+				"description":"This session will give an overview of SAP Master Data Integration and will demo some scenario's linked to SuccessFactors and S/4 Hana.  We will also explore some scenario's related to the extendibility and the possibilities of linking non-SAP applications to SAP Master Data Integration.",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "Me (the developer) and AI",
+				"speaker":"Jérémy Coppey",
+				"description":"Still seeing in what it evolves but I will give a session about SAP developments (ABAP/UI5/...) and the benefits/drawback of AI",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "How to use native functionalities in SAP MDK using Swift",
+				"speaker":"Robbe Wuyts",
+				"description":"https://blogs.sap.com/2023/04/18/mdk-ios-nfc-uid-scanner-how-to-use-native-functionalities-in-sap-mdk-using-swift-and-debug-on-mac/",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "Fantastic CAP Gems & Where to Find them",
+				"speaker":"Dries Van Vaerenbergh",
+				"description":"With a lot of good content out there, developing CAP applications is fun! But when you have a hard time during development, finding the right info is essential. That’s why I want to share some “hidden” CAP Gems with you all and focus on one of my favorite CAP features called “Hybrid Testing”.",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "Early insights into the upcoming Edge Integration Cell runtime, as part of the SAP Integration Suite",
+				"speaker":"Dimitri Sannen",
+				"description":"Get early insights into the upcoming Edge Integration Cell runtime.",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "Latest innovations in SBPA and lessons learned while migrating from iRPA & Workflow management",
+				"speaker":"Jana de Klerk",
+				"description":"During this session, we will reveal the latest innovations in SAP Build Process automation and explore the challenges faced when migrating from SAP iRPA and Workflow management to SAP Build Process Automation, uncovering the gaps between the two. Throughout this session, we will share valuable insights and real-world experiences gained from organizations that have successfully made the transition from iRPA and workflow systems to SAP Build Process Automation. We will discuss best practices, key considerations, and important lessons learned along the way.",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "SAP Advanced Event Mesh: Event Broker Runtime at the Developer's Fingertips",
+				"speaker":"Vadim Klimov",
+				"description":"In this hands-on session, we will see how an event broker runtime that is a part of SAP Advanced Event Mesh, can be used by the integration developer community as the playground for exploring the capabilities of the broker and practising the development of event-driven integrations. No subscription costs, no high performance and powerful servers - throughout the session, we will use a developer machine to build a portable and disposable infrastructure, and then to deploy and run a sample scenario.",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "Easy Integration of Excel Upload in UI5 Apps",
+				"speaker":"Marian Zeis",
+				"description":"Dive into the world of the open-source UI5 Excel Upload Component in a live demo, showcasing its power in simplifying Excel uploads in Fiori Elements and other UI5 scenarios.  Discover its features, including flexible template generation, column definition, and error-checking.Understand how this component's extensive configuration options let you adapt to various data handling.",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "Creating the ultimate user experience with SAP Build Work Zone, SAP Mobile Start & SAP Task Center",
+				"speaker":"Geert-Jan Klaps",
+				"description":"Learn more on how to create the ultimate user experience for your end-users. Starting with SAP Build Work Zone, working up to a full blown mobile experience with SAP Mobile Start & SAP Task Center. Insights into the possibilities of SAP Mobile Start & SAP Task Center, based on a demo case leveraging a custom build application on top of SAP CAP 7 combined with SAP Build Process Automation.",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			},{
+				"name": "Next-Gen UI5 Control Development",
+				"speaker":"Wouter Lemaire",
+				"description":"Controls are one of the most important aspects of the UI5 framework. Over time the framework evolved to keep track of new browser versions and web technologies in general. Compared to other frameworks, UI5 is still the first one of its kind which is quite unique these days. The evolution of the UI5 framework has an impact on the rendering of the controls as this is key to the performance of the framework.UI5 Controls already evolved with the renderer version 2. Now, with WebComponents making its way into the framework, it changes the game again. With a more native web technology the rendering of the controls will take your UI5 app to the next level!Allow Peter and myself to introduce you into building UI5 controls ready for whatever comes next in the future of the ui5 framework and beyond!",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
+			}],
 			"location": {
 				"name": "Deloitte",
 				"street": "Luchthaven Brussel Nationaal 1 J",
