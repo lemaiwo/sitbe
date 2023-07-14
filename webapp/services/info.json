@@ -83,6 +83,13 @@
 				"startdate":"",
 				"enddate":"",
 				"links":[]
+			},{
+				"name": "Modern JavaScript and UI5",
+				"speaker":"Mike Zaschka",
+				"description":"Over the years, JavaScript has evolved significantly, while UI5 and its best practices simply did not keep up. In this session, we will look at the importance of using and ways to apply modern JavaScript to any UI5 app. And to support my claims, there will be memes.",
+				"startdate":"",
+				"enddate":"",
+				"links":[]
 			}],
 			"location": {
 				"name": "Deloitte",
