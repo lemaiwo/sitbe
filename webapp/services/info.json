@@ -27,7 +27,7 @@
 					"name": "Keynote",
 					"speaker":"SITBE Team",
 					"description":"Welcome back to our Yearly SITBE!",
-					"startdate":"2023-09-23T07:00:00Z",
+					"startdate":"2023-09-23T06:45:00Z",
 					"enddate":"2023-09-23T07:15:00Z",
 					"links":[
 					]
@@ -135,15 +135,15 @@
 				"speaker":"SITBE Team",
 				"description": "",
 				"startdate":"2023-09-23T13:45:00Z",
-				"enddate":"2023-09-23T14:00:00Z",
+				"enddate":"2023-09-23T14:15:00Z",
 				"links":[
 				]
 			},{
 				"name": "Drinks",
 				"speaker":"Everyone",
 				"description": "",
-				"startdate":"2023-09-23T14:00:00Z",
-				"enddate":"2023-09-23T14:15:00Z",
+				"startdate":"2023-09-23T14:15:00Z",
+				"enddate":"2023-09-23T15:15:00Z",
 				"links":[
 				]
 			}],
