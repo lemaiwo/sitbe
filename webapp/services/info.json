@@ -125,7 +125,7 @@
 				"links":[]
 			},{
 				"name": "TypeScript: What's in it for me?",
-				"speaker":"Stijn Puttemans",
+				"speaker":"Stijn Puttemans, Jules Decock",
 				"description":"Why use Typescript as best practice for ui5 projects: short introduction to typescript, what are the advantages and benefits, some lessons learned, how to get started.",
 				"startdate":"2023-09-23T13:00:00Z",
 				"enddate":"2023-09-23T13:45:00Z",
