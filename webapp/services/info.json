@@ -34,14 +34,14 @@
 				},
 				{
 				"name": "Introduction into SAP Master Data Integration",
-				"speaker":"Tom Rottiers/Pieter Janssens",
+				"speaker":"Tom Rottiers & Pieter Janssens",
 				"description":"This session will give an overview of SAP Master Data Integration and will demo some scenario's linked to SuccessFactors and S/4 Hana.  We will also explore some scenario's related to the extendibility and the possibilities of linking non-SAP applications to SAP Master Data Integration.",
 				"startdate":"2023-09-23T07:15:00Z",
 				"enddate":"2023-09-23T08:00:00Z",
 				"links":[]
 			},{
 				"name": "How to use native functionalities in SAP MDK using Swift",
-				"speaker":"Robbe Wuyts",
+				"speaker":"Robbe Wuyts & Wouter Lemaire",
 				"description":"https://blogs.sap.com/2023/04/18/mdk-ios-nfc-uid-scanner-how-to-use-native-functionalities-in-sap-mdk-using-swift-and-debug-on-mac/",
 				"startdate":"2023-09-23T07:15:00Z",
 				"enddate":"2023-09-23T08:00:00Z",
@@ -96,9 +96,9 @@
 				"enddate":"2023-09-23T12:15:00Z",
 				"links":[]
 			},{
-				"name": "Next-Gen UI5 Control Development",
-				"speaker":"Wouter Lemaire",
-				"description":"Controls are one of the most important aspects of the UI5 framework. Over time the framework evolved to keep track of new browser versions and web technologies in general. Compared to other frameworks, UI5 is still the first one of its kind which is quite unique these days. The evolution of the UI5 framework has an impact on the rendering of the controls as this is key to the performance of the framework.UI5 Controls already evolved with the renderer version 2. Now, with WebComponents making its way into the framework, it changes the game again. With a more native web technology the rendering of the controls will take your UI5 app to the next level!Allow Peter and myself to introduce you into building UI5 controls ready for whatever comes next in the future of the ui5 framework and beyond!",
+				"name": "Introduction to CAP with PostgreSQL",
+				"speaker":"Matthijs Mennens",
+				"description":"This session will cover the setup of SAP CAP with PostgreSQL and additional examples",
 				"startdate":"2023-09-23T11:30:00Z",
 				"enddate":"2023-09-23T12:15:00Z",
 				"links":[]
@@ -125,7 +125,7 @@
 				"links":[]
 			},{
 				"name": "TypeScript: What's in it for me?",
-				"speaker":"Stijn Puttemans, Jules Decock",
+				"speaker":"Stijn Puttemans & Jules Decock",
 				"description":"Why use Typescript as best practice for ui5 projects: short introduction to typescript, what are the advantages and benefits, some lessons learned, how to get started.",
 				"startdate":"2023-09-23T13:00:00Z",
 				"enddate":"2023-09-23T13:45:00Z",
