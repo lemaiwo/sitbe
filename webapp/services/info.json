@@ -103,9 +103,9 @@
 				"enddate":"2023-09-23T12:15:00Z",
 				"links":[]
 			},{
-				"name": "Easy Integration of Excel Upload in UI5 Apps",
-				"speaker":"Marian Zeis",
-				"description":"Dive into the world of the open-source UI5 Excel Upload Component in a live demo, showcasing its power in simplifying Excel uploads in Fiori Elements and other UI5 scenarios.  Discover its features, including flexible template generation, column definition, and error-checking.Understand how this component's extensive configuration options let you adapt to various data handling.",
+				"name": "Next-Gen UI5 Control Development",
+				"speaker":"Wouter Lemaire",
+				"description":"Controls are one of the most important aspects of the UI5 framework. Over time the framework evolved to keep track of new browser versions and web technologies in general. Compared to other frameworks, UI5 is still the first one of its kind which is quite unique these days. The evolution of the UI5 framework has an impact on the rendering of the controls as this is key to the performance of the framework.UI5 Controls already evolved with the renderer version 2. Now, with WebComponents making its way into the framework, it changes the game again. With a more native web technology the rendering of the controls will take your UI5 app to the next level!Allow Peter and myself to introduce you into building UI5 controls ready for whatever comes next in the future of the ui5 framework and beyond!",
 				"startdate":"2023-09-23T12:15:00Z",
 				"enddate":"2023-09-23T13:00:00Z",
 				"links":[]
