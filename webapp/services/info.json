@@ -67,7 +67,9 @@
 				"description":"We all love coding with the SAP CAP Framework (especially with TypeScript) since it speeds up our developments and adding extensions becomes a pleasure. This made us search for an approach to use cap in a scalable and reusable way and make our projects future and maintainable proof. This approach enables us with the following: organized CAP project structures, reusing code as much as possible, consuming remote services from different source systems, making it all typed using TypeScript!, clear separation between backend and UI.Consumption, typing and maintaining a nice overview of your CAP Project was never easier.",
 				"startdate":"2023-09-23T08:00:00Z",
 				"enddate":"2023-09-23T08:45:00Z",
-				"links":[]
+				"links":[{
+					"url":"https://blogs.sap.com/2023/09/04/recap-2023-cap-advanced-programming-model-1/"
+				}]
 			},{
 				"name": "Early insights into the upcoming Edge Integration Cell runtime, as part of the SAP Integration Suite",
 				"speaker":"Dimitri Sannen",
