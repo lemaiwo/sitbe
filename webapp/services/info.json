@@ -55,7 +55,12 @@
 				"startdate":"2023-09-23T08:00:00Z",
 				"enddate":"2023-09-23T08:45:00Z",
 				"links":[
-					{ "url":"./presentations/2023/sitbe 2023 - Vadim Klimov - SAP AEM - Event Broker Runtime.pdf"}]
+					{ "url":"./presentations/2023/sitbe 2023 - Vadim Klimov - SAP AEM - Event Broker Runtime.pdf"},
+					{ "url":"https://github.com/vadimklimov/sitbe-2023-sap-aem-solace-event-broker-demo"},
+					{ "url":"https://hub.docker.com/r/vadimklimov/sap-cloud-connector"},
+					{ "url":"https://github.com/vadimklimov/sap-cloud-connector"},
+					{ "url":"https://github.com/vadimklimov/docker-utils"}
+				]
 			},{
 				"name": "CAP Advanced Programming Model",
 				"speaker":"Gert Mertens",
