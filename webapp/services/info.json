@@ -54,7 +54,8 @@
 				"description":"In this hands-on session, we will see how an event broker runtime that is a part of SAP Advanced Event Mesh, can be used by the integration developer community as the playground for exploring the capabilities of the broker and practising the development of event-driven integrations. No subscription costs, no high performance and powerful servers - throughout the session, we will use a developer machine to build a portable and disposable infrastructure, and then to deploy and run a sample scenario.",
 				"startdate":"2023-09-23T08:00:00Z",
 				"enddate":"2023-09-23T08:45:00Z",
-				"links":[]
+				"links":[
+					{ "url":"./presentations/2023/sitbe 2023 - Vadim Klimov - SAP AEM - Event Broker Runtime.pdf"}]
 			},{
 				"name": "CAP Advanced Programming Model",
 				"speaker":"Gert Mertens",
@@ -125,7 +126,9 @@
 				"description":"Still seeing in what it evolves but I will give a session about SAP developments (ABAP/UI5/...) and the benefits/drawback of AI",
 				"startdate":"2023-09-23T13:00:00Z",
 				"enddate":"2023-09-23T13:45:00Z",
-				"links":[]
+				"links":[{
+					"url":"./presentations/2023/Me and AI.pdf"
+				}]
 			},{
 				"name": "TypeScript: What's in it for me?",
 				"speaker":"Stijn Puttemans & Jules Decock",
