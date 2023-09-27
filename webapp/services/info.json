@@ -83,7 +83,8 @@
 				"description":"With a lot of good content out there, developing CAP applications is fun! But when you have a hard time during development, finding the right info is essential. That’s why I want to share some “hidden” CAP Gems with you all and focus on one of my favorite CAP features called “Hybrid Testing”.",
 				"startdate":"2023-09-23T09:00:00Z",
 				"enddate":"2023-09-23T09:45:00Z",
-				"links":[]
+				"links":[
+					{ "url":"https://blogs.sap.com/2023/06/14/sap-cap-hybrid-testing/"}]
 			},{
 				"name": "Creating the ultimate user experience with SAP Build Work Zone, SAP Mobile Start & SAP Task Center",
 				"speaker":"Geert-Jan Klaps",
@@ -142,7 +143,8 @@
 				"description":"Why use Typescript as best practice for ui5 projects: short introduction to typescript, what are the advantages and benefits, some lessons learned, how to get started.",
 				"startdate":"2023-09-23T13:00:00Z",
 				"enddate":"2023-09-23T13:45:00Z",
-				"links":[]
+				"links":[
+					{ "url":"./presentations/2023/Typescript.pdf"}]
 			},{
 				"name": "Wrap-up",
 				"speaker":"SITBE Team",
