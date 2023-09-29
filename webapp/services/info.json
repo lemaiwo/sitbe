@@ -98,7 +98,8 @@
 				"description":"For a \"brownfield\" application that uses BAPIs, standard classes and tables in the back-end, RAP unmanaged is recommended. By using a small intermediary, you can also use the power of RAP managed in these scenarios, including all features and best practices of the RAP framework (CDS, actions/validations/determinations, auto CrUD, etc..). This session covers the architecture of the solution, the benefits and a customer reference case.",
 				"startdate":"2023-09-23T09:45:00Z",
 				"enddate":"2023-09-23T10:30:00Z",
-				"links":[]
+				"links":[
+					{ "url":"./presentations/2023/RAP.pdf"}]
 			},{
 				"name": "Latest innovations in SBPA and lessons learned while migrating from iRPA & Workflow management",
 				"speaker":"Jana de Klerk",
