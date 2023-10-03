@@ -76,7 +76,8 @@
 				"description":"Get early insights into the upcoming Edge Integration Cell runtime.",
 				"startdate":"2023-09-23T09:00:00Z",
 				"enddate":"2023-09-23T09:45:00Z",
-				"links":[]
+				"links":[
+					{ "url":"./presentations/2023/The Edge Integration Cell.pdf"}]
 			},{
 				"name": "Fantastic CAP Gems & Where to Find them",
 				"speaker":"Dries Van Vaerenbergh",
@@ -91,7 +92,8 @@
 				"description":"Learn more on how to create the ultimate user experience for your end-users. Starting with SAP Build Work Zone, working up to a full blown mobile experience with SAP Mobile Start & SAP Task Center. Insights into the possibilities of SAP Mobile Start & SAP Task Center, based on a demo case leveraging a custom build application on top of SAP CAP 7 combined with SAP Build Process Automation.",
 				"startdate":"2023-09-23T09:45:00Z",
 				"enddate":"2023-09-23T10:30:00Z",
-				"links":[]
+				"links":[
+					{ "url":"./presentations/2023/Ultimate User Experience - SITBE.pdf"}]
 			},{
 				"name": "Using RAP Managed scenario for “Brownfield applications”",
 				"speaker":"Yor Rombaut",
@@ -113,7 +115,9 @@
 				"description":"This session will cover the setup of SAP CAP with PostgreSQL and additional examples",
 				"startdate":"2023-09-23T11:30:00Z",
 				"enddate":"2023-09-23T12:15:00Z",
-				"links":[]
+				"links":[{
+					"url":"./presentations/2023/PostgreSQL on SAP BTP.pdf"
+				}]
 			},{
 				"name": "Next-Gen UI5 Control Development",
 				"speaker":"Wouter Lemaire",
