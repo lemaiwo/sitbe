@@ -1,684 +1,884 @@
 [
 	{
-		"year":"2023",
-		"data":{
-			"date":"2023-09-23T07:30:00.000Z",
-			"eventId":"undefined",
-			"subscriptionLink":"https://groups.community.sap.com/t5/sap-insidetrack/sap-inside-track-belgium-2023/ec-p/255411#M40",
-			"agenda":true,
-			"submissions":true,
-			"announcements":[
+		"year": "2024",
+		"data": {
+			"date": "2024-09-21T07:30:00.000Z",
+			"eventId": "undefined",
+			"subscriptionLink": "https://groups.community.sap.com/t5/sap-insidetrack/sap-inside-track-belgium-2023/ec-p/255411#M40",
+			"agenda": true,
+			"submissions": true,
+			"announcements": [
 				{
-					"title":"SAP Inside Track Belgium 2023",
-					"content":"Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of Deloitte.\nSessions will run until 16:00 CET, followed by a wrap up and a drink.\nIf you're interested, there's also a codejam on 22th of September. You can make a complete trip out of it."
+					"title": "SAP Inside Track Belgium 2024",
+					"content": "Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of ARHS.\nSessions will run until 16:00 CET, followed by a wrap up and a drink."
+				}
+			],
+			"sessions": [
+				
+			],
+			"location": {
+				"name": "ARHS",
+				"street": "Ikaroslaan 53",
+				"city": "1930 Zaventem",
+				"country": "Belgium",
+				"mapUrl": "<iframe src='https://www.google.com/maps/embed/v1/place?q=ARHS+Developments+Belgium,+Ikaroslaan,+Zaventem,+België&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+			},
+			"host": {
+				"name": "ARHS",
+				"logo": "./images/arhs.jpg"
+			},
+			"sponsors": [
+				{
+					"name": "SAP Mentors",
+					"logo": "./images/mentors.png"
+				},
+				{
+					"name": "SAP Community",
+					"logo": "./images/SAPCommunity_new.JPG"
+				},
+				{
+					"name": "Fiddle Consulting",
+					"logo": "./images/fiddle.png"
+				}
+			],
+			"participants": [],
+			"address": []
+		}
+	},
+	{
+		"year": "2023",
+		"data": {
+			"date": "2023-09-23T07:30:00.000Z",
+			"eventId": "undefined",
+			"subscriptionLink": "https://groups.community.sap.com/t5/sap-insidetrack/sap-inside-track-belgium-2023/ec-p/255411#M40",
+			"agenda": true,
+			"submissions": true,
+			"announcements": [
+				{
+					"title": "SAP Inside Track Belgium 2023",
+					"content": "Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of Deloitte.\nSessions will run until 16:00 CET, followed by a wrap up and a drink.\nIf you're interested, there's also a codejam on 22th of September. You can make a complete trip out of it."
 				}
 			],
 			"sessions": [
 				{
 					"name": "Welcome",
-					"speaker":"",
-					"description":"Breakfast!",
-					"startdate":"2023-09-23T06:00:00Z",
-					"enddate":"2023-09-23T06:45:00Z",
-					"links":[
-					]
+					"speaker": "",
+					"description": "Breakfast!",
+					"startdate": "2023-09-23T06:00:00Z",
+					"enddate": "2023-09-23T06:45:00Z",
+					"links": []
 				},
 				{
 					"name": "Keynote",
-					"speaker":"SITBE Team",
-					"description":"Welcome back to our Yearly SITBE!",
-					"startdate":"2023-09-23T06:45:00Z",
-					"enddate":"2023-09-23T07:15:00Z",
-					"links":[
+					"speaker": "SITBE Team",
+					"description": "Welcome back to our Yearly SITBE!",
+					"startdate": "2023-09-23T06:45:00Z",
+					"enddate": "2023-09-23T07:15:00Z",
+					"links": []
+				},
+				{
+					"name": "Introduction into SAP Master Data Integration",
+					"speaker": "Tom Rottiers & Pieter Janssens",
+					"description": "This session will give an overview of SAP Master Data Integration and will demo some scenario's linked to SuccessFactors and S/4 Hana.  We will also explore some scenario's related to the extendibility and the possibilities of linking non-SAP applications to SAP Master Data Integration.",
+					"startdate": "2023-09-23T07:15:00Z",
+					"enddate": "2023-09-23T08:00:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/MDI.pdf"
+						}
 					]
 				},
 				{
-				"name": "Introduction into SAP Master Data Integration",
-				"speaker":"Tom Rottiers & Pieter Janssens",
-				"description":"This session will give an overview of SAP Master Data Integration and will demo some scenario's linked to SuccessFactors and S/4 Hana.  We will also explore some scenario's related to the extendibility and the possibilities of linking non-SAP applications to SAP Master Data Integration.",
-				"startdate":"2023-09-23T07:15:00Z",
-				"enddate":"2023-09-23T08:00:00Z",
-				"links":[
-					{ "url":"./presentations/2023/MDI.pdf"}]
-			},{
-				"name": "How to use native functionalities in SAP MDK using Swift",
-				"speaker":"Robbe Wuyts & Wouter Lemaire",
-				"description":"https://blogs.sap.com/2023/04/18/mdk-ios-nfc-uid-scanner-how-to-use-native-functionalities-in-sap-mdk-using-swift-and-debug-on-mac/",
-				"startdate":"2023-09-23T07:15:00Z",
-				"enddate":"2023-09-23T08:00:00Z",
-				"links":[
-					{ "url":"./presentations/2023/MDK.pdf"}]
-			},{
-				"name": "SAP Advanced Event Mesh: Event Broker Runtime at the Developer's Fingertips",
-				"speaker":"Vadim Klimov",
-				"description":"In this hands-on session, we will see how an event broker runtime that is a part of SAP Advanced Event Mesh, can be used by the integration developer community as the playground for exploring the capabilities of the broker and practising the development of event-driven integrations. No subscription costs, no high performance and powerful servers - throughout the session, we will use a developer machine to build a portable and disposable infrastructure, and then to deploy and run a sample scenario.",
-				"startdate":"2023-09-23T08:00:00Z",
-				"enddate":"2023-09-23T08:45:00Z",
-				"links":[
-					{ "url":"./presentations/2023/sitbe 2023 - Vadim Klimov - SAP AEM - Event Broker Runtime.pdf"},
-					{ "url":"https://github.com/vadimklimov/sitbe-2023-sap-aem-solace-event-broker-demo"},
-					{ "url":"https://hub.docker.com/r/vadimklimov/sap-cloud-connector"},
-					{ "url":"https://github.com/vadimklimov/sap-cloud-connector"},
-					{ "url":"https://github.com/vadimklimov/docker-utils"}
-				]
-			},{
-				"name": "CAP Advanced Programming Model",
-				"speaker":"Gert Mertens",
-				"description":"We all love coding with the SAP CAP Framework (especially with TypeScript) since it speeds up our developments and adding extensions becomes a pleasure. This made us search for an approach to use cap in a scalable and reusable way and make our projects future and maintainable proof. This approach enables us with the following: organized CAP project structures, reusing code as much as possible, consuming remote services from different source systems, making it all typed using TypeScript!, clear separation between backend and UI.Consumption, typing and maintaining a nice overview of your CAP Project was never easier.",
-				"startdate":"2023-09-23T08:00:00Z",
-				"enddate":"2023-09-23T08:45:00Z",
-				"links":[{
-					"url":"https://blogs.sap.com/2023/09/04/recap-2023-cap-advanced-programming-model-1/"
-				}]
-			},{
-				"name": "Early insights into the upcoming Edge Integration Cell runtime, as part of the SAP Integration Suite",
-				"speaker":"Dimitri Sannen",
-				"description":"Get early insights into the upcoming Edge Integration Cell runtime.",
-				"startdate":"2023-09-23T09:00:00Z",
-				"enddate":"2023-09-23T09:45:00Z",
-				"links":[
-					{ "url":"./presentations/2023/The Edge Integration Cell.pdf"}]
-			},{
-				"name": "Fantastic CAP Gems & Where to Find them",
-				"speaker":"Dries Van Vaerenbergh",
-				"description":"With a lot of good content out there, developing CAP applications is fun! But when you have a hard time during development, finding the right info is essential. That’s why I want to share some “hidden” CAP Gems with you all and focus on one of my favorite CAP features called “Hybrid Testing”.",
-				"startdate":"2023-09-23T09:00:00Z",
-				"enddate":"2023-09-23T09:45:00Z",
-				"links":[
-					{ "url":"https://blogs.sap.com/2023/06/14/sap-cap-hybrid-testing/"}]
-			},{
-				"name": "Creating the ultimate user experience with SAP Build Work Zone, SAP Mobile Start & SAP Task Center",
-				"speaker":"Geert-Jan Klaps",
-				"description":"Learn more on how to create the ultimate user experience for your end-users. Starting with SAP Build Work Zone, working up to a full blown mobile experience with SAP Mobile Start & SAP Task Center. Insights into the possibilities of SAP Mobile Start & SAP Task Center, based on a demo case leveraging a custom build application on top of SAP CAP 7 combined with SAP Build Process Automation.",
-				"startdate":"2023-09-23T09:45:00Z",
-				"enddate":"2023-09-23T10:30:00Z",
-				"links":[
-					{ "url":"./presentations/2023/Ultimate User Experience - SITBE.pdf"}]
-			},{
-				"name": "Using RAP Managed scenario for “Brownfield applications”",
-				"speaker":"Yor Rombaut",
-				"description":"For a \"brownfield\" application that uses BAPIs, standard classes and tables in the back-end, RAP unmanaged is recommended. By using a small intermediary, you can also use the power of RAP managed in these scenarios, including all features and best practices of the RAP framework (CDS, actions/validations/determinations, auto CrUD, etc..). This session covers the architecture of the solution, the benefits and a customer reference case.",
-				"startdate":"2023-09-23T09:45:00Z",
-				"enddate":"2023-09-23T10:30:00Z",
-				"links":[
-					{ "url":"./presentations/2023/RAP.pdf"}]
-			},{
-				"name": "Latest innovations in SBPA and lessons learned while migrating from iRPA & Workflow management",
-				"speaker":"Jana de Klerk",
-				"description":"During this session, we will reveal the latest innovations in SAP Build Process automation and explore the challenges faced when migrating from SAP iRPA and Workflow management to SAP Build Process Automation, uncovering the gaps between the two. Throughout this session, we will share valuable insights and real-world experiences gained from organizations that have successfully made the transition from iRPA and workflow systems to SAP Build Process Automation. We will discuss best practices, key considerations, and important lessons learned along the way.",
-				"startdate":"2023-09-23T11:30:00Z",
-				"enddate":"2023-09-23T12:15:00Z",
-				"links":[]
-			},{
-				"name": "Introduction to CAP with PostgreSQL",
-				"speaker":"Matthijs Mennens",
-				"description":"This session will cover the setup of SAP CAP with PostgreSQL and additional examples",
-				"startdate":"2023-09-23T11:30:00Z",
-				"enddate":"2023-09-23T12:15:00Z",
-				"links":[{
-					"url":"./presentations/2023/PostgreSQL on SAP BTP.pdf"
-				}]
-			},{
-				"name": "Next-Gen UI5 Control Development",
-				"speaker":"Wouter Lemaire",
-				"description":"Controls are one of the most important aspects of the UI5 framework. Over time the framework evolved to keep track of new browser versions and web technologies in general. Compared to other frameworks, UI5 is still the first one of its kind which is quite unique these days. The evolution of the UI5 framework has an impact on the rendering of the controls as this is key to the performance of the framework.UI5 Controls already evolved with the renderer version 2. Now, with WebComponents making its way into the framework, it changes the game again. With a more native web technology the rendering of the controls will take your UI5 app to the next level!Allow Peter and myself to introduce you into building UI5 controls ready for whatever comes next in the future of the ui5 framework and beyond!",
-				"startdate":"2023-09-23T12:15:00Z",
-				"enddate":"2023-09-23T13:00:00Z",
-				"links":[
-					{ "url":"./presentations/2023/WebComponents.pdf"}]
-			},{
-				"name": "Modern JavaScript and UI5",
-				"speaker":"Mike Zaschka",
-				"description":"Over the years, JavaScript has evolved significantly, while UI5 and its best practices simply did not keep up. In this session, we will look at the importance of using and ways to apply modern JavaScript to any UI5 app. And to support my claims, there will be memes.",
-				"startdate":"2023-09-23T12:15:00Z",
-				"enddate":"2023-09-23T13:00:00Z",
-				"links":[{
-					"url":"./presentations/2023/2023_sitbe_modern-javascript.pdf"
-				}]
-			},{
-				"name": "Me (the developer) and AI",
-				"speaker":"Jérémy Coppey",
-				"description":"Still seeing in what it evolves but I will give a session about SAP developments (ABAP/UI5/...) and the benefits/drawback of AI",
-				"startdate":"2023-09-23T13:00:00Z",
-				"enddate":"2023-09-23T13:45:00Z",
-				"links":[{
-					"url":"./presentations/2023/Me and AI.pdf"
-				}]
-			},{
-				"name": "TypeScript: What's in it for me?",
-				"speaker":"Stijn Puttemans & Jules Decock",
-				"description":"Why use Typescript as best practice for ui5 projects: short introduction to typescript, what are the advantages and benefits, some lessons learned, how to get started.",
-				"startdate":"2023-09-23T13:00:00Z",
-				"enddate":"2023-09-23T13:45:00Z",
-				"links":[
-					{ "url":"./presentations/2023/Typescript.pdf"}]
-			},{
-				"name": "Wrap-up",
-				"speaker":"SITBE Team",
-				"description": "",
-				"startdate":"2023-09-23T13:45:00Z",
-				"enddate":"2023-09-23T14:15:00Z",
-				"links":[
-				]
-			},{
-				"name": "Drinks",
-				"speaker":"Everyone",
-				"description": "",
-				"startdate":"2023-09-23T14:15:00Z",
-				"enddate":"2023-09-23T15:15:00Z",
-				"links":[
-				]
-			}],
+					"name": "How to use native functionalities in SAP MDK using Swift",
+					"speaker": "Robbe Wuyts & Wouter Lemaire",
+					"description": "https://blogs.sap.com/2023/04/18/mdk-ios-nfc-uid-scanner-how-to-use-native-functionalities-in-sap-mdk-using-swift-and-debug-on-mac/",
+					"startdate": "2023-09-23T07:15:00Z",
+					"enddate": "2023-09-23T08:00:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/MDK.pdf"
+						}
+					]
+				},
+				{
+					"name": "SAP Advanced Event Mesh: Event Broker Runtime at the Developer's Fingertips",
+					"speaker": "Vadim Klimov",
+					"description": "In this hands-on session, we will see how an event broker runtime that is a part of SAP Advanced Event Mesh, can be used by the integration developer community as the playground for exploring the capabilities of the broker and practising the development of event-driven integrations. No subscription costs, no high performance and powerful servers - throughout the session, we will use a developer machine to build a portable and disposable infrastructure, and then to deploy and run a sample scenario.",
+					"startdate": "2023-09-23T08:00:00Z",
+					"enddate": "2023-09-23T08:45:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/sitbe 2023 - Vadim Klimov - SAP AEM - Event Broker Runtime.pdf"
+						},
+						{
+							"url": "https://github.com/vadimklimov/sitbe-2023-sap-aem-solace-event-broker-demo"
+						},
+						{
+							"url": "https://hub.docker.com/r/vadimklimov/sap-cloud-connector"
+						},
+						{
+							"url": "https://github.com/vadimklimov/sap-cloud-connector"
+						},
+						{
+							"url": "https://github.com/vadimklimov/docker-utils"
+						}
+					]
+				},
+				{
+					"name": "CAP Advanced Programming Model",
+					"speaker": "Gert Mertens",
+					"description": "We all love coding with the SAP CAP Framework (especially with TypeScript) since it speeds up our developments and adding extensions becomes a pleasure. This made us search for an approach to use cap in a scalable and reusable way and make our projects future and maintainable proof. This approach enables us with the following: organized CAP project structures, reusing code as much as possible, consuming remote services from different source systems, making it all typed using TypeScript!, clear separation between backend and UI.Consumption, typing and maintaining a nice overview of your CAP Project was never easier.",
+					"startdate": "2023-09-23T08:00:00Z",
+					"enddate": "2023-09-23T08:45:00Z",
+					"links": [
+						{
+							"url": "https://blogs.sap.com/2023/09/04/recap-2023-cap-advanced-programming-model-1/"
+						}
+					]
+				},
+				{
+					"name": "Early insights into the upcoming Edge Integration Cell runtime, as part of the SAP Integration Suite",
+					"speaker": "Dimitri Sannen",
+					"description": "Get early insights into the upcoming Edge Integration Cell runtime.",
+					"startdate": "2023-09-23T09:00:00Z",
+					"enddate": "2023-09-23T09:45:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/The Edge Integration Cell.pdf"
+						}
+					]
+				},
+				{
+					"name": "Fantastic CAP Gems & Where to Find them",
+					"speaker": "Dries Van Vaerenbergh",
+					"description": "With a lot of good content out there, developing CAP applications is fun! But when you have a hard time during development, finding the right info is essential. That’s why I want to share some “hidden” CAP Gems with you all and focus on one of my favorite CAP features called “Hybrid Testing”.",
+					"startdate": "2023-09-23T09:00:00Z",
+					"enddate": "2023-09-23T09:45:00Z",
+					"links": [
+						{
+							"url": "https://blogs.sap.com/2023/06/14/sap-cap-hybrid-testing/"
+						}
+					]
+				},
+				{
+					"name": "Creating the ultimate user experience with SAP Build Work Zone, SAP Mobile Start & SAP Task Center",
+					"speaker": "Geert-Jan Klaps",
+					"description": "Learn more on how to create the ultimate user experience for your end-users. Starting with SAP Build Work Zone, working up to a full blown mobile experience with SAP Mobile Start & SAP Task Center. Insights into the possibilities of SAP Mobile Start & SAP Task Center, based on a demo case leveraging a custom build application on top of SAP CAP 7 combined with SAP Build Process Automation.",
+					"startdate": "2023-09-23T09:45:00Z",
+					"enddate": "2023-09-23T10:30:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/Ultimate User Experience - SITBE.pdf"
+						}
+					]
+				},
+				{
+					"name": "Using RAP Managed scenario for “Brownfield applications”",
+					"speaker": "Yor Rombaut",
+					"description": "For a \"brownfield\" application that uses BAPIs, standard classes and tables in the back-end, RAP unmanaged is recommended. By using a small intermediary, you can also use the power of RAP managed in these scenarios, including all features and best practices of the RAP framework (CDS, actions/validations/determinations, auto CrUD, etc..). This session covers the architecture of the solution, the benefits and a customer reference case.",
+					"startdate": "2023-09-23T09:45:00Z",
+					"enddate": "2023-09-23T10:30:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/RAP.pdf"
+						}
+					]
+				},
+				{
+					"name": "Latest innovations in SBPA and lessons learned while migrating from iRPA & Workflow management",
+					"speaker": "Jana de Klerk",
+					"description": "During this session, we will reveal the latest innovations in SAP Build Process automation and explore the challenges faced when migrating from SAP iRPA and Workflow management to SAP Build Process Automation, uncovering the gaps between the two. Throughout this session, we will share valuable insights and real-world experiences gained from organizations that have successfully made the transition from iRPA and workflow systems to SAP Build Process Automation. We will discuss best practices, key considerations, and important lessons learned along the way.",
+					"startdate": "2023-09-23T11:30:00Z",
+					"enddate": "2023-09-23T12:15:00Z",
+					"links": []
+				},
+				{
+					"name": "Introduction to CAP with PostgreSQL",
+					"speaker": "Matthijs Mennens",
+					"description": "This session will cover the setup of SAP CAP with PostgreSQL and additional examples",
+					"startdate": "2023-09-23T11:30:00Z",
+					"enddate": "2023-09-23T12:15:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/PostgreSQL on SAP BTP.pdf"
+						}
+					]
+				},
+				{
+					"name": "Next-Gen UI5 Control Development",
+					"speaker": "Wouter Lemaire",
+					"description": "Controls are one of the most important aspects of the UI5 framework. Over time the framework evolved to keep track of new browser versions and web technologies in general. Compared to other frameworks, UI5 is still the first one of its kind which is quite unique these days. The evolution of the UI5 framework has an impact on the rendering of the controls as this is key to the performance of the framework.UI5 Controls already evolved with the renderer version 2. Now, with WebComponents making its way into the framework, it changes the game again. With a more native web technology the rendering of the controls will take your UI5 app to the next level!Allow Peter and myself to introduce you into building UI5 controls ready for whatever comes next in the future of the ui5 framework and beyond!",
+					"startdate": "2023-09-23T12:15:00Z",
+					"enddate": "2023-09-23T13:00:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/WebComponents.pdf"
+						}
+					]
+				},
+				{
+					"name": "Modern JavaScript and UI5",
+					"speaker": "Mike Zaschka",
+					"description": "Over the years, JavaScript has evolved significantly, while UI5 and its best practices simply did not keep up. In this session, we will look at the importance of using and ways to apply modern JavaScript to any UI5 app. And to support my claims, there will be memes.",
+					"startdate": "2023-09-23T12:15:00Z",
+					"enddate": "2023-09-23T13:00:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/2023_sitbe_modern-javascript.pdf"
+						}
+					]
+				},
+				{
+					"name": "Me (the developer) and AI",
+					"speaker": "Jérémy Coppey",
+					"description": "Still seeing in what it evolves but I will give a session about SAP developments (ABAP/UI5/...) and the benefits/drawback of AI",
+					"startdate": "2023-09-23T13:00:00Z",
+					"enddate": "2023-09-23T13:45:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/Me and AI.pdf"
+						}
+					]
+				},
+				{
+					"name": "TypeScript: What's in it for me?",
+					"speaker": "Stijn Puttemans & Jules Decock",
+					"description": "Why use Typescript as best practice for ui5 projects: short introduction to typescript, what are the advantages and benefits, some lessons learned, how to get started.",
+					"startdate": "2023-09-23T13:00:00Z",
+					"enddate": "2023-09-23T13:45:00Z",
+					"links": [
+						{
+							"url": "./presentations/2023/Typescript.pdf"
+						}
+					]
+				},
+				{
+					"name": "Wrap-up",
+					"speaker": "SITBE Team",
+					"description": "",
+					"startdate": "2023-09-23T13:45:00Z",
+					"enddate": "2023-09-23T14:15:00Z",
+					"links": []
+				},
+				{
+					"name": "Drinks",
+					"speaker": "Everyone",
+					"description": "",
+					"startdate": "2023-09-23T14:15:00Z",
+					"enddate": "2023-09-23T15:15:00Z",
+					"links": []
+				}
+			],
 			"location": {
 				"name": "Deloitte",
 				"street": "Luchthaven Brussel Nationaal 1 J",
 				"city": "1930 Zaventem",
 				"country": "Belgium",
-				"mapUrl":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.481437292551!2d4.4823548766483245!3d50.896307355161234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dce1896ddd07%3A0x19a08d64e0690f7b!2sDeloitte%20Belgium!5e0!3m2!1sen!2sbe!4v1681849840007!5m2!1sen!2sbe' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+				"mapUrl": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.481437292551!2d4.4823548766483245!3d50.896307355161234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dce1896ddd07%3A0x19a08d64e0690f7b!2sDeloitte%20Belgium!5e0!3m2!1sen!2sbe!4v1681849840007!5m2!1sen!2sbe' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
 			},
 			"host": {
 				"name": "Deloitte",
 				"logo": "./images/Deloitte_logo_black.png"
 			},
-			"sponsors": [{
-				"name": "SAP Mentors",
-				"logo": "./images/mentors.png"
-			}, {
-				"name": "SAP Community",
-				"logo": "./images/SAPCommunity_new.JPG"
-			}, {
-				"name": "Fiddle Consulting",
-				"logo": "./images/fiddle.png"
-			}],
+			"sponsors": [
+				{
+					"name": "SAP Mentors",
+					"logo": "./images/mentors.png"
+				},
+				{
+					"name": "SAP Community",
+					"logo": "./images/SAPCommunity_new.JPG"
+				},
+				{
+					"name": "Fiddle Consulting",
+					"logo": "./images/fiddle.png"
+				}
+			],
 			"participants": [],
 			"address": []
 		}
-	},{
-		"year":"2022",
-		"data":{
-			"date":"2022-09-24T07:30:00.000Z",
-			"eventId":"undefined",
-			"subscriptionLink":"https://groups.community.sap.com/t5/sap-insidetrack/sap-inside-track-belgium/ec-p/5203#M3",
-			"agenda":true,
-			"submissions":false,
-			"announcements":[
+	},
+	{
+		"year": "2022",
+		"data": {
+			"date": "2022-09-24T07:30:00.000Z",
+			"eventId": "undefined",
+			"subscriptionLink": "https://groups.community.sap.com/t5/sap-insidetrack/sap-inside-track-belgium/ec-p/5203#M3",
+			"agenda": true,
+			"submissions": false,
+			"announcements": [
 				{
-					"title":"The Big Re-connect",
-					"content":"2 years of homework, but we're back. Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of TheValueChain.\nSessions will run until 16:00 CET, followed by a wrap up and a drink.\nIf you're interested, there's also a codejam on 23rd of September. You can make a complete trip out of it."
+					"title": "The Big Re-connect",
+					"content": "2 years of homework, but we're back. Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of TheValueChain.\nSessions will run until 16:00 CET, followed by a wrap up and a drink.\nIf you're interested, there's also a codejam on 23rd of September. You can make a complete trip out of it."
 				}
 			],
 			"sessions": [
-			{
-				"name": "Welcome",
-				"speaker":"",
-				"description":"Breakfast!",
-				"startdate":"2022-09-24T06:00:00Z",
-				"enddate":"2022-09-24T06:45:00Z",
-				"links":[
-				]
-			},
-			{
-				"name": "Keynote",
-				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-				"description":"Welcome back to our SITBe. After a 3 year break, we're back!",
-				"startdate":"2022-09-24T06:45:00Z",
-				"enddate":"2022-09-24T07:15:00Z",
-				"links":[
-				]
-			},{
-				"name": "A harmonized UX with the BTP Launchpad Service",
-				"speaker":"Stijn Puttemans, Yor Rombaut & Wouter Lemaire",
-				"description":"At Elia Group we are working on one of the biggest projects in Elia's history, called OneSAP. In this project the full SAP team is bringing all SAP systems from 50Hertz and Elia together as well as the functional as the technical parts of it. \nAs part of this project we provide one harmonized User eXperience for all standard and custom Fiori apps from different SAP systems to our business using the Business Technology Platform Launchpad Service!\nIn this session we will share our strategy, architecture and migration steps to achieve this.",
-				"startdate":"2022-09-24T07:15:00.000Z",
-				"enddate":"2022-09-24T08:00:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/BTPSetup.pdf"}
-				]
-			},{
-				"name": "How the SAP Business Technology Platform takes you beyond Robotic Process Automation",
-				"speaker":"Jana de Klerk",
-				"description":"SAP Business Technology Platform has so much to offer when it comes to Hyperautomation",
-				"startdate":"2022-09-24T07:15:00.000Z",
-				"enddate":"2022-09-24T08:00:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/Testing your CAP apps locally.pdf"}
-				]
-			},{
-				"name": "SEN Web Assistant, deep dive",
-				"speaker":"Jérémy Coppey & Tom Van Der Beken",
-				"description":"We will explain the benefits of SEN Web assistant, explain how to set it up, show its endless possibility's and make you want to implement this at your clients",
-				"startdate":"2022-09-24T08:00:00.000Z",
-				"enddate":"2022-09-24T08:45:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/SEN.pdf"}
-				]
-			},{
-				"name": "Testing your CAP apps locally made easy with the open source cds-launchpad-plugin",
-				"speaker":"Geert-Jan Klaps",
-				"description":"Tired of always creating and maintaining a local Fiori Launchpad Sandbox configuration in each CAP project manually?\n\nWell look no further, with the open source cds-launchpad-plugin you can easilly generate a local Fiori Launchpad Sandbox out of the box!\n\nIn this session, you will get an overview of what's included in this plugin and what it's advantages are.\n\nFurthermore, you will see how how you can incorporate this plugin in your own projects and how it allows you to easily test and demo your CAP-based Fiori / SAPUI5 apps and plugins hassle-free.",
-				"startdate":"2022-09-24T08:00:00.000Z",
-				"enddate":"2022-09-24T08:45:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/Automation.pdf"}
-				]
-			},{
-				"name": "Decision Tree to keep the core clean in S/4Hana and S/4Hana Public Cloud Implementation",
-				"speaker":"Sudip Ghosh",
-				"description":"In this session i will talk about different strategy to keep the core clean in S/4Hana and S/4Hana public cloud imementation with use case example. In which scenario which strategy will work. Below is the blog where i have started talking about this. If you are architect , developer , customer or partner in sap consulting project this session would help you to make your decision strategy.",
-				"startdate":"2022-09-24T09:00:00.000Z",
-				"enddate":"2022-09-24T09:45:00.000Z",
-				"links":[
-					{ "url":"https://blogs.sap.com/2022/06/14/keep-the-core-blog-series-decision-tree-of-sap-s-4hana-or-s-4hana-public-cloud-implementation/"}
-				]
-			},{
-				"name": "A Type Trip",
-				"speaker":"Dries Van Vaerenbergh / Wouter Lemaire",
-				"description":"An End-to-End TypeScript flavored journey.\nBuilding and testing a CAP TypeScript middleware (using the latest CAP-CLI-commands) with an SAPUI5 TypeScript app as cherry on top.",
-				"startdate":"2022-09-24T09:00:00.000Z",
-				"enddate":"2022-09-24T09:45:00.000Z",
-				"links":[
-					{"url":"./presentations/2022/A-TYPE-TRIP.pdf"}
-				]
-			},{
-				"name": "API Management",
-				"speaker":"Ismail Kichaout",
-				"description":"A high level overview about API Management solution",
-				"startdate":"2022-09-24T09:45:00.000Z",
-				"enddate":"2022-09-24T10:30:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/APIManagement.pdf"}
-				]
-			},{
-				"name": "SAP BTP NEO to SAP BTP CF Migration Best Practices",
-				"speaker":"Harish Yarra",
-				"description":"In the session will talk about the process, tools and best practices for BTP NEO to BTP CF application migrations. ",
-				"startdate":"2022-09-24T09:45:00.000Z",
-				"enddate":"2022-09-24T10:30:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/NeotoCF.pdf"}
-				]
-			},{
-				"name": "SAP Cloud ALM: monitoring Integration Suite and SuccessFactors",
-				"speaker":"Tom Rottiers",
-				"description":"I would like to share our experiences with deploying Cloud ALM to monitor integration suite and SuccessFactors.\nI am by no means an expert in Cloud ALM, but we have implemented it for some of our customers and I am eager to share our experiences.",
-				"startdate":"2022-09-24T11:15:00.000Z",
-				"enddate":"2022-09-24T12:00:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/ALM.pdf"}
-				]
-			},{
-				"name": "SAP Cloud SDK - Speed up your nodeJs projects with Virtual-Data-Models and learn to love the benefits!",
-				"speaker":"Cedric Heisel",
-				"description":"Let me show you the benefits of the SAP Cloud SDK and how to work efficient with Virtual-Datal-Models (VDMs) in nodeJs typescript applications. I am going share some insights of a project, where we did release more then 40 VDM packages in private npm-feeds to build up a solid world of type-safe SDKs for integration purposes. See why it's worth it to spend to effort in setting it up and getting to know the SAP Cloud SDK and why it's a gamechanger in our digital transformation.",
-				"startdate":"2022-09-24T11:15:00.000Z",
-				"enddate":"2022-09-24T12:00:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/SAPCloudSDK.pdf"}
-				]
-			},{
-				"name": "Event Driven Architecture with SAP Event Mesh",
-				"speaker":"Sandesh Kurumella",
-				"description":"With growing curiosity on event driven architectures at customers, I would like to introduce the basics of event based integrations and present a use-case how we have implemented 'SAP Event Mesh' at one of our customers to orchestrate an event driven architecture with SAP ECC.",
-				"startdate":"2022-09-24T12:00:00.000Z",
-				"enddate":"2022-09-24T12:45:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/SAPEventMesh.pdf"}
-				]
-			},{
-				"name": "OData V4 and SAP Cloud Application Programming Model",
-				"speaker":"DJ Adams",
-				"description":"In this session we'll look at what the SAP Cloud Application Programming Model (CAP) has to offer for OData V4. ",
-				"startdate":"2022-09-24T12:00:00.000Z",
-				"enddate":"2022-09-24T12:45:00.000Z",
-				"links":[
-					{
-						"url":"https://github.com/qmacro/odata-v4-and-cap/blob/main/slides.md"
-					}
-				]
-			},{
-				"name": "Best of Open Source SAP Community Projects",
-				"speaker":"Marian Zeis",
-				"description":"Fortunately, thanks to the initiative of the SAP Commnuity Members, SAP is increasingly focusing on making essential components of the software open and public.\nOn this basis it was possible to create further components based on the open source code.\nJust like the Inside Tracks, this SAP community open source software started as grassroots projects and have evolved to be indispensable for the daily development workflow.\nThis session will provide an current overview of the SAP community projects.\nProjects within these categories are showcased:\n- UI5\n- ABAP\n- CAP",
-				"startdate":"2022-09-24T13:00:00.000Z",
-				"enddate":"2022-09-24T13:45:00.000Z",
-				"links":[
-					{ "url":"https://github.com/marianfoo/marianfoo"}
-				]
-			},{
-				"name": "CAP vs RAP",
-				"speaker":"Aman Garg, Komal Bhadani, Sam M. Thenganalil",
-				"description":"Thinking of creating a new application? What to choose? Why? This session would give answers to all these questions and much more!",
-				"startdate":"2022-09-24T13:00:00.000Z",
-				"enddate":"2022-09-24T13:45:00.000Z",
-				"links":[
-					{ "url":"./presentations/2022/CAPvsRAP.pdf"}
-				]
-			},{
-				"name": "Wrap-up",
-				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-				"description": "",
-				"startdate":"2022-09-24T13:45:00Z",
-				"enddate":"2022-09-24T14:15:00Z",
-				"links":[
-				]
-			}],
+				{
+					"name": "Welcome",
+					"speaker": "",
+					"description": "Breakfast!",
+					"startdate": "2022-09-24T06:00:00Z",
+					"enddate": "2022-09-24T06:45:00Z",
+					"links": []
+				},
+				{
+					"name": "Keynote",
+					"speaker": "Wouter Lemaire & Tom Van Doorslaer",
+					"description": "Welcome back to our SITBe. After a 3 year break, we're back!",
+					"startdate": "2022-09-24T06:45:00Z",
+					"enddate": "2022-09-24T07:15:00Z",
+					"links": []
+				},
+				{
+					"name": "A harmonized UX with the BTP Launchpad Service",
+					"speaker": "Stijn Puttemans, Yor Rombaut & Wouter Lemaire",
+					"description": "At Elia Group we are working on one of the biggest projects in Elia's history, called OneSAP. In this project the full SAP team is bringing all SAP systems from 50Hertz and Elia together as well as the functional as the technical parts of it. \nAs part of this project we provide one harmonized User eXperience for all standard and custom Fiori apps from different SAP systems to our business using the Business Technology Platform Launchpad Service!\nIn this session we will share our strategy, architecture and migration steps to achieve this.",
+					"startdate": "2022-09-24T07:15:00.000Z",
+					"enddate": "2022-09-24T08:00:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/BTPSetup.pdf"
+						}
+					]
+				},
+				{
+					"name": "How the SAP Business Technology Platform takes you beyond Robotic Process Automation",
+					"speaker": "Jana de Klerk",
+					"description": "SAP Business Technology Platform has so much to offer when it comes to Hyperautomation",
+					"startdate": "2022-09-24T07:15:00.000Z",
+					"enddate": "2022-09-24T08:00:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/Testing your CAP apps locally.pdf"
+						}
+					]
+				},
+				{
+					"name": "SEN Web Assistant, deep dive",
+					"speaker": "Jérémy Coppey & Tom Van Der Beken",
+					"description": "We will explain the benefits of SEN Web assistant, explain how to set it up, show its endless possibility's and make you want to implement this at your clients",
+					"startdate": "2022-09-24T08:00:00.000Z",
+					"enddate": "2022-09-24T08:45:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/SEN.pdf"
+						}
+					]
+				},
+				{
+					"name": "Testing your CAP apps locally made easy with the open source cds-launchpad-plugin",
+					"speaker": "Geert-Jan Klaps",
+					"description": "Tired of always creating and maintaining a local Fiori Launchpad Sandbox configuration in each CAP project manually?\n\nWell look no further, with the open source cds-launchpad-plugin you can easilly generate a local Fiori Launchpad Sandbox out of the box!\n\nIn this session, you will get an overview of what's included in this plugin and what it's advantages are.\n\nFurthermore, you will see how how you can incorporate this plugin in your own projects and how it allows you to easily test and demo your CAP-based Fiori / SAPUI5 apps and plugins hassle-free.",
+					"startdate": "2022-09-24T08:00:00.000Z",
+					"enddate": "2022-09-24T08:45:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/Automation.pdf"
+						}
+					]
+				},
+				{
+					"name": "Decision Tree to keep the core clean in S/4Hana and S/4Hana Public Cloud Implementation",
+					"speaker": "Sudip Ghosh",
+					"description": "In this session i will talk about different strategy to keep the core clean in S/4Hana and S/4Hana public cloud imementation with use case example. In which scenario which strategy will work. Below is the blog where i have started talking about this. If you are architect , developer , customer or partner in sap consulting project this session would help you to make your decision strategy.",
+					"startdate": "2022-09-24T09:00:00.000Z",
+					"enddate": "2022-09-24T09:45:00.000Z",
+					"links": [
+						{
+							"url": "https://blogs.sap.com/2022/06/14/keep-the-core-blog-series-decision-tree-of-sap-s-4hana-or-s-4hana-public-cloud-implementation/"
+						}
+					]
+				},
+				{
+					"name": "A Type Trip",
+					"speaker": "Dries Van Vaerenbergh / Wouter Lemaire",
+					"description": "An End-to-End TypeScript flavored journey.\nBuilding and testing a CAP TypeScript middleware (using the latest CAP-CLI-commands) with an SAPUI5 TypeScript app as cherry on top.",
+					"startdate": "2022-09-24T09:00:00.000Z",
+					"enddate": "2022-09-24T09:45:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/A-TYPE-TRIP.pdf"
+						}
+					]
+				},
+				{
+					"name": "API Management",
+					"speaker": "Ismail Kichaout",
+					"description": "A high level overview about API Management solution",
+					"startdate": "2022-09-24T09:45:00.000Z",
+					"enddate": "2022-09-24T10:30:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/APIManagement.pdf"
+						}
+					]
+				},
+				{
+					"name": "SAP BTP NEO to SAP BTP CF Migration Best Practices",
+					"speaker": "Harish Yarra",
+					"description": "In the session will talk about the process, tools and best practices for BTP NEO to BTP CF application migrations. ",
+					"startdate": "2022-09-24T09:45:00.000Z",
+					"enddate": "2022-09-24T10:30:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/NeotoCF.pdf"
+						}
+					]
+				},
+				{
+					"name": "SAP Cloud ALM: monitoring Integration Suite and SuccessFactors",
+					"speaker": "Tom Rottiers",
+					"description": "I would like to share our experiences with deploying Cloud ALM to monitor integration suite and SuccessFactors.\nI am by no means an expert in Cloud ALM, but we have implemented it for some of our customers and I am eager to share our experiences.",
+					"startdate": "2022-09-24T11:15:00.000Z",
+					"enddate": "2022-09-24T12:00:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/ALM.pdf"
+						}
+					]
+				},
+				{
+					"name": "SAP Cloud SDK - Speed up your nodeJs projects with Virtual-Data-Models and learn to love the benefits!",
+					"speaker": "Cedric Heisel",
+					"description": "Let me show you the benefits of the SAP Cloud SDK and how to work efficient with Virtual-Datal-Models (VDMs) in nodeJs typescript applications. I am going share some insights of a project, where we did release more then 40 VDM packages in private npm-feeds to build up a solid world of type-safe SDKs for integration purposes. See why it's worth it to spend to effort in setting it up and getting to know the SAP Cloud SDK and why it's a gamechanger in our digital transformation.",
+					"startdate": "2022-09-24T11:15:00.000Z",
+					"enddate": "2022-09-24T12:00:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/SAPCloudSDK.pdf"
+						}
+					]
+				},
+				{
+					"name": "Event Driven Architecture with SAP Event Mesh",
+					"speaker": "Sandesh Kurumella",
+					"description": "With growing curiosity on event driven architectures at customers, I would like to introduce the basics of event based integrations and present a use-case how we have implemented 'SAP Event Mesh' at one of our customers to orchestrate an event driven architecture with SAP ECC.",
+					"startdate": "2022-09-24T12:00:00.000Z",
+					"enddate": "2022-09-24T12:45:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/SAPEventMesh.pdf"
+						}
+					]
+				},
+				{
+					"name": "OData V4 and SAP Cloud Application Programming Model",
+					"speaker": "DJ Adams",
+					"description": "In this session we'll look at what the SAP Cloud Application Programming Model (CAP) has to offer for OData V4. ",
+					"startdate": "2022-09-24T12:00:00.000Z",
+					"enddate": "2022-09-24T12:45:00.000Z",
+					"links": [
+						{
+							"url": "https://github.com/qmacro/odata-v4-and-cap/blob/main/slides.md"
+						}
+					]
+				},
+				{
+					"name": "Best of Open Source SAP Community Projects",
+					"speaker": "Marian Zeis",
+					"description": "Fortunately, thanks to the initiative of the SAP Commnuity Members, SAP is increasingly focusing on making essential components of the software open and public.\nOn this basis it was possible to create further components based on the open source code.\nJust like the Inside Tracks, this SAP community open source software started as grassroots projects and have evolved to be indispensable for the daily development workflow.\nThis session will provide an current overview of the SAP community projects.\nProjects within these categories are showcased:\n- UI5\n- ABAP\n- CAP",
+					"startdate": "2022-09-24T13:00:00.000Z",
+					"enddate": "2022-09-24T13:45:00.000Z",
+					"links": [
+						{
+							"url": "https://github.com/marianfoo/marianfoo"
+						}
+					]
+				},
+				{
+					"name": "CAP vs RAP",
+					"speaker": "Aman Garg, Komal Bhadani, Sam M. Thenganalil",
+					"description": "Thinking of creating a new application? What to choose? Why? This session would give answers to all these questions and much more!",
+					"startdate": "2022-09-24T13:00:00.000Z",
+					"enddate": "2022-09-24T13:45:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/2022/CAPvsRAP.pdf"
+						}
+					]
+				},
+				{
+					"name": "Wrap-up",
+					"speaker": "Wouter Lemaire & Tom Van Doorslaer",
+					"description": "",
+					"startdate": "2022-09-24T13:45:00Z",
+					"enddate": "2022-09-24T14:15:00Z",
+					"links": []
+				}
+			],
 			"location": {
 				"name": "TheValueChain",
 				"street": "Satenrozen 10",
 				"city": "2550 Kontich",
 				"country": "Belgium",
-				"mapUrl":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.028827088671!2d4.420034299999999!3d51.1263763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f044bc2be273%3A0x7a578ffefe326ace!2sSatenrozen%2010%2C%202550%20Kontich!5e0!3m2!1sen!2sbe!4v1654197320803!5m2!1sen!2sbe' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+				"mapUrl": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.028827088671!2d4.420034299999999!3d51.1263763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f044bc2be273%3A0x7a578ffefe326ace!2sSatenrozen%2010%2C%202550%20Kontich!5e0!3m2!1sen!2sbe!4v1654197320803!5m2!1sen!2sbe' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
 			},
 			"host": {
 				"name": "TVC",
 				"logo": "./images/TVC_LOGO_TAGLINE_RED.png"
 			},
-			"sponsors": [{
-				"name": "SAP Mentors",
-				"logo": "./images/mentors.png"
-			}, {
-				"name": "SAP Community",
-				"logo": "./images/SAPCommunity_new.JPG"
-			},{
-				"name": "Neptune Software",
-				"logo": "./images/neptune.png"
-			}, {
-				"name": "Fiddle Consulting",
-				"logo": "./images/fiddle.png"
-			}],
+			"sponsors": [
+				{
+					"name": "SAP Mentors",
+					"logo": "./images/mentors.png"
+				},
+				{
+					"name": "SAP Community",
+					"logo": "./images/SAPCommunity_new.JPG"
+				},
+				{
+					"name": "Neptune Software",
+					"logo": "./images/neptune.png"
+				},
+				{
+					"name": "Fiddle Consulting",
+					"logo": "./images/fiddle.png"
+				}
+			],
 			"participants": [],
 			"address": []
 		}
-	},{
-		"year":"2020",
-		"data":{
-			"date":"2020-05-09T07:30:00.000Z",
-			"eventId":"69",
-			"agenda":false,
-			"submissions":false,
-			"announcements":[
+	},
+	{
+		"year": "2020",
+		"data": {
+			"date": "2020-05-09T07:30:00.000Z",
+			"eventId": "69",
+			"agenda": false,
+			"submissions": false,
+			"announcements": [
 				{
-					"title":"March 15: Covid-19",
-					"content":"Due to the Covid-19 measures, we are not certain yet if SITBe will proceed on the foreseen date of May the 9th. We don't want the brightest minds in the SAP ecosystem to fall victim to this nasty virus. We are keeping a close eye on the trends and government regulations to decide if we proceed on May 9, or postpone to a later date."
+					"title": "March 15: Covid-19",
+					"content": "Due to the Covid-19 measures, we are not certain yet if SITBe will proceed on the foreseen date of May the 9th. We don't want the brightest minds in the SAP ecosystem to fall victim to this nasty virus. We are keeping a close eye on the trends and government regulations to decide if we proceed on May 9, or postpone to a later date."
 				},
 				{
-					"title":"March 29: SITBe cancelled",
-					"content":"Sadly, the current crisis will not abate anytime soon and life as we know it will not resume for a while. Therefore, it's no big surprise that SITBe will not take place on the 9th of May.<br/>We have decided to cancel the event until further notice, but we will be back in the future.<br /> Stay safe, respect the rules imposed by your government and keep physical distance."
+					"title": "March 29: SITBe cancelled",
+					"content": "Sadly, the current crisis will not abate anytime soon and life as we know it will not resume for a while. Therefore, it's no big surprise that SITBe will not take place on the 9th of May.<br/>We have decided to cancel the event until further notice, but we will be back in the future.<br /> Stay safe, respect the rules imposed by your government and keep physical distance."
 				}
 			],
 			"sessions": [
-			{
-				"name": "Keynote",
-				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-				"description":"",
-				"startdate":"2020-05-09T07:30:00.000Z",
-				"enddate":"2020-05-09T08:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "FaceRecognition with SCP",
-				"speaker":"Wouter Lemaire",
-				"description":"Over the years you get to know more and more people and of course you always like to greet them by name. From time to time it can happen that you can’t remember the name of someone you know… which can be awkward.\nThe same thing happens to me too, more and more lately… To avoid awkward situations, I’ve been thinking about a solution for this. I’ve started with an app to store all the people I know together with a picture. This should help me to find the name of someone I already knew. I would still need to search in the list, which is not easy when it becomes a big list and you don’t remember the name…\nI needed to add something to the app that could provide me the name of a person by just taking a picture. This way, I don’t need to search through a big list and don’t have to know the name.\nThis is where I came up with the Face Recognition app! In this session I will show how this app works and how you can do face recognition with SCP yourself!",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Cloud: The Final Frontier",
-				"speaker":"Christian Drumm",
-				"description":"Cloud: the final frontier. These are the endeavors of an ABAP developer. Its mission: to explore strange new cloud worlds. To seek out new platform and new programming models. To boldly go where no ABAP developer has gone before! ",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Write more solid state code with functional programming techniques",
-				"description":"Functional programming techniques can help you write code that is less prone to bugs, because it has a smaller surface area and follows principles that mean that the code \"doesn't move\" - it just \"is\". This session will give you an introduction to some of the fundamentals using JavaScript as the carrier language.",
-				"speaker":"DJ Adams",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Performance Measurement and Benchmarking of Custom Code in SAP Cloud Platform Integration",
-				"speaker":"Vadim Klimov",
-				"description":"The session will showcase some techniques and tools that can be utilized when measuring performance of custom code that is embedded in integration scenarios deployed to SAP Cloud Platform Integration. In particular, we will start from a bird's eye view on performance measurement using stopwatch benchmarking, and then will put it under the microscope and detail to a level of microbenchmarking.",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "SAP Community at its best",
-				"speaker":"Svea Becker",
-				"description":"Everyone is somehow involved in a community e.g. a sports club, neighborhood, a fan club, etc. Why are you part of these communities? The SAP Community offers a wide range of involvement and engagement opportunities. What are the similarities to your private communities? Join this session and find out what the SAP Community is, how to get part of it and how to actively contribute. After all, bringing people together is what community is all about.",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "CAP and Cloud SDK at work",
-				"speaker":"Vincent Weiss",
-				"description":"Since August 2019 I have been working with CAP to build Applications and APIs and also leveraging the Cloud SDK from time to time. This session will share a bit of the lessons learned and how to work with it.",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Cloud Foundry, Kyma, Kubernetes, Knative - What do I need?!",
-				"speaker":"Max Streifeneder",
-				"description":"Containers are no longer buzzwords, they are reality and part of most development activities today. Let's take a quick look at the differences, the advantages and disadvantages and see what SAP has to offer in this context. ",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "SAP Security",
-				"speaker":"Joris Van De Vis & Kris Wauters",
-				"description":"Joris and Kris have uncovered yet a whole new load of SAP security issues that could seriously endanger your business operations. This is the stuff of nightmares.",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Safety First",
-				"speaker":"Tom Van Doorslaer",
-				"description":"I'm a complete dummy when it comes to security, but apparently there are even bigger dummies. I won't teach you how to hack, because I have no idea myself. Instead, I'll show you how best intentions can lead to catastrophes.\n\nThis session will make you laugh, cry and feel embarassed about the silly way your IT landscape could be at risk. Promise me you'll never make such mistakes yourself.",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Building a Trello Timesheet MTA on Cloud Foundry",
-				"speaker":"Dries Van Vaerenbergh",
-				"description":"Over the years the Trello application is a tool I’ve seen a lot of times. This combined with a customer that wants you to maintain your timesheet and an extra excel drove me crazy. This excel file had to contain the spent hours on a Trello card and all the details. But building an SAP Multi Target Application running on Cloud Foundry brought me relief. One single application to maintain your timesheet combined with the Trello cards (data) via the Trello API’s. No more timesheet and excel files to maintain. Happy Developers === Happy Customers 😎",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Using the SAP Business Application Studio for UI development",
-				"speaker":"Marius Obert",
-				"description":"The SAP Business Application Studio, or short: App Studio, is the next generation of SAP's web-based development environment. The new architecture offers a new degree of freedom to the developer by adding support for VS Code plugins and access to a full-fledged terminal. In this session, Marius will show how the new App Studio simplifies UI development and why it is more than just a Web IDE 2.0.",
-				"startdate":"2020-05-09T08:00:00.000Z",
-				"enddate":"2020-05-09T09:00:00.000Z",
-				"links":[
-				]
-			},{
-				"name": "Wrap-up, Reception and book Lottery",
-				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-				"description": "As usual, we'll be giving away free SAP press books. Don't worry, they are wrapped in sterile plastic and properly quarantained.",
-				"startdate":"2020-05-09T14:00:00Z",
-				"enddate":"2020-05-09T15:30:00Z",
-				"links":[
-					{ "url":"./images/books.jpg"}
-				]
-			}],
+				{
+					"name": "Keynote",
+					"speaker": "Wouter Lemaire & Tom Van Doorslaer",
+					"description": "",
+					"startdate": "2020-05-09T07:30:00.000Z",
+					"enddate": "2020-05-09T08:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "FaceRecognition with SCP",
+					"speaker": "Wouter Lemaire",
+					"description": "Over the years you get to know more and more people and of course you always like to greet them by name. From time to time it can happen that you can’t remember the name of someone you know… which can be awkward.\nThe same thing happens to me too, more and more lately… To avoid awkward situations, I’ve been thinking about a solution for this. I’ve started with an app to store all the people I know together with a picture. This should help me to find the name of someone I already knew. I would still need to search in the list, which is not easy when it becomes a big list and you don’t remember the name…\nI needed to add something to the app that could provide me the name of a person by just taking a picture. This way, I don’t need to search through a big list and don’t have to know the name.\nThis is where I came up with the Face Recognition app! In this session I will show how this app works and how you can do face recognition with SCP yourself!",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "Cloud: The Final Frontier",
+					"speaker": "Christian Drumm",
+					"description": "Cloud: the final frontier. These are the endeavors of an ABAP developer. Its mission: to explore strange new cloud worlds. To seek out new platform and new programming models. To boldly go where no ABAP developer has gone before! ",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "Write more solid state code with functional programming techniques",
+					"description": "Functional programming techniques can help you write code that is less prone to bugs, because it has a smaller surface area and follows principles that mean that the code \"doesn't move\" - it just \"is\". This session will give you an introduction to some of the fundamentals using JavaScript as the carrier language.",
+					"speaker": "DJ Adams",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "Performance Measurement and Benchmarking of Custom Code in SAP Cloud Platform Integration",
+					"speaker": "Vadim Klimov",
+					"description": "The session will showcase some techniques and tools that can be utilized when measuring performance of custom code that is embedded in integration scenarios deployed to SAP Cloud Platform Integration. In particular, we will start from a bird's eye view on performance measurement using stopwatch benchmarking, and then will put it under the microscope and detail to a level of microbenchmarking.",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "SAP Community at its best",
+					"speaker": "Svea Becker",
+					"description": "Everyone is somehow involved in a community e.g. a sports club, neighborhood, a fan club, etc. Why are you part of these communities? The SAP Community offers a wide range of involvement and engagement opportunities. What are the similarities to your private communities? Join this session and find out what the SAP Community is, how to get part of it and how to actively contribute. After all, bringing people together is what community is all about.",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "CAP and Cloud SDK at work",
+					"speaker": "Vincent Weiss",
+					"description": "Since August 2019 I have been working with CAP to build Applications and APIs and also leveraging the Cloud SDK from time to time. This session will share a bit of the lessons learned and how to work with it.",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "Cloud Foundry, Kyma, Kubernetes, Knative - What do I need?!",
+					"speaker": "Max Streifeneder",
+					"description": "Containers are no longer buzzwords, they are reality and part of most development activities today. Let's take a quick look at the differences, the advantages and disadvantages and see what SAP has to offer in this context. ",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "SAP Security",
+					"speaker": "Joris Van De Vis & Kris Wauters",
+					"description": "Joris and Kris have uncovered yet a whole new load of SAP security issues that could seriously endanger your business operations. This is the stuff of nightmares.",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "Safety First",
+					"speaker": "Tom Van Doorslaer",
+					"description": "I'm a complete dummy when it comes to security, but apparently there are even bigger dummies. I won't teach you how to hack, because I have no idea myself. Instead, I'll show you how best intentions can lead to catastrophes.\n\nThis session will make you laugh, cry and feel embarassed about the silly way your IT landscape could be at risk. Promise me you'll never make such mistakes yourself.",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "Building a Trello Timesheet MTA on Cloud Foundry",
+					"speaker": "Dries Van Vaerenbergh",
+					"description": "Over the years the Trello application is a tool I’ve seen a lot of times. This combined with a customer that wants you to maintain your timesheet and an extra excel drove me crazy. This excel file had to contain the spent hours on a Trello card and all the details. But building an SAP Multi Target Application running on Cloud Foundry brought me relief. One single application to maintain your timesheet combined with the Trello cards (data) via the Trello API’s. No more timesheet and excel files to maintain. Happy Developers === Happy Customers 😎",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "Using the SAP Business Application Studio for UI development",
+					"speaker": "Marius Obert",
+					"description": "The SAP Business Application Studio, or short: App Studio, is the next generation of SAP's web-based development environment. The new architecture offers a new degree of freedom to the developer by adding support for VS Code plugins and access to a full-fledged terminal. In this session, Marius will show how the new App Studio simplifies UI development and why it is more than just a Web IDE 2.0.",
+					"startdate": "2020-05-09T08:00:00.000Z",
+					"enddate": "2020-05-09T09:00:00.000Z",
+					"links": []
+				},
+				{
+					"name": "Wrap-up, Reception and book Lottery",
+					"speaker": "Wouter Lemaire & Tom Van Doorslaer",
+					"description": "As usual, we'll be giving away free SAP press books. Don't worry, they are wrapped in sterile plastic and properly quarantained.",
+					"startdate": "2020-05-09T14:00:00Z",
+					"enddate": "2020-05-09T15:30:00Z",
+					"links": [
+						{
+							"url": "./images/books.jpg"
+						}
+					]
+				}
+			],
 			"location": {
 				"name": "Flexso Nv",
 				"street": "Veldkant 33/A",
 				"city": "2550 Kontich",
 				"country": "Belgium",
-				"mapUrl":"<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+				"mapUrl": "<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
 			},
 			"host": {
 				"name": "Flexso",
 				"logo": "./images/flexso.png"
 			},
-			"sponsors": [{
-				"name": "SAP Mentors",
-				"logo": "./images/mentors.png"
-			}, {
-				"name": "SAP Community",
-				"logo": "./images/SAPCommunity.png"
-			}, {
-				"name": "Fiddle Consulting",
-				"logo": "./images/fiddle.png"
-			}],
+			"sponsors": [
+				{
+					"name": "SAP Mentors",
+					"logo": "./images/mentors.png"
+				},
+				{
+					"name": "SAP Community",
+					"logo": "./images/SAPCommunity.png"
+				},
+				{
+					"name": "Fiddle Consulting",
+					"logo": "./images/fiddle.png"
+				}
+			],
 			"participants": [],
 			"address": []
 		}
-	},{
-		"year":"2019",
-		"data":{
-			"date":"2019-05-18T07:30:00.000Z",
-			"eventId":"59",
-			"agenda":true,
-			"submissions":false,
+	},
+	{
+		"year": "2019",
+		"data": {
+			"date": "2019-05-18T07:30:00.000Z",
+			"eventId": "59",
+			"agenda": true,
+			"submissions": false,
 			"sessions": [
-			{
-				"name": "Keynote",
-				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-				"startdate":"2019-05-18T07:30:00.000Z",
-				"enddate":"2019-05-18T08:00:00.000Z",
-				"links":[
-					{ "url":"./presentations/Keynote.pdf"}
-				]
-			},{
-				"name":"Cloud qualities out-of-the-box: Development and continuous delivery of high-quality enterprise apps on SAP Cloud Platform",
-				"speaker":"Marco Dahms (SAP)",
-				"description":"While running enterprise software in the cloud, we can decouple its lifecycle from that of the legacy enterprise systems maintained by the IT organizations residing on-premise. While the IT department is usually reluctant to enhance the functional scope of their legacy enterprise applications in order to reduce the risk of outages, we can provide new innovations to the business in a faster pace through the SAP Cloud Platform. The development of such cloud extensions shall be quick and efficient and lead to applications that meet high quality standards. In addition, business expects to receive new innovations instantly and frequently. To fulfill both expectations at the same time, you may use the S/4HANA Cloud SDK and its open-source Continuous Delivery Toolkit provided by SAP. In this talk, we will outline how this SDK simplifies the development process and helps to integrate new cloud solutions with legacy enterprise systems. We will also present a pre-configured, out-of-the-box delivery pipeline that requires minimal setup effort and ensures that the delivered software fulfills the expected quality criteria.",
-				"startdate":"2019-05-18T08:00:00.000Z",
-				"enddate":"2019-05-18T08:50:00.000Z",
-				"links":[
-					{ "url":"./presentations/Development%20%26%20Delivery%20of%20Enterprise%20Cloud%20Apps%20with%20SAP%20Cloud%20SDK.pdf"}
-				]
-			},{
-				"name": "Hack the system",
-				"speaker": "Joris Van De Vis",
-				"description": "Ever wondered how secure your SAP systems are? They're not.",
-				"startdate":"2019-05-18T09:00:00.000Z",
-				"enddate":"2019-05-18T09:50:00.000Z",
-				"links":[
-					{ "url":""}
-				]
-			},{
-				"name":"The Future of ABAP Programming",
-				"speaker":"Paul Hardy",
-				"description":"All that you know is at an end. This is in regard to both version management - CTS => abapGit and even the very nature of ABAP programming \"the so called RESTful ABAP programming model\" which SAP are working on. I am on the inside of both initiatives and want to share with you all the non-secret things I can...",
-				"startdate":"2019-05-18T09:00:00.000Z",
-				"enddate":"2019-05-18T09:50:00.000Z",
-				"links":[
-					{ "url":"./presentations/FutureOfAbap.pdf"}
-				]
-			},{
-				"name":"Lunch",
-				"startdate":"2019-05-18T10:00:00.000Z",
-				"enddate":"2019-05-18T11:00:00.000Z"
-			},{
-				"name":"Hitchhikers Guide to the Legacy",
-				"speaker":"Laurens van Rijn",
-				"description":"Handling legacy code",
-				"startdate":"2019-05-18T11:00:00.000Z",
-				"enddate":"2019-05-18T11:50:00.000Z",
-				"links":[
-					{ "url":"/presentations/sitBRU%20-%20HHGttLegacy.ppsx"}
-				]
-			},{
-				"name": "I Have Issues",
-				"speaker": "Tom Van Doorslaer",
-				"description": "You have issues, I have issues, we all have issues. But how can you keep track of these issues and manage your modern UI5 project?",
-				"startdate":"2019-05-18T11:00:00Z",
-				"enddate":"2019-05-18T11:50:00Z",
-				"links":[
-					{ "url":"./presentations/issues.pdf"},
-					{"url":"https://gitlab.com/fiddlebe"}
-				]
-			},{
-				"name":"Domain-driven design, ABAP and SAP Cloud Platform",
-				"speaker":"Tudor Riscutia",
-				"description":"Introduction to DDD: a bit of theory as well as how to apply these ideas in your day to day work as an SAP developer working on ABAP or SAP Cloud Platform.",
-				"startdate":"2019-05-18T12:00:00Z",
-				"enddate":"2019-05-18T12:50:00Z",
-				"links":[
-					{ "url":""}
-				]
-			},{
-				"name":"Troubleshooting and debugging Node.js applications in SAP Cloud Platform Cloud Foundry",
-				"speaker":"Vadim Klimov",
-				"description":"The session will cover some practical hints and tips about increasing productivity of troubleshooting and particularly debugging Node.js applications that are deployed to SAP Cloud Platform Cloud Foundry. We will use classic options that require pausing application execution, as well as will see how verbose logging output can be collected dynamically for an application that is already running in debug mode. We will also apply described techniques to Node.js applications that involve source code transpiling - such as Node.js applications developed in TypeScript.",
-				"startdate":"2019-05-18T12:00:00Z",
-				"enddate":"2019-05-18T12:50:00Z",
-				"links":[
-					{ "url":""}
-				]
-			},{
-				"name": "Hunting Zombies the SCP-Way",
-				"speaker": "Christian Drumm",
-				"description": "In my session I'll show how the SCP can be used to survive in a world after the zombie apocalypse.",
-				"startdate":"2019-05-18T13:00:00Z",
-				"enddate":"2019-05-18T13:50:00Z",
-				"links":[
-					{ "url":"https://blogs.sap.com/2018/12/04/hunting-zombies-the-scp-way/"}
-				]
-			},{
-				"name": "Smart Coffee Machine – SAP Leonardo IoT Service",
-				"speaker": "Dries Van Vaerenbergh & Wouter Lemaire",
-				"description": "If you like to blow stuff up, this session really is for you. Come join us to learn how we gave a coffee machine some intelligence, and then blew it up.",
-				"startdate":"2019-05-18T13:00:00Z",
-				"enddate":"2019-05-18T13:50:00Z",
-				"links":[
-					{ "url":""}
-				]
-			},{
-				"name": "Wrap-up, Reception and book Lottery",
-				"speaker":"Wouter Lemaire & Tom Van Doorslaer",
-				"description": "",
-				"startdate":"2019-05-18T14:00:00Z",
-				"enddate":"2019-05-18T15:30:00Z",
-				"links":[
-					{ "url":"./presentations/Wrapup.pdf"}
-				]
-			},{
-				"name": "Dinner",
-				"speaker": "",
-				"description": "",
-				"startdate":"2019-05-18T17:00:00Z",
-				"enddate":"2019-05-18T21:30:00Z"
-			}],
+				{
+					"name": "Keynote",
+					"speaker": "Wouter Lemaire & Tom Van Doorslaer",
+					"startdate": "2019-05-18T07:30:00.000Z",
+					"enddate": "2019-05-18T08:00:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/Keynote.pdf"
+						}
+					]
+				},
+				{
+					"name": "Cloud qualities out-of-the-box: Development and continuous delivery of high-quality enterprise apps on SAP Cloud Platform",
+					"speaker": "Marco Dahms (SAP)",
+					"description": "While running enterprise software in the cloud, we can decouple its lifecycle from that of the legacy enterprise systems maintained by the IT organizations residing on-premise. While the IT department is usually reluctant to enhance the functional scope of their legacy enterprise applications in order to reduce the risk of outages, we can provide new innovations to the business in a faster pace through the SAP Cloud Platform. The development of such cloud extensions shall be quick and efficient and lead to applications that meet high quality standards. In addition, business expects to receive new innovations instantly and frequently. To fulfill both expectations at the same time, you may use the S/4HANA Cloud SDK and its open-source Continuous Delivery Toolkit provided by SAP. In this talk, we will outline how this SDK simplifies the development process and helps to integrate new cloud solutions with legacy enterprise systems. We will also present a pre-configured, out-of-the-box delivery pipeline that requires minimal setup effort and ensures that the delivered software fulfills the expected quality criteria.",
+					"startdate": "2019-05-18T08:00:00.000Z",
+					"enddate": "2019-05-18T08:50:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/Development%20%26%20Delivery%20of%20Enterprise%20Cloud%20Apps%20with%20SAP%20Cloud%20SDK.pdf"
+						}
+					]
+				},
+				{
+					"name": "Hack the system",
+					"speaker": "Joris Van De Vis",
+					"description": "Ever wondered how secure your SAP systems are? They're not.",
+					"startdate": "2019-05-18T09:00:00.000Z",
+					"enddate": "2019-05-18T09:50:00.000Z",
+					"links": [
+						{
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "The Future of ABAP Programming",
+					"speaker": "Paul Hardy",
+					"description": "All that you know is at an end. This is in regard to both version management - CTS => abapGit and even the very nature of ABAP programming \"the so called RESTful ABAP programming model\" which SAP are working on. I am on the inside of both initiatives and want to share with you all the non-secret things I can...",
+					"startdate": "2019-05-18T09:00:00.000Z",
+					"enddate": "2019-05-18T09:50:00.000Z",
+					"links": [
+						{
+							"url": "./presentations/FutureOfAbap.pdf"
+						}
+					]
+				},
+				{
+					"name": "Lunch",
+					"startdate": "2019-05-18T10:00:00.000Z",
+					"enddate": "2019-05-18T11:00:00.000Z"
+				},
+				{
+					"name": "Hitchhikers Guide to the Legacy",
+					"speaker": "Laurens van Rijn",
+					"description": "Handling legacy code",
+					"startdate": "2019-05-18T11:00:00.000Z",
+					"enddate": "2019-05-18T11:50:00.000Z",
+					"links": [
+						{
+							"url": "/presentations/sitBRU%20-%20HHGttLegacy.ppsx"
+						}
+					]
+				},
+				{
+					"name": "I Have Issues",
+					"speaker": "Tom Van Doorslaer",
+					"description": "You have issues, I have issues, we all have issues. But how can you keep track of these issues and manage your modern UI5 project?",
+					"startdate": "2019-05-18T11:00:00Z",
+					"enddate": "2019-05-18T11:50:00Z",
+					"links": [
+						{
+							"url": "./presentations/issues.pdf"
+						},
+						{
+							"url": "https://gitlab.com/fiddlebe"
+						}
+					]
+				},
+				{
+					"name": "Domain-driven design, ABAP and SAP Cloud Platform",
+					"speaker": "Tudor Riscutia",
+					"description": "Introduction to DDD: a bit of theory as well as how to apply these ideas in your day to day work as an SAP developer working on ABAP or SAP Cloud Platform.",
+					"startdate": "2019-05-18T12:00:00Z",
+					"enddate": "2019-05-18T12:50:00Z",
+					"links": [
+						{
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "Troubleshooting and debugging Node.js applications in SAP Cloud Platform Cloud Foundry",
+					"speaker": "Vadim Klimov",
+					"description": "The session will cover some practical hints and tips about increasing productivity of troubleshooting and particularly debugging Node.js applications that are deployed to SAP Cloud Platform Cloud Foundry. We will use classic options that require pausing application execution, as well as will see how verbose logging output can be collected dynamically for an application that is already running in debug mode. We will also apply described techniques to Node.js applications that involve source code transpiling - such as Node.js applications developed in TypeScript.",
+					"startdate": "2019-05-18T12:00:00Z",
+					"enddate": "2019-05-18T12:50:00Z",
+					"links": [
+						{
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "Hunting Zombies the SCP-Way",
+					"speaker": "Christian Drumm",
+					"description": "In my session I'll show how the SCP can be used to survive in a world after the zombie apocalypse.",
+					"startdate": "2019-05-18T13:00:00Z",
+					"enddate": "2019-05-18T13:50:00Z",
+					"links": [
+						{
+							"url": "https://blogs.sap.com/2018/12/04/hunting-zombies-the-scp-way/"
+						}
+					]
+				},
+				{
+					"name": "Smart Coffee Machine – SAP Leonardo IoT Service",
+					"speaker": "Dries Van Vaerenbergh & Wouter Lemaire",
+					"description": "If you like to blow stuff up, this session really is for you. Come join us to learn how we gave a coffee machine some intelligence, and then blew it up.",
+					"startdate": "2019-05-18T13:00:00Z",
+					"enddate": "2019-05-18T13:50:00Z",
+					"links": [
+						{
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "Wrap-up, Reception and book Lottery",
+					"speaker": "Wouter Lemaire & Tom Van Doorslaer",
+					"description": "",
+					"startdate": "2019-05-18T14:00:00Z",
+					"enddate": "2019-05-18T15:30:00Z",
+					"links": [
+						{
+							"url": "./presentations/Wrapup.pdf"
+						}
+					]
+				},
+				{
+					"name": "Dinner",
+					"speaker": "",
+					"description": "",
+					"startdate": "2019-05-18T17:00:00Z",
+					"enddate": "2019-05-18T21:30:00Z"
+				}
+			],
 			"location": {
 				"name": "Flexso Nv",
 				"street": "Veldkant 33/A",
 				"city": "2550 Kontich",
 				"country": "Belgium",
-				"mapUrl":"<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+				"mapUrl": "<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10012.652284747743!2d4.4422205!3d51.1423439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ea2f56487a3e382!2sFlexso+Nv!5e0!3m2!1snl!2sde!4v1547229769390' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
 			},
 			"host": {
 				"name": "Flexso",
 				"logo": "./images/flexso.png"
 			},
-			"sponsors": [{
-				"name": "SAP Mentors",
-				"logo": "./images/mentors.png"
-			}, {
-				"name": "SAP Community",
-				"logo": "./images/SAPCommunity.png"
-			}, {
-				"name": "Espresso Tutorials",
-				"logo": "./images/ET.jpg"
-			}, {
-				"name": "Fiddle Consulting",
-				"logo": "./images/fiddle.png"
-			}],
+			"sponsors": [
+				{
+					"name": "SAP Mentors",
+					"logo": "./images/mentors.png"
+				},
+				{
+					"name": "SAP Community",
+					"logo": "./images/SAPCommunity.png"
+				},
+				{
+					"name": "Espresso Tutorials",
+					"logo": "./images/ET.jpg"
+				},
+				{
+					"name": "Fiddle Consulting",
+					"logo": "./images/fiddle.png"
+				}
+			],
 			"participants": [],
 			"address": []
 		}
