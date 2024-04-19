@@ -5,8 +5,8 @@
 			"date": "2024-09-21T07:30:00.000Z",
 			"eventId": "undefined",
 			"subscriptionLink": "https://groups.community.sap.com/t5/sap-insidetrack/sap-inside-track-belgium-2023/ec-p/255411#M40",
-			"agenda": true,
-			"submissions": true,
+			"agenda": false,
+			"submissions": false,
 			"announcements": [
 				{
 					"title": "SAP Inside Track Belgium 2024",

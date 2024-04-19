@@ -138,5 +138,5 @@ module.exports = function(grunt) {
     grunt.registerTask("lint", [ "eslint" ]);
 
     // deploy task
-    grunt.registerTask("deploy", [ "clean", "eslint", "jsdoc", "openui5_preload",  "copy", "ftp_push" ]);
+    grunt.registerTask("deploy", [ "clean", "eslint", "openui5_preload",  "copy", "ftp_push" ]);
 };
