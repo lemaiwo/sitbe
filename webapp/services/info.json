@@ -6,7 +6,7 @@
 			"eventId": "undefined",
 			"subscriptionLink": "https://community.sap.com/t5/sap-inside-track/sap-inside-track-belgium-2024/ec-p/13676523#M163",
 			"agenda": false,
-			"submissions": false,
+			"submissions": true,
 			"announcements": [
 				{
 					"title": "SAP Inside Track Belgium 2024",
