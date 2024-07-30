@@ -63,6 +63,14 @@
 					"links": []
 				},
 				{
+					"name": "Business Technology Platform as a foundation for multitenant (partner) solutions",
+					"speaker": "Geert-Jan Klaps",
+					"description": "In the first part of this session, I'll give you an overview of the different runtimes available in SAP Business Technology Platform and their advantages / disadvantages when it comes to building multitenant solutions.\nIn the second part of this session, we'll dive into the architecture and used services of a real-life example of a multitenant solution ""Partner Portal"" by TheValueChain.",
+					"startdate": "2023-09-23T07:15:00Z",
+					"enddate": "2023-09-23T08:00:00Z",
+					"links": []
+				},
+				{
 					"name": "Simplifying UI5 Control Development",
 					"speaker": "Jérémy Coppey & Wouter Lemaire",
 					"description": "Controls are one of the most important aspects of the UI5 framework, making it crucial to understand how and when to create your own UI5 controls. Creating UI5 controls can be quite intensive, particularly when writing HTML using the UI5 renderer API. In this session, I'll demonstrate how to simplify this process using my UI5 Control Generator, which makes it super easy to create UI5 controls.\nAdditionally, I will clarify the different options available for creating a UI5 control and when to use each option, whether it be a UI5 Control or a UI5 Web Component. I'll explain the advantages and disadvantages of each option, comparing them based on reusability, UX strategy, company policy, and performance.",
