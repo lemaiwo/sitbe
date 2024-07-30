@@ -65,7 +65,7 @@
 				{
 					"name": "Business Technology Platform as a foundation for multitenant (partner) solutions",
 					"speaker": "Geert-Jan Klaps",
-					"description": "In the first part of this session, I'll give you an overview of the different runtimes available in SAP Business Technology Platform and their advantages / disadvantages when it comes to building multitenant solutions.\nIn the second part of this session, we'll dive into the architecture and used services of a real-life example of a multitenant solution ""Partner Portal"" by TheValueChain.",
+					"description": "In the first part of this session, I'll give you an overview of the different runtimes available in SAP Business Technology Platform and their advantages / disadvantages when it comes to building multitenant solutions.\nIn the second part of this session, we'll dive into the architecture and used services of a real-life example of a multitenant solution \"Partner Portal\" by TheValueChain.",
 					"startdate": "2023-09-23T07:15:00Z",
 					"enddate": "2023-09-23T08:00:00Z",
 					"links": []
