@@ -34,15 +34,15 @@
 					"name": "Developer experience in SAP Cloud Integration: An alternative perspective",
 					"speaker": "Vadim Klimov",
 					"description": "In this session, we will explore some unconventional techniques and tools to support integration developers working with SAP Cloud Integration. To infuse a sense of old school, we will set aside popular browsers, code editors and IDEs, focusing instead on something distinctly different. These techniques will bring experience with SAP Cloud Integration to developers' fingertips in the most literal sense, not just figuratively. As a word of caution, be prepared for some nerd stuff.",
-					"startdate": "2024-09-21T07:30:00Z",
-					"enddate": "2024-09-21T08:10:00Z",
+					"startdate": "2024-09-21T07:35:00Z",
+					"enddate": "2024-09-21T08:15:00Z",
 					"links": []
 				},
 				{
 					"name": "Navigating the Tree: Unleashing Hierarchical Data in Fiori",
 					"speaker": "Yor Rombaut, Fouad Walravens-Hjiyer, Stijn Puttemans",
 					"description": "We will explore the possibilities offered by tree tables and analytical apps. We'll dissect the components that make up these applications, from back-end custom coding to front-end tree table interactions. Along the way, we'll compare Odata V2 with V4, covering essential aspects like searching, filtering, sorting, and editing. A live demo will showcase both back-end and front-end magic. Finally, we will share insights into the future of this technology.",
-					"startdate": "2024-09-21T08:25:00Z",
+					"startdate": "2024-09-21T08:30:00Z",
 					"enddate": "2024-09-21T09:05:00Z",
 					"links": []
 				},
@@ -50,8 +50,8 @@
 					"name": "UI5 Spreadsheet Importer V1 Release",
 					"speaker": "Marian Zeis",
 					"description": "The UI5 Spreadsheet Importer has finally reached version 1 after a long beta phase.\nIn this session we will briefly describe the path of the last 2 years and how it went thanks to open source.\nWe will also show the latest features that have been added in the last few months.",
-					"startdate": "2024-09-21T09:10:00Z",
-					"enddate": "2024-09-21T09:50:00Z",
+					"startdate": "2024-09-21T09:15:00Z",
+					"enddate": "2024-09-21T09:55:00Z",
 					"links": []
 				},
 				{
