@@ -5,7 +5,7 @@
 			"date": "2024-09-21T07:30:00.000Z",
 			"eventId": "undefined",
 			"subscriptionLink": "https://community.sap.com/t5/sap-inside-track/sap-inside-track-belgium-2024/ec-p/13676523#M163",
-			"agenda": false,
+			"agenda": true,
 			"submissions": true,
 			"announcements": [
 				{
@@ -15,67 +15,91 @@
 			],
 			"sessions": [
 				{
+					"name": "Welcome",
+					"speaker": "",
+					"description": "Breakfast!",
+					"startdate": "2024-09-21T06:00:00Z",
+					"enddate": "2024-09-21T07:15:00Z",
+					"links": []
+				},
+				{
+					"name": "Keynote",
+					"speaker": "SITBE Team",
+					"description": "Welcome back to our Yearly SITBE!",
+					"startdate": "2023-09-21T07:15:00Z",
+					"enddate": "2023-09-21T07:30:00Z",
+					"links": []
+				},
+				{
 					"name": "Developer experience in SAP Cloud Integration: An alternative perspective",
 					"speaker": "Vadim Klimov",
 					"description": "In this session, we will explore some unconventional techniques and tools to support integration developers working with SAP Cloud Integration. To infuse a sense of old school, we will set aside popular browsers, code editors and IDEs, focusing instead on something distinctly different. These techniques will bring experience with SAP Cloud Integration to developers' fingertips in the most literal sense, not just figuratively. As a word of caution, be prepared for some nerd stuff.",
-					"startdate": "2023-09-23T07:15:00Z",
-					"enddate": "2023-09-23T08:00:00Z",
-					"links": []
-				},
-				{
-					"name": "Extending SAP S/4HANA with  blockchain through SAP BTP",
-					"speaker": "Stijn Mertens",
-					"description": "What is blockchain; What are the use cases for blockchain; How dit we use it in combination with SAP; Explaining blockchain technology",
-					"startdate": "2023-09-23T07:15:00Z",
-					"enddate": "2023-09-23T08:00:00Z",
-					"links": []
-				},
-				{
-					"name": "UI5 Spreadsheet Importer V1 Release",
-					"speaker": "Marian Zeis",
-					"description": "The UI5 Spreadsheet Importer has finally reached version 1 after a long beta phase.\nIn this session we will briefly describe the path of the last 2 years and how it went thanks to open source.\nWe will also show the latest features that have been added in the last few months.",
-					"startdate": "2023-09-23T07:15:00Z",
-					"enddate": "2023-09-23T08:00:00Z",
+					"startdate": "2023-09-21T07:30:00Z",
+					"enddate": "2023-09-21T08:10:00Z",
 					"links": []
 				},
 				{
 					"name": "Navigating the Tree: Unleashing Hierarchical Data in Fiori",
 					"speaker": "Yor Rombaut, Fouad Walravens-Hjiyer, Stijn Puttemans",
 					"description": "We will explore the possibilities offered by tree tables and analytical apps. We'll dissect the components that make up these applications, from back-end custom coding to front-end tree table interactions. Along the way, we'll compare Odata V2 with V4, covering essential aspects like searching, filtering, sorting, and editing. A live demo will showcase both back-end and front-end magic. Finally, we will share insights into the future of this technology.",
-					"startdate": "2023-09-23T07:15:00Z",
-					"enddate": "2023-09-23T08:00:00Z",
+					"startdate": "2023-09-21T08:25:00Z",
+					"enddate": "2023-09-21T09:05:00Z",
 					"links": []
 				},
 				{
-					"name": "Getting started with TypeScript in CAP workshop",
-					"speaker": "Matthias Cobbaut",
-					"description": "During this session we'll start a new sample CAP project with TypeScript in which we'll: - Add automatic type generation using @cap-js/cds-typer - Add a TypeScript Fiori Elements app - Add a local launchpad for testing our app using the cds-launchpad-plugin The session is aimed at developers with little to no experience with CAP or CAP developers who are interested in setting their first steps in using TypeScript.",
-					"startdate": "2023-09-23T07:15:00Z",
-					"enddate": "2023-09-23T08:00:00Z",
+					"name": "UI5 Spreadsheet Importer V1 Release",
+					"speaker": "Marian Zeis",
+					"description": "The UI5 Spreadsheet Importer has finally reached version 1 after a long beta phase.\nIn this session we will briefly describe the path of the last 2 years and how it went thanks to open source.\nWe will also show the latest features that have been added in the last few months.",
+					"startdate": "2023-09-21T09:10:00Z",
+					"enddate": "2023-09-21T09:50:00Z",
 					"links": []
 				},
 				{
-					"name": "CAP Advanced programming model plugin",
-					"speaker": "Dries Van Vaerenbergh & Wouter Lemaire",
-					"description": "Still looking for a way to organize & structure your CAP-projects in a scalable and reusable way? Search no more! In this session we will demonstrate to you how our CAP Advanced programming model will make your CAP-project future and maintainable proof! Mashing up with Remote Services has never been easier. Through a live coding example will try to convince you to start using this setup by mashing up multiple remote services, so it may significantly speed up your CAP-developments! Convinced? Or not? What if we told you that the CAP Advanced programming model plugin is waiting to be discovered by you at our session. A whole setup contained in a single NPM package is waiting for you! On top of that, we'll share insights on how this CAP plugin works. It might inspire you to build your own CAP plugin. We hope to see you there to ease your future CAP developments and to gain some feedback to improve the plugin where possible.",
-					"startdate": "2023-09-23T07:15:00Z",
-					"enddate": "2023-09-23T08:00:00Z",
+					"name": "SAP Build & Fusion Development",
+					"speaker": "Jana de Klerk",
+					"description": "SAP Build & fusion development. A lot of things have been written about it, mostly about combining citizen developers with pro-code developers. But the more interesting part is combining the Low-Code No-Code possibilities of SAP Build together with SAP Build Code. Let's take a look at the new possibilities and how to combine forces!",
+					"startdate": "2023-09-21T11:00:00Z",
+					"enddate": "2023-09-21T11:40:00Z",
 					"links": []
 				},
 				{
 					"name": "Business Technology Platform as a foundation for multitenant (partner) solutions",
 					"speaker": "Geert-Jan Klaps",
 					"description": "In the first part of this session, I'll give you an overview of the different runtimes available in SAP Business Technology Platform and their advantages / disadvantages when it comes to building multitenant solutions.\nIn the second part of this session, we'll dive into the architecture and used services of a real-life example of a multitenant solution \"Partner Portal\" by TheValueChain.",
-					"startdate": "2023-09-23T07:15:00Z",
-					"enddate": "2023-09-23T08:00:00Z",
+					"startdate": "2023-09-21T11:45:00Z",
+					"enddate": "2023-09-21T12:25:00Z",
 					"links": []
 				},
 				{
-					"name": "Simplifying UI5 Control Development",
-					"speaker": "Jérémy Coppey & Wouter Lemaire",
-					"description": "Controls are one of the most important aspects of the UI5 framework, making it crucial to understand how and when to create your own UI5 controls. Creating UI5 controls can be quite intensive, particularly when writing HTML using the UI5 renderer API. In this session, I'll demonstrate how to simplify this process using my UI5 Control Generator, which makes it super easy to create UI5 controls.\nAdditionally, I will clarify the different options available for creating a UI5 control and when to use each option, whether it be a UI5 Control or a UI5 Web Component. I'll explain the advantages and disadvantages of each option, comparing them based on reusability, UX strategy, company policy, and performance.",
-					"startdate": "2023-09-23T07:15:00Z",
-					"enddate": "2023-09-23T08:00:00Z",
+					"name": "Getting started with TypeScript in CAP workshop",
+					"speaker": "Matthias Cobbaut",
+					"description": "During this session we'll start a new sample CAP project with TypeScript in which we'll: - Add automatic type generation using @cap-js/cds-typer - Add a TypeScript Fiori Elements app - Add a local launchpad for testing our app using the cds-launchpad-plugin The session is aimed at developers with little to no experience with CAP or CAP developers who are interested in setting their first steps in using TypeScript.",
+					"startdate": "2023-09-21T11:00:00Z",
+					"enddate": "2023-09-21T12:25:00Z",
+					"links": []
+				},
+				{
+					"name": "Extending SAP S/4HANA with  blockchain through SAP BTP",
+					"speaker": "Stijn Mertens",
+					"description": "What is blockchain; What are the use cases for blockchain; How dit we use it in combination with SAP; Explaining blockchain technology",
+					"startdate": "2023-09-21T12:45:00Z",
+					"enddate": "2023-09-21T13:25:00Z",
+					"links": []
+				},
+				{
+					"name": "Wrap-up",
+					"speaker": "SITBE Team",
+					"description": "",
+					"startdate": "2023-09-23T13:30:00Z",
+					"enddate": "2023-09-23T14:00:00Z",
+					"links": []
+				},
+				{
+					"name": "Drinks",
+					"speaker": "Everyone",
+					"description": "",
+					"startdate": "2023-09-23T14:00:00Z",
+					"enddate": "2023-09-23T15:00:00Z",
 					"links": []
 				}
 			],
