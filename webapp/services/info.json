@@ -40,7 +40,7 @@
 				},
 				{
 					"name": "Navigating the Tree: Unleashing Hierarchical Data in Fiori",
-					"speaker": "Yor Rombaut, Fouad Walravens-Hjiyer, Stijn Puttemans",
+					"speaker": "Yor Rombaut, Fouad Walravens-Hjiyer & Stijn Puttemans",
 					"description": "We will explore the possibilities offered by tree tables and analytical apps. We'll dissect the components that make up these applications, from back-end custom coding to front-end tree table interactions. Along the way, we'll compare Odata V2 with V4, covering essential aspects like searching, filtering, sorting, and editing. A live demo will showcase both back-end and front-end magic. Finally, we will share insights into the future of this technology.",
 					"startdate": "2024-09-21T08:30:00Z",
 					"enddate": "2024-09-21T09:10:00Z",
@@ -80,8 +80,8 @@
 				},
 				{
 					"name": "Extending SAP S/4HANA with  blockchain through SAP BTP",
-					"speaker": "Stijn Mertens",
-					"description": "What is blockchain; What are the use cases for blockchain; How dit we use it in combination with SAP; Explaining blockchain technology",
+					"speaker": "Cas De Brouwer & Matthis Vansteenhuyse",
+					"description": "What is blockchain; What are the use cases for blockchain; How did we use it in combination with SAP; Explaining blockchain technology",
 					"startdate": "2024-09-21T12:45:00Z",
 					"enddate": "2024-09-21T13:25:00Z",
 					"links": []
