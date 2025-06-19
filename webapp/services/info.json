@@ -12,6 +12,14 @@
 				{
 					"title": "SAP Inside Track Belgium 2025",
 					"content": "Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of Amista in Mechelen.\nSessions will run until 16:00 CET, followed by a wrap up and a drink."
+				},
+				{
+					"title": "Call for speakers open",
+					"content":"We are currently accepting session proposals at: https://community.sap.com/t5/brussels-blog-posts/call-for-speakers-sap-inside-track-belgium-2025/ba-p/14088851"
+				},
+				{
+					"title":"Pre-event: Codejam",
+					"content":"Prior to the SITBe, a Codejam will take place, also in the Amista offices in Mechelen. Stay tuned for more info. Special guest: André Fischer "
 				}
 			],
 			"sessions": [
