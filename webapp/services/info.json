@@ -1,5 +1,82 @@
 [
 	{
+		"year": "2025",
+		"data": {
+			"date": "2025-09-20T07:30:00.000Z",
+			"eventId": "undefined",
+			"subscriptionLink": "https://community.sap.com/t5/brussels-events/sap-inside-track-belgium-september-20th-2025/ev-p/14093107",
+			"agenda": true,
+			"submissions": true,
+			"announcements": [
+				{
+					"title": "SAP Inside Track Belgium 2024",
+					"content": "Let's re-connect and share our knowledge with a fresh pint of beer or soda!\nWe welcome you as from 09:00 CET in the offices of ARHS.\nSessions will run until 16:00 CET, followed by a wrap up and a drink."
+				}
+			],
+			"sessions": [
+				{
+					"name": "Welcome",
+					"speaker": "",
+					"description": "Breakfast!",
+					"startdate": "2025-09-20T06:00:00Z",
+					"enddate": "2025-09-20T07:00:00Z",
+					"links": []
+				},
+				{
+					"name": "Keynote",
+					"speaker": "SITBE Team",
+					"description": "Welcome back to our Yearly SITBE!",
+					"startdate": "2025-09-20T07:05:00Z",
+					"enddate": "2025-09-20T07:30:00Z",
+					"links": []
+				},
+				{
+					"name": "Wrap-up",
+					"speaker": "SITBE Team",
+					"description": "",
+					"startdate": "2025-09-20T13:30:00Z",
+					"enddate": "2025-09-20T14:00:00Z",
+					"links": []
+				},
+				{
+					"name": "Drinks",
+					"speaker": "Everyone",
+					"description": "",
+					"startdate": "2025-09-20T14:00:00Z",
+					"enddate": "2025-09-20T15:00:00Z",
+					"links": []
+				}
+			],
+			"location": {
+				"name": "Amista",
+				"street": "Vaartdijk 86",
+				"city": "2800 Mechelen,",
+				"country": "Belgium",
+				"mapUrl": "<iframe src='https://www.google.com/maps/embed/v1/place?q=Vaartdijk+86,+2800+Mechelen,+Belgium&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+			},
+			"host": {
+				"name": "Amista",
+				"logo": "./images/Amista.jpg"
+			},
+			"sponsors": [
+				{
+					"name": "SAP Mentors",
+					"logo": "./images/mentors.png"
+				},
+				{
+					"name": "SAP Community",
+					"logo": "./images/SAPCommunity_new.JPG"
+				},
+				{
+					"name": "Fiddle Consulting",
+					"logo": "./images/fiddle.png"
+				}
+			],
+			"participants": [],
+			"address": []
+		}
+	},
+	{
 		"year": "2024",
 		"data": {
 			"date": "2024-09-21T07:30:00.000Z",
