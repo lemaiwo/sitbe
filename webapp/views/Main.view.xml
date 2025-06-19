@@ -47,7 +47,7 @@
                             <!--description-->
                             <ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date', formatter:'.formatDate'}" />
                             <FormattedText htmlText="{i18n>appDescription}" />
-                            <FormattedText htmlText="&lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;https://forms.gle/9jHao78a3ZvTWU5R9&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;" visible="{info>submissions}" />
+                            <FormattedText htmlText="&lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;{info>sessionForm}&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;" visible="{info>submissions}" />
                         </l:VerticalLayout>
                     </uxap:ObjectPageSubSection>
                 </uxap:ObjectPageSection>
