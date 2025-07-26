@@ -5,7 +5,7 @@
 			"date": "2025-09-20T07:30:00.000Z",
 			"eventId": "undefined",
 			"subscriptionLink": "https://community.sap.com/t5/brussels-events/sap-inside-track-belgium-september-20th-2025/ev-p/14093107",
-			"agenda": true,
+			"agenda": false,
 			"submissions": true,
 			"sessionForm":"https://community.sap.com/t5/brussels-blog-posts/call-for-speakers-sap-inside-track-belgium-2025/ba-p/14088851",
 			"announcements": [
@@ -35,6 +35,54 @@
 					"name": "Keynote",
 					"speaker": "SITBE Team",
 					"description": "Welcome back to our Yearly SITBE!",
+					"startdate": "2025-09-20T07:05:00Z",
+					"enddate": "2025-09-20T07:30:00Z",
+					"links": []
+				},
+				{
+					"name": "Between AI and API: Real-time integration for LLM applications using MCP",
+					"speaker": "Vadim Klimov",
+					"description": "In this session, we are going to explore how to infuse data from external sources into LLM applications on demand and in real time using a standardized mechanism based on the Model Context Protocol (MCP). I will demonstrate this approach through practical scenarios using SAP Integration Suite. In addition, I will also discuss common risks associated with MCP servers, along with best practices to consider and anti-patterns to avoid.",
+					"startdate": "2025-09-20T07:05:00Z",
+					"enddate": "2025-09-20T07:30:00Z",
+					"links": []
+				},
+				{
+					"name": "Clean Code is not Enough",
+					"speaker": "Thibault Vandevoorde",
+					"description": "SAP has been driving the message: keep the core clean, write clean code, and embrace the cloud with frameworks like RAP. But beneath the surface, one question remains: where is the architecture? In this session, we'll take a step back and look at 15 years of ABAP development — from ECC and WebDynpro, to Gateway, and now RAP — and identify a recurring pattern: we keep putting business logic in the wrong place. Whether it was in report programs, DPC_EXT classes, or today's behavior implementations, the absence of layered design and separation of concerns is still costing us maintainability, testability, and clarity. We'll explore what clean architecture means in an ABAP context, how to structure your code into external, integration, business, technical, and physical layers, and how to apply these principles even within the constraints of modern frameworks like RAP. If you've ever written a behavior class that feels like a procedural monolith, this talk is for you.",
+					"startdate": "2025-09-20T07:05:00Z",
+					"enddate": "2025-09-20T07:30:00Z",
+					"links": []
+				},
+				{
+					"name": "Integration Modernization with SAP Integration Suite",
+					"speaker": "Jeroen Knops",
+					"description": "After multiple PO to Integration Suite migrations I want to share our experiences on modernizing your Integration landscape. I will present the highlights and lowlights from a practical perspective",
+					"startdate": "2025-09-20T07:05:00Z",
+					"enddate": "2025-09-20T07:30:00Z",
+					"links": []
+				},
+				{
+					"name": "ABAP Cloud in Action",
+					"speaker": "Andre Fischer",
+					"description": "ABAP Cloud is the powerful development model for building cloud applications on SAP Business Technology Platform (SAP BTP) and SAP S/4HANA, in the cloud and on premise. Experience live demos of the major ABAP Cloud capabilities around the ABAP RESTful application programming model which can be used to build and extend transactional and analytical applications.",
+					"startdate": "2025-09-20T07:05:00Z",
+					"enddate": "2025-09-20T07:30:00Z",
+					"links": []
+				},
+				{
+					"name": "CAP & Joule: Extending beyond the First Build",
+					"speaker": "Stijn Verdoodt",
+					"description": "Generating a full blown CAP application in less than 20 minutes is definitely within the realm of possibilities of Joule. But how far can it help us with extending said app, and how closely will it be able to follow best-practice recommendations? In this session we will explore just that, generating an app from scratch and discovering how to implement key business logic in no time - all while sharing some valuable insights into the product as we go.",
+					"startdate": "2025-09-20T07:05:00Z",
+					"enddate": "2025-09-20T07:30:00Z",
+					"links": []
+				},
+				{
+					"name": "ABAP Development with modern tooling",
+					"speaker": "Pieter Lemaire & Matthis Vansteenhuyse",
+					"description": "This session wil explore modern ABAP development, covering ABAP Development Tools in Eclipse, abapGit, documentation best practices (Markdown & Mermaid), and unit testing. We'll wrap up with an SFLIGHT demo, applying these tools in practice.",
 					"startdate": "2025-09-20T07:05:00Z",
 					"enddate": "2025-09-20T07:30:00Z",
 					"links": []
