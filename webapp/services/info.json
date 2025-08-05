@@ -105,11 +105,11 @@
 				}
 			],
 			"location": {
-				"name": "Amista",
-				"street": "Vaartdijk 86",
+				"name": "Van Der Valk Hotel",
+				"street": "Rode-Kruisplein 1-4",
 				"city": "2800 Mechelen,",
 				"country": "Belgium",
-				"mapUrl": "<iframe src='https://www.google.com/maps/embed/v1/place?q=Vaartdijk+86,+2800+Mechelen,+Belgium&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+				"mapUrl": "<iframe src='https://www.google.com/maps/embed/v1/place?q=Rode-Kruisplein+1-4,+2800+Mechelen,+Belgium&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
 			},
 			"host": {
 				"name": "Amista",
