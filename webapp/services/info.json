@@ -43,7 +43,7 @@
 					"name": "Session by Amista",
 					"speaker": "tbd",
 					"description": "Session by Amista",
-					"startdate": "2025-09-21T07:35:00Z",
+					"startdate": "2025-09-20T07:35:00Z",
 					"enddate": "2025-09-20T08:15:00Z",
 					"links": []
 				},
@@ -91,7 +91,7 @@
 					"name": "CAP & Joule: Extending beyond the First Build",
 					"speaker": "Stijn Verdoodt",
 					"description": "Generating a full blown CAP application in less than 20 minutes is definitely within the realm of possibilities of Joule. But how far can it help us with extending said app, and how closely will it be able to follow best-practice recommendations? In this session we will explore just that, generating an app from scratch and discovering how to implement key business logic in no time - all while sharing some valuable insights into the product as we go.",
-					"startdate": "2025-09-21T13:10:00Z",
+					"startdate": "2025-09-20T13:10:00Z",
 					"enddate": "2025-09-20T13:30:00Z",
 					"links": []
 				},
