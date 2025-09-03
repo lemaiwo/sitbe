@@ -40,9 +40,9 @@
 					"links": []
 				},
 				{
-					"name": "Session by Amista",
-					"speaker": "tbd",
-					"description": "Session by Amista",
+					"name": "From Legacy to BTP: How Mambo Supply Brings Supply Chain to Every Cente",
+					"speaker": "Amista",
+					"description": "Mambo Supply is a set of supply chain applicatiosn for managing ordering and inventory in local centers. Originally built outside of SAP with limited integration, it has now been re-engineered on SAP BTP as an extensible solution connected to ECC. The new version delivers desktop and mobile access, while paving the way towards S/4HANA.",
 					"startdate": "2025-09-20T07:35:00Z",
 					"enddate": "2025-09-20T08:15:00Z",
 					"links": []
