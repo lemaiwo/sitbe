@@ -1,139 +1,45 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta charset="UTF-8">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SAP Inside Track Belgium</title>
 
-		<title>SAP Inside Track Belgium</title>
+	<link rel="stylesheet" href="./css/boot.css">
 
-		<script id="sap-ui-bootstrap"
-			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-			data-sap-ui-libs="sap.m, sap.ui.layout"
-			data-sap-ui-theme="sap_fiori_3"
-			data-sap-ui-compatVersion="edge"
-			data-sap-ui-preload="async"
-			data-sap-ui-resourceroots='{"be.fiddle.sitbe": "./"}'
-			data-sap-ui-bindingSyntax="complex">
-		</script>
-		<style>
-			.overlay-loader {
-			    position: fixed;
-			    top: 0;
-			    right: 0;
-			    bottom: 0;
-			    left: 0;
-			    z-index: 1000;
-			}
-			.overlay-loader .loader-background {
-			    position: absolute;
-			    top: 0;
-			    right: 0;
-			    bottom: 0;
-			    left: 0;
-			    background-color: #fff;
-			    -webkit-transition: background-color .2s 0s linear, right .2s .3s ease-out;
-			    -moz-transition: background-color .2s 0s linear, right .2s .3s ease-out;
-			    -ms-transition: background-color .2s 0s linear, right .2s .3s ease-out;
-			    -o-transition: background-color .2s 0s linear, right .2s .3s ease-out;
-			    transition: background-color .2s 0s linear, right .2s .3s ease-out;
-			}
-			.overlay-loader .loader-icon {
-			    position: absolute;
-			    top: 50%;
-			    left: 50%;
-			    margin: -128px 0 0 -128px;
-			    width: 256px;
-			    height: 256px;
-			}
-			.overlay-loader .loader-text {
-			    position: absolute;
-			    top: 50%;
-			    left: 50%;
-			    margin: 140px 0 0 -40px;
-			    font-size: 20px;
-			    font-family: Arial, Helvetica, sans-serif;
-			    color: #000;
-			}
-			.overlay-loader .loader-icon.spinning-cog {
-			    -webkit-animation: spinning-cog 1.3s infinite ease;
-			    -moz-animation: spinning-cog 1.3s infinite ease;
-			    -ms-animation: spinning-cog 1.3s infinite ease;
-			    -o-animation: spinning-cog 1.3s infinite ease;
-			    animation: spinning-cog 1.3s infinite ease;
-			}
-			@-webkit-keyframes spinning-cog {
-			    0% { -webkit-transform: rotate(0deg) }
-			    20% { -webkit-transform: rotate(-45deg) }
-			    100% { -webkit-transform: rotate(360deg) }
-			}
-			@-moz-keyframes spinning-cog {
-			    0% { -moz-transform: rotate(0deg) }
-			    20% { -moz-transform: rotate(-45deg) }
-			    100% { -moz-transform: rotate(360deg) }
-			}
-			@-o-keyframes spinning-cog {
-			    0% { -o-transform: rotate(0deg) }
-			    20% { -o-transform: rotate(-45deg) }
-			    100% { -o-transform: rotate(360deg) }
-			}
-			@keyframes spinning-cog {
-			    0% { transform: rotate(0deg) }
-			    20% { transform: rotate(-45deg) }
-			    100% { transform: rotate(360deg) }
-			}
-			@-webkit-keyframes shrinking-cog {
-			    0% { -webkit-transform: scale(1) }
-			    20% { -webkit-transform: scale(1.2) }
-			    100% { -webkit-transform: scale(0) }
-			}
-			@-moz-keyframes shrinking-cog {
-			    0% { -moz-transform: scale(1) }
-			    20% { -moz-transform: scale(1.2) }
-			    100% { -moz-transform: scale(0) }
-			}
-			@-o-keyframes shrinking-cog {
-			    0% { -o-transform: scale(1) }
-			    20% { -o-transform: scale(1.2) }
-			    100% { -o-transform: scale(0) }
-			}
-			@keyframes shrinking-cog {
-			    0% { transform: scale(1) }
-			    20% { transform: scale(1.2) }
-			    100% { transform: scale(0) }
-			}
-			.overlay-loader .loader-icon.shrinking-cog {
-			    -webkit-animation: shrinking-cog .3s 1 ease forwards;
-			    -moz-animation: shrinking-cog .3s 1 ease forwards;
-			    -ms-animation: shrinking-cog .3s 1 ease forwards;
-			    -o-animation: shrinking-cog .3s 1 ease forwards;
-			    animation: shrinking-cog .3s 1 ease forwards;
-			}
-		</style>
+	<script
+		id="sap-ui-bootstrap"
+		src="https://sdk.openui5.org/1.136.0/resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_horizon"
+		data-sap-ui-async="true"
+		data-sap-ui-compat-version="edge"
+		data-sap-ui-resource-roots='{"be.wl.sitbe": "./"}'
+		data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+		data-sap-ui-xx-waitfortheme="init">
+	</script>
+</head>
 
-		<script>
-			sap.ui.getCore().attachInit(function() {
-				new sap.m.Shell({
-					appWidthLimited:false,
-					app: new sap.ui.core.ComponentContainer({
-						height : "100%",
-						name : "be.fiddle.sitbe"
-					})
-				}).placeAt("content");
-			});
-		</script>
-	</head>
+<body class="sapUiBody sitbe-body">
+	<div
+		id="sitbe-host"
+		data-sap-ui-component
+		data-name="be.wl.sitbe"
+		data-id="container"
+		data-settings='{"id":"sitbe"}'
+		data-handle-validation="true"
+		data-height="100%"
+		style="height:100%;width:100%;"></div>
 
-	<body class="sapUiBody main" id="zcontent">
-		<div id="content"></div>
-		<div id="loader" class="overlay-loader">
-			<div class="loader-background"></div>
-			<!--RvhH: To make SVG work with IE (since technically it's a malformed data URI, and IE is being strict), you need to:
-			 - swap ' with "
-			 - URL-encode the SVG string (and since ' is safe and " is not, the encoded string will be shorter)-->
-			<!--TVDO: ahum, IE? -->
-			<img class="loader-icon spinning-cog" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20289.13333%20289.13333%27%20height%3D%27289.133%27%20width%3D%27289.133%27%3E%3Cpath%20d%3D%27M289.128%20144.57c0%2079.84-64.724%20144.563-144.564%20144.563C64.724%20289.133%200%20224.41%200%20144.57%200%2064.727%2064.723.004%20144.564.004c79.84%200%20144.564%2064.723%20144.564%20144.564%27%20fill%3D%27%23eda216%27%2F%3E%3Cpath%20d%3D%27M111.09%20164.93l49.723-130.914c2.222-5.88%209.016-8.613%2014.69-5.897l35.892%2017.04c5.824%202.77%208.045%209.92%204.834%2015.5l-69.675%20120.957c-2.186%203.77-6.907%205.246-10.846%203.38l-20.457-9.707c-3.883-1.867-5.693-6.346-4.162-10.36M126.9%20235.222c-.11%2014.298-11.796%2025.814-26.093%2025.702-14.278-.112-25.814-11.796-25.703-26.095.094-14.297%2011.797-25.813%2026.095-25.7%2014.295.092%2025.812%2011.795%2025.7%2026.092%27%20fill%3D%27%23fff%27%2F%3E%3C%2Fsvg%3E">
-			<div class="loader-text">Loading...</div>
-		</div>
-	</body>
+	<div id="sitbe-loader" class="sitbe-loader" aria-hidden="true">
+		<div class="sitbe-loader__backdrop"></div>
+		<svg class="sitbe-loader__mark" viewBox="0 0 289 289" role="img" aria-label="Loading SAP Inside Track Belgium">
+			<circle cx="144.5" cy="144.5" r="144.5" fill="#eda216"/>
+			<path fill="#fff" d="M111.09 164.93 160.813 34.016c2.222-5.88 9.016-8.613 14.69-5.897l35.892 17.04c5.824 2.77 8.045 9.92 4.834 15.5l-69.675 120.957c-2.186 3.77-6.907 5.246-10.846 3.38l-20.457-9.707c-3.883-1.867-5.693-6.346-4.162-10.36M126.9 235.222c-.11 14.298-11.796 25.814-26.093 25.702-14.278-.112-25.814-11.796-25.703-26.095.094-14.297 11.797-25.813 26.095-25.7 14.295.092 25.812 11.795 25.7 26.092"/>
+		</svg>
+		<div class="sitbe-loader__text">Loading…</div>
+	</div>
+</body>
+
 </html>

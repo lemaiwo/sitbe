@@ -1,40 +1,25 @@
 {
-	"_version": "0.0.1",
+	"_version": "1.60.0",
 	"sap.app": {
-		"_version": "0.0.1",
-		"id": "be.fiddle.sitbe",
+		"id": "be.wl.sitbe",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
-			"version": "0.0.1"
+			"version": "0.2.0"
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
-		"offline": true,
 		"dataSources": {
 			"info": {
-				"uri": "./services/info.json",
+				"uri": "services/info.json",
 				"type": "JSON"
-			},
-			"service.xsodata": {
-				"uri": "./services/participants.php",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
-				}
 			}
-		},
-		"sourceTemplate": {
-			"id": "servicecatalog.connectivityComponentForManifest",
-			"version": "0.0.0"
 		}
 	},
 	"sap.ui": {
-		"_version": "1.52.0",
 		"technology": "UI5",
 		"icons": {
-			"icon": "",
+			"icon": "sap-icon://activity-2",
 			"favIcon": "",
 			"phone": "",
 			"phone@2": "",
@@ -47,25 +32,26 @@
 			"phone": true
 		},
 		"supportedThemes": [
-			"sap_belize_plus"
+			"sap_horizon",
+			"sap_horizon_dark"
 		],
 		"fullWidth": true
 	},
 	"sap.ui5": {
-		"_version": "1.52.0",
 		"rootView": {
-			"viewName": "be.fiddle.sitbe.views.Main",
+			"viewName": "be.wl.sitbe.views.Main",
 			"type": "XML",
-			"id": "root"
+			"id": "root",
+			"async": true
 		},
 		"dependencies": {
-			"minUI5Version": "1.52.0",
+			"minUI5Version": "1.136.0",
 			"libs": {
 				"sap.m": {},
 				"sap.ui.core": {},
 				"sap.ui.layout": {},
-				"sap.ui.unified":{},
-				"sap.uxap":{}
+				"sap.ui.unified": {},
+				"sap.uxap": {}
 			}
 		},
 		"contentDensities": {
@@ -78,35 +64,23 @@
 				"dataSource": "info",
 				"settings": {}
 			},
-			"settings":{
+			"settings": {
 				"type": "sap.ui.model.json.JSONModel"
 			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "be.fiddle.sitbe.i18n.i18n"
+					"bundleName": "be.wl.sitbe.i18n.i18n"
 				}
-			},
-			"participants": {
-				"__comment":"Every model must be named. non-named models are not acceptable",
-				"type": "sap.ui.model.odata.v2.ODataModel",
-				"settings": {
-					"defaultOperationMode": "Server",
-					"defaultBindingMode": "OneWay",
-					"defaultCountMode": "Request",
-					"useBatch" : false,
-					"json":false
-				},
-				"dataSource": "service.xsodata",
-				"preload": true
 			}
 		},
 		"resources": {
 			"css": [
 				{
-					"uri": "./css/style.css"
+					"uri": "css/style.css"
 				}
 			]
-		}
+		},
+		"handleValidation": false
 	}
 }

@@ -1,209 +1,302 @@
 <mvc:View
-    controllerName="be.fiddle.sitbe.controllers.Main"
-    xmlns="sap.m"
-    xmlns:l="sap.ui.layout"
-    xmlns:f="sap.ui.layout.form"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:uxap="sap.uxap"
-    xmlns:core="sap.ui.core"
-    xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns:unified="sap.ui.unified"
-    height="100%"
-    displayBlock="true"
->
-    <Page title="{i18n>appTitle}" showHeader="false" showNavButton="false">
-        <subHeader>
-            <Toolbar>
-                <ToolbarSpacer />
-                <Select enabled="true" editable="true" forceSelection="true" change="onSelectYear" items="{info>/}">
-                    <core:Item key="{info>year}" text="{info>year}" />
-                </Select>
-            </Toolbar>
-        </subHeader>
+	controllerName="be.wl.sitbe.controllers.Main"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:uxap="sap.uxap"
+	xmlns:core="sap.ui.core"
+	xmlns:unified="sap.ui.unified"
+	height="100%"
+	displayBlock="true">
 
-        <uxap:ObjectPageLayout id="Detail" enableLazyLoading="true" useIconTabBar="false" class="ObjectPageRoot">
-            <uxap:headerContent>
-                <l:HorizontalLayout class="sapUiNoContentPadding sapUiNoMargin">
-                    <Image src="images/SLogo_SITBRU.png" width="100%" mode="Image" />
-                </l:HorizontalLayout>
-            </uxap:headerContent>
+	<uxap:ObjectPageLayout
+		id="Detail"
+		class="sitbeObjectPage"
+		showAnchorBar="true"
+		showAnchorBarPopover="false"
+		useIconTabBar="false"
+		alwaysShowContentHeader="false"
+		preserveHeaderStateOnScroll="false"
+		headerContentPinnable="true"
+		toggleHeaderOnTitleClick="true">
 
-            <uxap:sections>
-                <!--overview-->
-                <uxap:ObjectPageSection id="tabOverview" title="{i18n>be.fiddle.sitbe.overview}">
-                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.overview}">
-                        <l:VerticalLayout>
-                            <!--Announcements-->
-                            <List items="{
-											path:'info>announcements',
-											templateShareable:true
-										}" visible="{path:'info>announcements', formatter:'.isArrayVisible'}">
-                                <CustomListItem class="announcement">
-                                    <Title text="{info>title}" />
-                                    <FormattedText htmlText="{info>content}" />
-                                </CustomListItem>
-                            </List>
+		<uxap:headerTitle>
+			<uxap:ObjectPageDynamicHeaderTitle>
+				<uxap:expandedHeading>
+					<Title class="sitbeHeroTitle" text="SAP Inside Track Belgium" wrapping="true" level="H1"/>
+				</uxap:expandedHeading>
+				<uxap:snappedHeading>
+					<Title class="sitbeHeroTitleSnapped" text="SAP Inside Track Belgium" wrapping="true" level="H1"/>
+				</uxap:snappedHeading>
 
-                            <!--description-->
-                            <ObjectHeader title="{i18n>be.fiddle.sitbe.savedate} {path:'info>date', formatter:'.formatDate'}" />
-                            <FormattedText htmlText="{i18n>appDescription}" />
-                            <FormattedText htmlText="&lt;br /&gt; {i18n>be.fiddle.sitbe.sessionDescription} &lt;a href=&quot;{info>sessionForm}&quot; target=&quot;_blank&quot;&gt;{i18n&gt;be.fiddle.sitbe.session}&lt;/a&gt;" visible="{info>submissions}" />
-                        </l:VerticalLayout>
-                    </uxap:ObjectPageSubSection>
-                </uxap:ObjectPageSection>
+				<uxap:expandedContent>
+					<Text class="sitbeHeroTagline" text="{i18n>be.wl.sitbe.hero.tagline}"/>
+				</uxap:expandedContent>
+				<uxap:snappedContent>
+					<ObjectStatus text="{path:'info>date', formatter:'.formatDate'}" state="Indication05" icon="sap-icon://calendar"/>
+				</uxap:snappedContent>
 
-                <!--sessions-->
-                <uxap:ObjectPageSection id="tabsessions" title="{i18n>be.fiddle.sitbe.sessions}" visible="{=!${info>agenda}}" subSections="{info>sessions}">
-                    <uxap:ObjectPageSubSection title="{info>name}" class="session">
-                        <VBox>
-                            <Title text="{info>speaker}" />
-                            <Text text="{info>description}" />
+				<uxap:actions>
+					<SegmentedButton
+						class="sitbeYearSelector"
+						selectionChange="onSelectYear"
+						items="{info>/}">
+						<items>
+							<SegmentedButtonItem key="{info>year}" text="{info>year}"/>
+						</items>
+					</SegmentedButton>
+				</uxap:actions>
+			</uxap:ObjectPageDynamicHeaderTitle>
+		</uxap:headerTitle>
 
-                            <List items="{info>links}" visible="{path:'info>links', formatter:'.isArrayVisible' }">
-                                <CustomListItem>
-                                    <Link text="{info>url}" href="{info>url}" target="_blank" />
-                                </CustomListItem>
-                            </List>
-                        </VBox>
-                    </uxap:ObjectPageSubSection>
-                </uxap:ObjectPageSection>
+		<uxap:headerContent>
+			<FlexBox class="sitbeHero" alignItems="Center" justifyContent="SpaceBetween" wrap="Wrap" fitContainer="true">
+				<VBox class="sitbeHeroInfo" renderType="Div">
+					<HBox class="sitbeChipRow" wrap="Wrap" alignItems="Center">
+						<ObjectStatus
+							class="sitbeChip"
+							text="{path:'info>date', formatter:'.formatDate'}"
+							state="Indication05"
+							icon="sap-icon://calendar"
+							inverted="true"/>
+						<ObjectStatus
+							class="sitbeChip"
+							text="{info>location/name} · {info>location/city}"
+							state="Indication04"
+							icon="sap-icon://map-2"
+							inverted="true"
+							visible="{= !!${info>location/name} }"/>
+					</HBox>
+					<Text class="sitbeHeroSubtitle" text="{i18n>appDescription}"/>
+					<HBox class="sitbeHeroActions" wrap="Wrap">
+						<Button
+							class="sitbeCtaPrimary"
+							text="{i18n>be.wl.sitbe.registerhere}"
+							type="Emphasized"
+							icon="sap-icon://add-contact"
+							press=".onRegisterPress"
+							visible="{= !!${info>subscriptionLink} &amp;&amp; ${info>subscriptionLink} !== 'undefined' }">
+							<customData>
+								<core:CustomData key="href" value="{info>subscriptionLink}" writeToDom="false"/>
+							</customData>
+						</Button>
+						<Button
+							class="sitbeCtaSecondary"
+							text="{i18n>be.wl.sitbe.session}"
+							icon="sap-icon://microphone"
+							press=".onSubmitSessionPress"
+							visible="{= !!${info>sessionForm} &amp;&amp; !!${info>submissions} }">
+							<customData>
+								<core:CustomData key="href" value="{info>sessionForm}" writeToDom="false"/>
+							</customData>
+						</Button>
+					</HBox>
+				</VBox>
+				<Image src="images/SLogo_SITBRU.png" class="sitbeHeroMark" decorative="false" alt="SITBe logo"/>
+			</FlexBox>
+		</uxap:headerContent>
 
-                <!--agenda-->
-                <uxap:ObjectPageSection id="tabagenda" title="{i18n>be.fiddle.sitbe.sessions}" visible="{info>agenda}">
-                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.sessions}">
-                        <VBox>
-                            <MessageStrip type="Information" text="{i18n>be.fiddle.sitbe.sessions.info}" />
-                            <SinglePlanningCalendar title="" startDate="{path:'info>date', formatter:'.asDate'}" startHour="8" endHour="18" fullDay="false" enableAppointmentsDragAndDrop="false" stickyMode="None" appointments="{info>sessions}" appointmentSelect="onClickSession">
-                                <views>
-                                    <SinglePlanningCalendarDayView key="DayView" title="Day" />
-                                </views>
-                                <appointments>
-                                    <unified:CalendarAppointment type="None" title="{info>name}" text="{info>description}" startDate="{path:'info>startdate', formatter:'.asDate'}" endDate="{path:'info>enddate', formatter:'.asDate'}" />
-                                </appointments>
-                            </SinglePlanningCalendar>
-                        </VBox>
-                    </uxap:ObjectPageSubSection>
-                </uxap:ObjectPageSection>
+		<uxap:sections>
 
-                <!--participants-->
-                <uxap:ObjectPageSection id="tabParticipants" title="{i18n>be.fiddle.sitbe.participants} ">
-                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.participants} ({= ${participants>Participants}.length } / 50)">
-                        <Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank" href="{info>subscriptionLink}" visible="{= ${info>subscriptionLink} !== 'undefined'}" />
-                        <Table items="{path:'participants>Participants'}" class="sapUiLargeMarginBottom" visible="{= ${info>eventId} !== 'undefined'}">
-                            <headerToolbar>
-                                <Toolbar>
-                                    <content>
-                                        <Link text="{i18n>be.fiddle.sitbe.registerhere}" emphasized="true" target="_blank" href="https://sitregparticipant-a5a504e08.dispatcher.hana.ondemand.com/index.html#/Events/{info>eventId}" visible="{= ${info>eventId} !== 'undefined'}" />
-                                    </content>
-                                </Toolbar>
-                            </headerToolbar>
-                            <columns>
-                                <Column width="7rem">
-                                    <Text text="Name" />
-                                </Column>
-                                <Column width="9rem">
-                                    <Text text="Twitter Handle" />
-                                </Column>
-                            </columns>
-                            <items>
-                                <ColumnListItem>
-                                    <cells>
-                                        <ObjectIdentifier title="{participants>FirstName} {participants>LastName}" />
-                                        <Link href="https://twitter.com/{path:'participants>Twitter'}" text="{path:'participants>Twitter'}" />
-                                    </cells>
-                                </ColumnListItem>
-                            </items>
-                        </Table>
-                    </uxap:ObjectPageSubSection>
-                </uxap:ObjectPageSection>
+			<!-- Overview -->
+			<uxap:ObjectPageSection id="tabOverview" title="{i18n>be.wl.sitbe.overview}">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="{i18n>be.wl.sitbe.overview}">
+						<VBox class="sitbeSectionBody">
 
-                <!--host-->
-                <uxap:ObjectPageSection id="tabLocation" title="{i18n>be.fiddle.sitbe.location}">
-                    <!--description-->
-                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.location}">
-                        <VBox class="sapUiSmallMargin">
-                            <f:SimpleForm
-                                editable="false"
-                                layout="ResponsiveGridLayout"
-                                labelSpanXL="1"
-                                labelSpanL="2"
-                                labelSpanM="3"
-                                labelSpanS="12"
-                                adjustLabelSpan="false"
-                                emptySpanXL="4"
-                                emptySpanL="4"
-                                emptySpanM="4"
-                                emptySpanS="0"
-                                columnsXL="1"
-                                columnsL="1"
-                                columnsM="1"
-                                singleContainerFullSize="false"
-                            >
-                                <f:content>
-                                    <Label text="{i18n>be.fiddle.sitbe.name}" />
-                                    <Text text="{info>location/name}" />
-                                    <Label text="{i18n>be.fiddle.sitbe.street}" />
-                                    <Text text="{info>location/street}" />
-                                    <Label text="{i18n>be.fiddle.sitbe.city}" />
-                                    <Text text="{info>location/city}" />
-                                    <Label text="{i18n>be.fiddle.sitbe.country}" />
-                                    <Text text="{info>location/country}" />
-                                </f:content>
-                            </f:SimpleForm>
-                            <core:HTML content="{info>location/mapUrl}" />
-                        </VBox>
-                    </uxap:ObjectPageSubSection>
-                </uxap:ObjectPageSection>
+							<List
+								class="sitbeAnnouncements"
+								showSeparators="None"
+								items="{path:'info>announcements', templateShareable:false}"
+								visible="{path:'info>announcements', formatter:'.isArrayVisible'}">
+								<CustomListItem class="sitbeAnnouncement">
+									<VBox class="sitbeAnnouncementBody">
+										<HBox alignItems="Center" class="sitbeAnnouncementHeader">
+											<core:Icon src="sap-icon://megaphone" class="sitbeAnnouncementIcon"/>
+											<Title text="{info>title}" level="H3"/>
+										</HBox>
+										<FormattedText htmlText="{info>content}"/>
+									</VBox>
+								</CustomListItem>
+							</List>
 
-                <!--host-->
-                <uxap:ObjectPageSection id="tabHost" title="{i18n>be.fiddle.sitbe.host}">
-                    <!--description-->
-                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.host}">
-                        <Image src="{info>host/logo}" width="240px" />
-                    </uxap:ObjectPageSubSection>
-                </uxap:ObjectPageSection>
+							<Panel class="sitbeSaveDatePanel" expandable="false">
+								<headerToolbar>
+									<OverflowToolbar class="sitbeCardToolbar">
+										<core:Icon src="sap-icon://date-time" class="sitbeCardIcon"/>
+										<Title text="{i18n>be.wl.sitbe.savedate}" level="H3"/>
+										<ToolbarSpacer/>
+										<ObjectStatus
+											text="{path:'info>date', formatter:'.formatDate'}"
+											state="Indication05"
+											inverted="true"/>
+									</OverflowToolbar>
+								</headerToolbar>
+								<VBox class="sitbeCardBody">
+									<FormattedText htmlText="{i18n>appDescription}"/>
+									<FormattedText
+										class="sapUiTinyMarginTop"
+										htmlText="{i18n>be.wl.sitbe.sessionDescription} &lt;a href=&quot;{info>sessionForm}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;{i18n&gt;be.wl.sitbe.session}&lt;/a&gt;"
+										visible="{= !!${info>submissions} }"/>
+								</VBox>
+							</Panel>
 
-                <!--sponsors-->
-                <uxap:ObjectPageSection id="tabSponsor" title="{i18n>be.fiddle.sitbe.sponsors}" subSections="{path:'info>sponsors'}">
-                    <!--description-->
-                    <uxap:ObjectPageSubSection title="{info>name}">
-                        <Image src="{info>logo}" width="240px" />
-                    </uxap:ObjectPageSubSection>
-                </uxap:ObjectPageSection>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
 
-                <!--contact us-->
-                <uxap:ObjectPageSection id="tabContact" title="{i18n>be.fiddle.sitbe.contact}">
-                    <!--description-->
-                    <uxap:ObjectPageSubSection title="{i18n>be.fiddle.sitbe.contact}">
-                        <!--<l:VerticalLayout>-->
-                        <f:SimpleForm
-                            editable="false"
-                            layout="ResponsiveGridLayout"
-                            labelSpanXL="1"
-                            labelSpanL="2"
-                            labelSpanM="3"
-                            labelSpanS="12"
-                            adjustLabelSpan="false"
-                            emptySpanXL="4"
-                            emptySpanL="4"
-                            emptySpanM="4"
-                            emptySpanS="0"
-                            columnsXL="1"
-                            columnsL="1"
-                            columnsM="1"
-                            singleContainerFullSize="false"
-                        >
-                            <f:content>
-                                <Label text="{i18n>be.fiddle.sitbe.mail}" />
-                                <Link href="mailto:sapinsidetrackbelgium@gmail.com" text="sapinsidetrackbelgium@gmail.com" target="_blank" />
-                                <Label text="{i18n>be.fiddle.sitbe.twitter}" />
-                                <Link href="https://twitter.com/sitbru" text="#sitbru" target="_blank" />
-                            </f:content>
-                        </f:SimpleForm>
-                        <!--</l:VerticalLayout>-->
-                    </uxap:ObjectPageSubSection>
-                </uxap:ObjectPageSection>
-            </uxap:sections>
-        </uxap:ObjectPageLayout>
-    </Page>
+			<!-- Sessions (list mode) -->
+			<uxap:ObjectPageSection id="tabsessions" title="{i18n>be.wl.sitbe.sessions}" visible="{= !${info>agenda} }">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="{i18n>be.wl.sitbe.sessions}">
+						<VBox class="sitbeSectionBody">
+							<List
+								class="sitbeSessionList"
+								showSeparators="None"
+								items="{path:'info>sessions', templateShareable:false}">
+								<CustomListItem class="sitbeSessionCard">
+									<VBox class="sitbeSessionBody">
+										<HBox alignItems="Center" class="sitbeSessionHeader">
+											<core:Icon src="sap-icon://presentation" class="sitbeSessionIcon"/>
+											<Title text="{info>name}" level="H3" wrapping="true"/>
+										</HBox>
+										<ObjectStatus class="sitbeSessionSpeaker" text="{info>speaker}" icon="sap-icon://person-placeholder" visible="{= !!${info>speaker} }"/>
+										<Text class="sitbeSessionDescription" text="{info>description}"/>
+										<List
+											class="sitbeSessionLinks"
+											showSeparators="None"
+											items="{path:'info>links', templateShareable:false}"
+											visible="{path:'info>links', formatter:'.isArrayVisible'}">
+											<CustomListItem>
+												<Link text="{info>url}" href="{info>url}" target="_blank"/>
+											</CustomListItem>
+										</List>
+									</VBox>
+								</CustomListItem>
+							</List>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<!-- Sessions (calendar mode) -->
+			<uxap:ObjectPageSection id="tabagenda" title="{i18n>be.wl.sitbe.sessions}" visible="{= !!${info>agenda} }">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="{i18n>be.wl.sitbe.sessions}">
+						<VBox class="sitbeSectionBody">
+							<MessageStrip class="sitbeInfoStrip" type="Information" showIcon="true" text="{i18n>be.wl.sitbe.sessions.info}"/>
+							<SinglePlanningCalendar
+								class="sitbeCalendar"
+								title=""
+								startDate="{path:'info>date', formatter:'.asDate'}"
+								startHour="8"
+								endHour="18"
+								fullDay="false"
+								enableAppointmentsDragAndDrop="false"
+								stickyMode="None"
+								appointments="{path:'info>sessions', templateShareable:false}"
+								appointmentSelect="onClickSession">
+								<views>
+									<SinglePlanningCalendarDayView key="DayView" title="Day"/>
+								</views>
+								<appointments>
+									<unified:CalendarAppointment
+										type="None"
+										title="{info>name}"
+										text="{info>description}"
+										startDate="{path:'info>startdate', formatter:'.asDate'}"
+										endDate="{path:'info>enddate', formatter:'.asDate'}"/>
+								</appointments>
+							</SinglePlanningCalendar>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<!-- Location -->
+			<uxap:ObjectPageSection id="tabLocation" title="{i18n>be.wl.sitbe.location}">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="{i18n>be.wl.sitbe.location}">
+						<VBox class="sitbeSectionBody">
+							<Panel class="sitbeLocationPanel">
+								<f:SimpleForm
+									editable="false"
+									layout="ResponsiveGridLayout"
+									labelSpanXL="2" labelSpanL="2" labelSpanM="3" labelSpanS="12"
+									adjustLabelSpan="false"
+									emptySpanXL="2" emptySpanL="2" emptySpanM="2" emptySpanS="0"
+									columnsXL="1" columnsL="1" columnsM="1"
+									singleContainerFullSize="false">
+									<f:content>
+										<Label text="{i18n>be.wl.sitbe.name}"/>
+										<Text text="{info>location/name}"/>
+										<Label text="{i18n>be.wl.sitbe.street}"/>
+										<Text text="{info>location/street}"/>
+										<Label text="{i18n>be.wl.sitbe.city}"/>
+										<Text text="{info>location/city}"/>
+										<Label text="{i18n>be.wl.sitbe.country}"/>
+										<Text text="{info>location/country}"/>
+									</f:content>
+								</f:SimpleForm>
+							</Panel>
+							<core:HTML class="sitbeMap" content="{info>location/mapUrl}"/>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<!-- Host -->
+			<uxap:ObjectPageSection id="tabHost" title="{i18n>be.wl.sitbe.host}">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="{i18n>be.wl.sitbe.host}">
+						<FlexBox class="sitbeLogoBox" wrap="Wrap" alignItems="Center">
+							<Image src="{info>host/logo}" class="sitbeLogoTile" densityAware="false"/>
+						</FlexBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<!-- Sponsors -->
+			<uxap:ObjectPageSection id="tabSponsor" title="{i18n>be.wl.sitbe.sponsors}" visible="{path:'info>sponsors', formatter:'.isArrayVisible'}">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="{i18n>be.wl.sitbe.sponsors}">
+						<FlexBox class="sitbeLogoBox" wrap="Wrap" alignItems="Center" items="{path:'info>sponsors', templateShareable:false}">
+							<VBox class="sitbeSponsorTile" renderType="Div">
+								<Image src="{info>logo}" class="sitbeLogoTile" densityAware="false"/>
+								<Text class="sitbeSponsorName" text="{info>name}"/>
+							</VBox>
+						</FlexBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<!-- Contact -->
+			<uxap:ObjectPageSection id="tabContact" title="{i18n>be.wl.sitbe.contact}">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="{i18n>be.wl.sitbe.contact}">
+						<Panel class="sitbeContactPanel">
+							<f:SimpleForm
+								editable="false"
+								layout="ResponsiveGridLayout"
+								labelSpanXL="2" labelSpanL="2" labelSpanM="3" labelSpanS="12"
+								adjustLabelSpan="false"
+								emptySpanXL="2" emptySpanL="2" emptySpanM="2" emptySpanS="0"
+								columnsXL="1" columnsL="1" columnsM="1"
+								singleContainerFullSize="false">
+								<f:content>
+									<Label text="{i18n>be.wl.sitbe.mail}"/>
+									<Link href="mailto:sapinsidetrackbelgium@gmail.com" text="sapinsidetrackbelgium@gmail.com" target="_blank"/>
+									<Label text="{i18n>be.wl.sitbe.twitter}"/>
+									<Link href="https://twitter.com/sitbru" text="#sitbru" target="_blank"/>
+								</f:content>
+							</f:SimpleForm>
+						</Panel>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+		</uxap:sections>
+	</uxap:ObjectPageLayout>
 </mvc:View>

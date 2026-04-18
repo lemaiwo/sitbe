@@ -1,5 +1,47 @@
 [
 	{
+		"year": "2026",
+		"data": {
+			"date": "2026-09-19T07:00:00.000Z",
+			"eventId": "undefined",
+			"subscriptionLink": "undefined",
+			"agenda": false,
+			"submissions": false,
+			"sessionForm": "undefined",
+			"announcements": [
+				{
+					"title": "SAP Inside Track Belgium 2026 — back to our roots",
+					"content": "We are thrilled to announce that SAP Inside Track Belgium is back in 2026! This time we head back to Kontich, to the offices of Flexso — a place that holds a very special spot in the history of #sitBE. Join us on Saturday September 19th, 2026 for a day of community-driven SAP content."
+				},
+				{
+					"title": "Call for Speakers opens soon",
+					"content": "Want to share your story at #sitBE? A Call for Speakers will open soon. Both 20-minute lightning talks and 40-minute deep dives are welcome!"
+				},
+				{
+					"title": "Registration opens soon",
+					"content": "Spots are limited. Registration details are coming soon — stay tuned and follow us on the SAP Community to be the first to know."
+				},
+				{
+					"title": "Hosted by Flexso",
+					"content": "A heartfelt thank you to Flexso for opening their doors and welcoming the SAP community back. Flexso is an expert SAP partner and a strong supporter of the SAP community in Belgium, located right next to the E19 in Kontich. More info: https://www.flexso.com/en/flexso-kontich"
+				}
+			],
+			"sessions": [],
+			"location": {
+				"name": "Flexso",
+				"street": "Prins Boudewijnlaan 24A",
+				"city": "2550 Kontich",
+				"country": "Belgium",
+				"mapUrl": "<iframe src='https://www.google.com/maps/embed/v1/place?q=Prins+Boudewijnlaan+24A,+2550+Kontich,+Belgium&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8' width='100%' height='500' frameborder='0' style='border:0' allowfullscreen></iframe>"
+			},
+			"host": {
+				"name": "Flexso",
+				"logo": "./images/flexso.png"
+			},
+			"sponsors": []
+		}
+	},
+	{
 		"year": "2025",
 		"data": {
 			"date": "2025-09-20T07:30:00.000Z",

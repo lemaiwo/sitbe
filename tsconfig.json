@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es2022",
+		"module": "es2022",
+		"moduleResolution": "node",
+		"lib": ["es2022", "dom"],
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": false,
+		"rootDir": "./webapp",
+		"baseUrl": "./",
+		"paths": {
+			"be/wl/sitbe/*": ["./webapp/*"]
+		},
+		"types": ["@openui5/types"]
+	},
+	"include": ["./webapp/**/*.ts"]
+}

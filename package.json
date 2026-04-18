@@ -1,28 +1,23 @@
 {
-	"name": "be.fiddle.sitbe",
-	"version": "0.1.0",
-	"description": "SAP Insiders Track Belgium",
+	"name": "be.wl.sitbe",
+	"version": "0.2.0",
+	"description": "SAP Inside Track Belgium",
 	"private": true,
 	"author": "SITBe",
 	"repository": {
 		"type": "git",
-		"url": "https://gitlab.com/fiddlebe/web/sitbe.git"
+		"url": "https://github.com/lemaiwo/sitbe.git"
 	},
 	"scripts": {
-		"start": "grunt",
-		"start:local":"ui5 serve",
-	    "lint": "grunt lint",
-		"build": "grunt build",
-		"test": "echo \"Error: no test specified. Please add some.\" && exit 1",
-		"deploy": "grunt deploy"
+		"start": "ui5 serve --open index.html",
+		"build": "ui5 build --clean-dest --all --dest dist",
+		"typecheck": "tsc --noEmit",
+		"test": "echo \"Error: no test specified. Please add some.\" && exit 1"
 	},
 	"devDependencies": {
-		"grunt": "latest",
-		"grunt-openui5": "latest",
-		"grunt-contrib-clean": "~1.0.0",
-		"grunt-contrib-copy": "~1.0.0",
-		"grunt-eslint": "^19.0.0",
-		"jsdoc-x": "latest",
-		"grunt-ftp-push": "latest"
+		"@openui5/types": "~1.136.0",
+		"@ui5/cli": "^4.0.0",
+		"typescript": "^5.4.0",
+		"ui5-tooling-transpile": "^3.6.0"
 	}
 }
