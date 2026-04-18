@@ -143,6 +143,33 @@ export default class Main extends Controller {
 		return Array.isArray(aList) && aList.length > 0;
 	}
 
+	public announcementClass(sType: string | undefined): string {
+		const sBase = "sitbeAnnouncementPanel";
+		if (sType === "info") {
+			return sBase + " sitbeAnnouncementPanel--info";
+		}
+		if (sType === "warning") {
+			return sBase + " sitbeAnnouncementPanel--warning";
+		}
+		if (sType === "success") {
+			return sBase + " sitbeAnnouncementPanel--success";
+		}
+		return sBase;
+	}
+
+	public announcementIcon(sType: string | undefined): string {
+		if (sType === "info") {
+			return "sap-icon://information";
+		}
+		if (sType === "warning") {
+			return "sap-icon://message-warning";
+		}
+		if (sType === "success") {
+			return "sap-icon://message-success";
+		}
+		return "sap-icon://megaphone";
+	}
+
 	public getOwnerComponent(): UIComponent {
 		return super.getOwnerComponent() as UIComponent;
 	}

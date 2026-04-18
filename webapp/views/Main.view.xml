@@ -67,6 +67,19 @@
 							icon="sap-icon://map-2"
 							inverted="true"
 							visible="{= !!${info>location/name} }"/>
+						<ObjectStatus
+							class="sitbeChip sitbeChip--cfp"
+							text="{i18n>be.wl.sitbe.hero.cfpOpen}"
+							state="Indication02"
+							icon="sap-icon://microphone"
+							inverted="true"
+							active="true"
+							press="onSubmitSessionPress"
+							visible="{= !!${info>submissions} &amp;&amp; !!${info>sessionForm} &amp;&amp; ${info>sessionForm} !== 'undefined' }">
+							<customData>
+								<core:CustomData key="href" value="{info>sessionForm}" writeToDom="false"/>
+							</customData>
+						</ObjectStatus>
 					</HBox>
 					<Text class="sitbeHeroSubtitle" text="{i18n>appDescription}"/>
 					<HBox class="sitbeHeroActions" wrap="Wrap">
@@ -110,14 +123,20 @@
 								showSeparators="None"
 								items="{path:'info>announcements', templateShareable:false}"
 								visible="{path:'info>announcements', formatter:'.isArrayVisible'}">
-								<CustomListItem class="sitbeAnnouncement">
-									<VBox class="sitbeAnnouncementBody">
-										<HBox alignItems="Center" class="sitbeAnnouncementHeader">
-											<core:Icon src="sap-icon://megaphone" class="sitbeAnnouncementIcon"/>
-											<Title text="{info>title}" level="H3"/>
-										</HBox>
-										<FormattedText htmlText="{info>content}"/>
-									</VBox>
+								<CustomListItem class="sitbeAnnouncementRow">
+									<Panel class="{path:'info>type', formatter:'.announcementClass'}" expandable="false">
+										<headerToolbar>
+											<OverflowToolbar class="sitbeCardToolbar">
+												<core:Icon
+													src="{path:'info>type', formatter:'.announcementIcon'}"
+													class="sitbeCardIcon"/>
+												<Title text="{info>title}" level="H3"/>
+											</OverflowToolbar>
+										</headerToolbar>
+										<VBox class="sitbeCardBody">
+											<FormattedText htmlText="{info>content}"/>
+										</VBox>
+									</Panel>
 								</CustomListItem>
 							</List>
 
@@ -134,6 +153,7 @@
 									</OverflowToolbar>
 								</headerToolbar>
 								<VBox class="sitbeCardBody">
+									<FormattedText htmlText="{info>intro}" visible="{= !!${info>intro} }"/>
 									<FormattedText htmlText="{i18n>appDescription}"/>
 									<FormattedText
 										class="sapUiTinyMarginTop"
@@ -141,6 +161,14 @@
 										visible="{= !!${info>submissions} }"/>
 								</VBox>
 							</Panel>
+
+							<HBox
+								class="sitbeRegistrationNotice"
+								alignItems="Center"
+								visible="{= !${info>subscriptionLink} || ${info>subscriptionLink} === 'undefined' }">
+								<core:Icon src="sap-icon://hint" class="sitbeRegistrationNoticeIcon"/>
+								<Text text="{i18n>be.wl.sitbe.registrationSoon}"/>
+							</HBox>
 
 						</VBox>
 					</uxap:ObjectPageSubSection>
