@@ -10,7 +10,36 @@
 			"sessionForm": "https://docs.google.com/forms/d/e/1FAIpQLScSMlKEPfOz04XL_Em7PHb2ewYxzGvCQQtPN5FGspYyphRWNw/viewform",
 			"intro": "We are thrilled to announce that <strong>SAP Inside Track Belgium is back in 2026!</strong> This time we head back to Kontich, to the offices of Flexso — a place that holds a very special spot in the history of #sitBE. Join us on <strong>Saturday September 19th, 2026</strong> for a day of community-driven SAP content.",
 			"announcements": [],
-			"sessions": [],
+			"sessions": [
+				{
+					"name": "SAP ABAP evolution with RAP",
+					"speaker": "Kaustav Das",
+					"description": "RAP is SAP's strategic answer to extending S/4HANA in a cloud-safe, upgrade-stable way — without touching the core. RAP is designed for clean core development (no direct modifications to SAP standard objects), works across cloud and on-premise, and enables a modern, service-based, API-driven architecture. We need to focus on more to clean core the system.",
+					"links": [
+						{
+							"url": "https://www.linkedin.com/in/kaustav-das-%F0%9F%87%A9%F0%9F%87%AA%F0%9F%87%AE%F0%9F%87%B3-57b46a73"
+						}
+					]
+				},
+				{
+					"name": "Simplifying Email Integration using SAP CAP plugins: A Proof-of-Concept with Microsoft Graph API",
+					"speaker": "Dries Van Vaerenbergh",
+					"description": "Discover how to streamline email integration in SAP CAP applications with our annotation-driven plugin. This session showcases a proof-of-concept implementation leveraging Microsoft Graph API, enabling developers to automate email dispatch effortlessly. Learn how declarative annotations in the SAP CAP framework, combined with SAP BTP destination service, simplify email functionality while ensuring extensibility for future enhancements.",
+					"links": []
+				},
+				{
+					"name": "Building Code-Based AI Agents with CAP and UI5: From Concept to Production",
+					"speaker": "Wouter Lemaire",
+					"description": "AI agents are transforming how we interact with enterprise applications, but how do you actually build one? In this session, we'll go beyond the hype and dive into the code.\n\nUsing the Smart Monitoring Agent (demonstrated at SAP TechEd) as our real-world example, you'll learn how to create intelligent, code-based AI agents that combine SAP AI Core with CAP and UI5. We'll cover the complete journey from development to deployment.\nWhat you'll take away:\n- How AI-powered development tools like Claude Code and MCP servers for CAP/UI5 can accelerate your agent development\n- A live demo of the Smart Monitoring Agent in action\n- The technical architecture and code patterns for integrating SAP AI Core into your CAP applications\n- Practical insights on building conversational AI agents that actually work in enterprise scenarios\n\nWhether you're exploring AI capabilities for your own projects or looking to understand what's possible with SAP's AI stack, this session will give you the foundation to start building.",
+					"links": []
+				},
+				{
+					"name": "The Road to S/4HANA 2025: Lessons Learned from the Trenches",
+					"speaker": "Jérémy Coppey",
+					"description": "Upgrading to S/4HANA 2025 sounds straightforward on paper, but the reality is full of surprises. In this session, Jérémy shares the hands-on lessons learned from a real upgrade project — what went smoothly, what went sideways, and what he wishes he had known before starting.\n\nExpect honest takeaways on planning and preparation, custom code adaptation and the clean core mindset, the pitfalls to watch out for, and practical tips to make your own journey to S/4HANA 2025 a lot less painful.",
+					"links": []
+				}
+			],
 			"location": {
 				"name": "Flexso",
 				"street": "Prins Boudewijnlaan 24A",
