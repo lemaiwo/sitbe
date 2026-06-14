@@ -38,6 +38,16 @@
 					"speaker": "Jérémy Coppey",
 					"description": "Upgrading to S/4HANA 2025 sounds straightforward on paper, but the reality is full of surprises. In this session, Jérémy shares the hands-on lessons learned from a real upgrade project — what went smoothly, what went sideways, and what he wishes he had known before starting.\n\nExpect honest takeaways on planning and preparation, custom code adaptation and the clean core mindset, the pitfalls to watch out for, and practical tips to make your own journey to S/4HANA 2025 a lot less painful.",
 					"links": []
+				},
+				{
+					"name": "SAP BTP as the Foundation for Partner SaaS Solutions",
+					"speaker": "Geert-Jan Klaps",
+					"description": "Architectural choices, development approaches, and operational lessons from taking five multitenant solutions to the SAP Store.",
+					"links": [
+						{
+							"url": "https://www.linkedin.com/in/geertjanklaps"
+						}
+					]
 				}
 			],
 			"location": {
