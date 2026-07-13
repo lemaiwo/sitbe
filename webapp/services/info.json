@@ -48,6 +48,32 @@
 							"url": "https://www.linkedin.com/in/geertjanklaps"
 						}
 					]
+				},
+				{
+					"name": "Conversational Search, Analysis and Validation in SAP Cloud Integration",
+					"speaker": "Vadim Klimov",
+					"description": "As SAP Integration Suite adoption grows, reviewing a massive volume of integration flows within tenants using conventional tools may become time consuming and challenging. This session explores an approach to decomposing and analyzing integration flows using conversational search, powered by a GenAI RAG architecture.",
+					"links": [
+						{
+							"url": "https://www.linkedin.com/in/vadim-klimov"
+						}
+					]
+				},
+				{
+					"name": "Do you really need an agent army?",
+					"speaker": "Thibault Vandevoorde",
+					"description": "Everyone's racing to build agent armies: more agents, more skills, more orchestration. But do you really need one? The right architecture isn't the biggest, it's the one that fits what you're actually replacing. A developer on a team needs a single agent with a few skills, because the team already handles the rest. A solo founder needs something closer to a company: agents that plan, build, test, review and govern, because there's no one else to do it. Same technology, opposite architectures, and both are right. This talk is about agent-oriented architecture as a question of fit, not firepower: how the shape of your agent system ends up mirroring the organization it stands in for, which principles hold at any size (boundaries, orchestration, governance, human gates), and why that fit is what survives when the models change every quarter. If you were here last year for \"Is Clean Core enough?\", this is the same instinct applied to AI: the discipline matters more than the tool.",
+					"links": [
+						{
+							"url": "https://www.linkedin.com/in/thvdv/"
+						}
+					]
+				},
+				{
+					"name": "What's new in S/4 development",
+					"speaker": "Lobna Sabri & Kevin De Backer",
+					"description": "S/4 development is moving rapidly, with new capabilities in ABAP, RAP, Fiori Elements and integrated AI enabling developers to build better applications faster. Join us to explore what’s new and learn how to make the most of these innovations in your own projects.",
+					"links": []
 				}
 			],
 			"location": {
