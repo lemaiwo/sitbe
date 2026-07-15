@@ -34,12 +34,6 @@
 					"links": []
 				},
 				{
-					"name": "The Road to S/4HANA 2025: Lessons Learned from the Trenches",
-					"speaker": "Jérémy Coppey",
-					"description": "Upgrading to S/4HANA 2025 sounds straightforward on paper, but the reality is full of surprises. In this session, Jérémy shares the hands-on lessons learned from a real upgrade project — what went smoothly, what went sideways, and what he wishes he had known before starting.\n\nExpect honest takeaways on planning and preparation, custom code adaptation and the clean core mindset, the pitfalls to watch out for, and practical tips to make your own journey to S/4HANA 2025 a lot less painful.",
-					"links": []
-				},
-				{
 					"name": "SAP BTP as the Foundation for Partner SaaS Solutions",
 					"speaker": "Geert-Jan Klaps",
 					"description": "Architectural choices, development approaches, and operational lessons from taking five multitenant solutions to the SAP Store.",
@@ -74,6 +68,16 @@
 					"speaker": "Lobna Sabri & Kevin De Backer",
 					"description": "S/4 development is moving rapidly, with new capabilities in ABAP, RAP, Fiori Elements and integrated AI enabling developers to build better applications faster. Join us to explore what’s new and learn how to make the most of these innovations in your own projects.",
 					"links": []
+				},
+				{
+					"name": "RAP Meets VS Code — Building Fiori Apps with ABAP in a Modern IDE",
+					"speaker": "Okpanachi Victor Fibechola",
+					"description": "What attendees will take away:\n- A working VS Code + ABAP ADT setup they can replicate immediately\n- Practical understanding of what's available in the first release and what's still coming\n- A first look at AI-assisted ABAP development via the built-in MCP server",
+					"links": [
+						{
+							"url": "https://www.linkedin.com/in/victor-okpanachi/"
+						}
+					]
 				}
 			],
 			"location": {
