@@ -36,16 +36,12 @@
 					"links": []
 				},
 				{
-					"name": "SAP ABAP evolution with RAP",
-					"speaker": "Kaustav Das",
-					"description": "RAP is SAP's strategic answer to extending S/4HANA in a cloud-safe, upgrade-stable way — without touching the core. RAP is designed for clean core development (no direct modifications to SAP standard objects), works across cloud and on-premise, and enables a modern, service-based, API-driven architecture. We need to focus on more to clean core the system.",
+					"name": "Vibe coding & AI‑infused development in SAP",
+					"speaker": "Maxime Brusselle",
+					"description": "Discover how AI is reshaping the way SAP developers build, innovate and solve problems. In this session about vibe coding, we explore how AI-powered tools and agents can turn ideas and requirements into working solutions faster than ever before. Through practical examples and a live demo, you’ll discover the opportunities, challenges and real-world potential of AI-assisted development in ABAP and SAP BTP, and why the future is not about replacing developers, but empowering them to create more.",
 					"startdate": "2026-09-19T08:20:00Z",
 					"enddate": "2026-09-19T09:00:00Z",
-					"links": [
-						{
-							"url": "https://www.linkedin.com/in/kaustav-das-%F0%9F%87%A9%F0%9F%87%AA%F0%9F%87%AE%F0%9F%87%B3-57b46a73"
-						}
-					]
+					"links": []
 				},
 				{
 					"name": "RAP Meets VS Code — Building Fiori Apps with ABAP in a Modern IDE",
