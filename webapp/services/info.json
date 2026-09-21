@@ -33,7 +33,11 @@
 					"description": "S/4 development is moving rapidly, with new capabilities in ABAP, RAP, Fiori Elements and integrated AI enabling developers to build better applications faster. Join us to explore what’s new and learn how to make the most of these innovations in your own projects.",
 					"startdate": "2026-09-19T07:35:00Z",
 					"enddate": "2026-09-19T08:15:00Z",
-					"links": []
+					"links": [
+						{
+							"url": "./presentations/2026/SITBE - Whats new in S4 -SITBE - Published.pdf"
+						}
+					]
 				},
 				{
 					"name": "Vibe coding & AI‑infused development in SAP",
@@ -41,7 +45,11 @@
 					"description": "Discover how AI is reshaping the way SAP developers build, innovate and solve problems. In this session about vibe coding, we explore how AI-powered tools and agents can turn ideas and requirements into working solutions faster than ever before. Through practical examples and a live demo, you’ll discover the opportunities, challenges and real-world potential of AI-assisted development in ABAP and SAP BTP, and why the future is not about replacing developers, but empowering them to create more.",
 					"startdate": "2026-09-19T08:20:00Z",
 					"enddate": "2026-09-19T09:00:00Z",
-					"links": []
+					"links": [
+						{
+							"url": "./presentations/2026/SITBE AI infused Development - Presentation.pdf"
+						}
+					]
 				},
 				{
 					"name": "RAP Meets VS Code — Building Fiori Apps with ABAP in a Modern IDE",
@@ -50,6 +58,9 @@
 					"startdate": "2026-09-19T09:15:00Z",
 					"enddate": "2026-09-19T09:55:00Z",
 					"links": [
+						{
+							"url": "./presentations/2026/RAP-Meets-VS-Code.pdf"
+						},
 						{
 							"url": "https://www.linkedin.com/in/victor-okpanachi/"
 						}
@@ -75,6 +86,9 @@
 					"enddate": "2026-09-19T12:20:00Z",
 					"links": [
 						{
+							"url": "./presentations/2026/Vadim Klimov - Conversational Search, Analysis and Validation in SAP CPI.pdf"
+						},
+						{
 							"url": "https://www.linkedin.com/in/vadim-klimov"
 						}
 					]
@@ -87,6 +101,9 @@
 					"enddate": "2026-09-19T13:15:00Z",
 					"links": [
 						{
+							"url": "./presentations/2026/SAP_Talk_2026.pptx"
+						},
+						{
 							"url": "https://www.linkedin.com/in/thvdv/"
 						}
 					]
@@ -97,7 +114,11 @@
 					"description": "Discover how to streamline email integration in SAP CAP applications with our annotation-driven plugin. This session showcases a proof-of-concept implementation leveraging Microsoft Graph API, enabling developers to automate email dispatch effortlessly. Learn how declarative annotations in the SAP CAP framework, combined with SAP BTP destination service, simplify email functionality while ensuring extensibility for future enhancements.",
 					"startdate": "2026-09-19T13:20:00Z",
 					"enddate": "2026-09-19T13:40:00Z",
-					"links": []
+					"links": [
+						{
+							"url": "./presentations/2026/SITbe-CAP-email-plugin.pdf"
+						}
+					]
 				},
 				{
 					"name": "AI-assisted migration of legacy free-style Fiori apps to best practises",
@@ -106,6 +127,9 @@
 					"startdate": "2026-09-19T13:45:00Z",
 					"enddate": "2026-09-19T14:05:00Z",
 					"links": [
+						{
+							"url": "./presentations/2026/20260919 SITbe AI assisted Fiori migration.pdf"
+						},
 						{
 							"url": "https://www.linkedin.com/in/samibo/"
 						}
